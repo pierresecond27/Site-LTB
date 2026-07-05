@@ -1,418 +1,272 @@
+/*==============================
+    GOOGLE FONT
+==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-.logo-header{
-    width: 60px;
-    height: 60px;
-}
-
-.title-header{
-    font-size: 23px;
-  text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-}
-
-.header-title-2{
-    font-size: 23px;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    color: #fee90a;
-    text-transform: uppercase;
-}
-
-.colour-1 a{
-    color: #f1f1f1;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-.colour-1 a:hover{
-    color: #fee90a;
-}
-
-.colour-1-active a{
-    color: #fee90a;
-}
-/* fin du header */
-
-
-/* ----------------------------------------------- */
-
-.social-icon{
-    display: flex;
-    align-items: center;
-}
-.custom-footer {
-    background: #2A3591;
-    color: #fff;
-}
-
-/* Colonnes */
-.custom-footer .row>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Logo */
-.footer-logo {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-}
-
-.footer-title {
-    font-size: 26px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.footer-title-2 {
-    font-size: 26px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    color: #fee90a;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-/* Texte */
-.footer-text {
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #f1f1f1;
-    line-height: 1.8;
-}
-
-/* Titres */
-.footer-subtitle {
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #fee90a;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-.footer-subtitle{
-    font-size:18px;
-    font-family:"Poppins",sans-serif;
-    font-weight:600;
-    color:#fee90a !important; 
-    text-transform:uppercase;
-    margin-bottom:20px;
-}
-
-/* Navigation */
-.footer-lien {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-lien li {
-    margin-bottom: 10px;
-}
-
-.footer-lien a {
-    text-decoration: none;
-    color: #f1f1f1;
-    font-family: "Poppins", sans-serif;
-    transition: .3s;
-}
-
-.footer-lien a:hover {
-    color: #fee90a;
-}
-
-.facebook-titre {
-    font-family: 'Poppins', sans-serif;
-    text-align: none;
-}
-
-/* Contact */
-.footer-contact {
-    margin-bottom: 12px;
-    font-family: "Poppins", sans-serif;
-}
-
-.footer-contact i {
-    color: #fee90a;
-    margin-right: 8px;
-}
-
-/* Réseaux sociaux */
-.social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.social-icon a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #fff;
-    font-size: 22px;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.social-icon a:hover {
-    color: #fee90a;
-}
-
-.social-icon p {
-    margin: 0;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-}
-
-/* Ligne */
-.footer-line {
-    border-color: rgba(255, 255, 255, .2);
-}
-/* =======================
-   STYLE GENERAL
-======================= */
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#efefefe8;
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-/* =======================
-   NAVBAR
-======================= */
-
-.navbar-custom{
-    background:#4c73e6;
-    padding:12px 0;
+body{
+    background:#f5f7fb;
 }
 
-.logo{
-    width:55px;      /* Taille du logo */
-    height:55px;
-}
+/*==============================
+      BANNIERE
+==============================*/
 
-.logo-title{
-    font-size:18px;
-    color:#fff;
-    font-weight:bold;
-}
+.news-banner{
 
-.navbar-brand small{
-    color:#ffd400;
-    font-size:14px;
-}
+    background:url("images/banner.jpg") center center/cover no-repeat;
 
-.nav-link{
-    color:#fff !important;
-    font-size:16px;      /* Taille menu */
-    margin-left:20px;
-}
+    height:280px;
 
-.nav-link.active{
-    color:#ffb400 !important;
-    font-weight:bold;
-}
-
-/* =======================
-   BANNIERE
-======================= */
-
-.banner{
     position:relative;
 }
 
-.banner-img{
+.overlay{
+
     width:100%;
-    height:220px;      /* Modifier la hauteur */
-    object-fit:cover;
+    height:100%;
+    background:rgba(8,43,114,.82);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.banner-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+.news-banner h1{
+
+    color:#fff;
+    font-size:52px;
+    font-weight:700;
 }
 
-.banner-text h1{
-    color:white;
-    font-size:45px;   /* Taille du titre */
-    font-weight:bold;
+.line{
+
+    width:70px;
+    height:5px;
+    background:#ff9800;
+    margin:15px auto;
+    border-radius:50px;
 }
 
-/* =======================
-   CARTES
-======================= */
+.news-banner p{
 
-.actualite-card{
+    color:#fff;
+    font-size:18px;
+}
 
-    border: 1px solid black;
-    border-radius:10px;
+/*==============================
+      CARD
+==============================*/
+
+.card{
+
+    border:none;
+    border-radius:15px;
+
     overflow:hidden;
-    transition:.3s;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
 
+    transition:.4s;
 }
 
-.actualite-card:hover{
+.card:hover{
 
-    transform:translateY(+8px);
+    transform:translateY(-8px);
 
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
 }
 
-.actualite-card img{
+/*==============================
+        IMAGE
+==============================*/
+
+.news-img{
 
     width:100%;
-    height:220px;      /* Taille image */
+
+    height:220px;
+
     object-fit:cover;
-
 }
 
-.card-body{
+/*==============================
+        BADGE
+==============================*/
 
-    padding:20px;
-    background-color: #fafbfcb9;
+.badge{
 
+    background:#ff9800 !important;
+
+    color:#fff !important;
+
+    font-size:12px;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
 }
 
-.card-title{
+/*==============================
+        TITRE
+==============================*/
 
-    font-size:22px;   /* Taille titre */
-    font-weight:bold;
-    text-align:center;
-    margin-bottom:15px;
-
-}
-
-.card-text{
-
-    font-size:15px;   /* Taille texte */
-    line-height:1.7;
-    color:#221e1e;
-    text-align:left;
-
-}
-
-/* =======================
-   FOOTER
-======================= */
-
-.footer{
-
-    background:#4c73e6;
-    color:rgb(245, 239, 239);
-    padding:60px 0 20px;
-
-}
-
-.footer-logo{
-
-    width:70px;     /* Taille logo footer */
-    margin-bottom:15px;
-
-}
-
-.footer h5{
+.card h5{
 
     font-size:22px;
-    font-weight:bold;
-    margin-bottom:20px;
 
+    font-weight:700;
+
+    color:#222;
+
+    margin-top:18px;
+
+    line-height:30px;
 }
 
-.footer p{
+/*==============================
+        DATE
+==============================*/
 
-    font-size:15px;
-    line-height:1.8;
-
-}
-
-.footer ul{
-
-    list-style:none;
-    padding:0;
-
-}
-
-
-
-.footer ul li{
-
-    margin-bottom:10px;
-    font-size:15px;
-
-}
-
-.footer hr{
-
-    border-color:rgba(255,255,255,.3);
-    margin:30px 0;
-
-}
-
-.footer .text-center{
+.text-muted{
 
     font-size:14px;
+}
+
+.bi-calendar3{
+
+    color:#0d6efd;
+
+    margin-right:8px;
+}
+
+/*==============================
+       DESCRIPTION
+==============================*/
+
+.card p{
+
+    color:#666;
+
+    line-height:28px;
+}
+
+/*==============================
+       BOUTON
+==============================*/
+
+.btn-primary{
+
+    background:#0d47a1;
+
+    border:none;
+
+    padding:10px 25px;
+
+    border-radius:7px;
+
+    font-weight:600;
+}
+
+.btn-primary:hover{
+
+    background:#ff9800;
+}
+
+/*==============================
+      RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+.news-banner{
+
+height:220px;
 
 }
 
-/* =======================
-   RESPONSIVE
-======================= */
+.news-banner h1{
+
+font-size:42px;
+
+}
+
+.news-banner p{
+
+font-size:16px;
+
+}
+
+.news-img{
+
+height:200px;
+
+}
+
+}
 
 @media(max-width:768px){
 
-.banner-img{
+.news-banner{
 
-    height:170px;
-
-}
-
-.banner-text h1{
-
-    font-size:30px;
+height:180px;
 
 }
 
-.logo{
+.news-banner h1{
 
-    width:45px;
-    height:45px;
-
-}
-
-.card-title{
-
-    font-size:18px;
+font-size:34px;
 
 }
 
-.card-text{
+.news-banner p{
 
-    font-size:14px;
-
-}
-
-.actualite-card img{
-
-    height:180px;
+font-size:14px;
 
 }
 
-.footer{
+.news-img{
 
-    text-align:center;
+height:180px;
 
 }
+
+.card h5{
+
+font-size:18px;
+
+line-height:25px;
+
 }
-.colour_banniere{
-       background-color: #3d59b6;
-  }
+
+}
+
+@media(max-width:576px){
+
+.news-banner{
+
+height:170px;
+
+}
+
+.news-banner h1{
+
+font-size:30px;
+
+}
+
+.news-img{
+
+height:170px;
+
+}
+
+}
