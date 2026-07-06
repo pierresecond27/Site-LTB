@@ -13,16 +13,77 @@
       src="https://kit.fontawesome.com/e6f374f6c0.js"
       crossorigin="anonymous"
     ></script>
+    <!-- lien du css filieres -->
     <link rel="stylesheet" href="asset/detail filières/detail_filieres.css" />
+    <!-- police google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="asset/filieres/style-filieres/footer.css">
-    <link rel="stylesheet" href="asset/filieres/style-filieres/scroll.css">
-
+    <!-- lien du header -->
+    <link rel="stylesheet" href="asset/En_commun/header.css" />
+    <!-- lien du footer -->
+    <link rel="stylesheet" href="asset/En_commun/footer.css" />
+    <!-- lien du css au scroll -->
+    <link rel="stylesheet" href="asset/filieres/style-filieres/scroll.css" />
   </head>
   <body>
-   <!-- en tete -->
-   <!-- fin de l'en tete -->
+    <!-- debut de du header -->
+
+    <nav
+      class="navbar navbar-expand-lg custom-navbar"
+      data-bs-theme="dark container"
+    >
+      <div class="container-fluid container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="Acceuil.html"
+        >
+          <img
+            src="asset/image/logo_sans_fond.png"
+            alt="Logo Lycée Technique"
+            class="navbar-logo"
+            width="45"
+            height="45"
+          />
+          <div class="brand-text">
+            <span class="brand-title">LYCÉE TECHNIQUE</span>
+            <span class="brand-subtext">DE BIKÉLÉ</span>
+          </div>
+        </a>
+
+        <!-- Bouton Burger (Mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens de navigation -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="Acceuil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="filieres.html">Filières</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="actualité.html">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- fin du header -->
+
     <!-- le contenu de la page -->
     <main class="container my-5">
       <!-- ------------------- -->
@@ -31,29 +92,31 @@
 
         <div class="hero-dmw position-relative">
           <img
-            src="asset/filieres/image-filieres/DMW.png"
+            src="asset/filieres/image-filieres/Minf.jpg"
             class="w-100 hero-img"
             alt="DMW"
           />
 
           <div class="hero-overlay">
-            <div class="container p-5 ">
+            <div class="container alignement p-5">
               <div class="hero-content">
                 <p class="badge-filiere">FILIÈRE</p>
 
-                <h1>
-                  Développement <br />
-                  Multimédia Web
-                </h1>
+                <h1>Maintenance <br />Informatique</h1>
 
-                <h2>DMW</h2>
+                <h2>MINF</h2>
 
                 <p class="lead">
-                  Concevoir aujourd'hui les solutions digitales de demain.
+                  Assurer le bon fonctionnement, la maintenance et la sécurité
+                  des équipements informatiques d'aujourd'hui et de demain.
                 </p>
 
-                <div class="">
-                  <a href="filieres.html" class="btn btn-warning me-3 px-4">
+                <div>
+                  <a
+                    href="filieres.html"
+                    class="btn btn-warning me-3 px-4"
+                    title="Retour"
+                  >
                     <i class="fa-solid fa-graduation-cap"></i>
                     Retour
                   </a>
@@ -79,9 +142,11 @@
                   <h3 class="section-title">OBJECTIFS</h3>
 
                   <p>
-                    Former des développeurs capables de concevoir des
-                    applications web et mobiles modernes utilisant les
-                    technologies actuelles.
+                    Former des techniciens qualifiés capables d'installer,
+                    configurer, diagnostiquer, entretenir et réparer les
+                    équipements informatiques, les réseaux ainsi que les
+                    systèmes d'exploitation afin de garantir leur bon
+                    fonctionnement.
                   </p>
                 </div>
               </div>
@@ -100,13 +165,22 @@
 
                   <ul class="list-unstyled">
                     <li>
-                      <i class="fa-solid fa-check"></i>HTML / CSS / JavaScript</li>
+                      <i class="fa-solid fa-check"></i>Électricité appliquée
+                    </li>
 
-                    <li><i class="fa-solid fa-check"></i> Backend</li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> Réseaux informatiques
+                    </li>
 
-                    <li><i class="fa-solid fa-check"></i>Bases de données </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>Maintenance des systemes
+                      informatique
+                    </li>
 
-                    <li><i class="fa-solid fa-check"></i> UX / UI Design</li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> Architecture et
+                      Technologie d'ordinateur
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -114,24 +188,33 @@
 
             <!-- DEBOUCHES -->
 
-            <div class="col-lg-3 reveal reveal">
+            <div class="col-lg-3 reveal">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <div class="card-body">
                   <div class="icon-box">
                     <i class="fa-solid fa-briefcase"></i>
                   </div>
+
                   <h3 class="section-title">DÉBOUCHÉS</h3>
 
                   <div class="emploi">
-                    <i class="fa-solid fa-code"></i>
-
-                    Développeur Web
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Technicien de maintenance informatique
                   </div>
 
-                  <div class="emploi mt-3">
-                    <i class="fa-solid fa-mobile-screen"></i>
+                  <div class="emploi mt-2">
+                    <i class="fa-solid fa-network-wired"></i>
+                    Technicien réseaux
+                  </div>
 
-                    Développeur Mobile
+                  <div class="emploi mt-2">
+                    <i class="fa-solid fa-headset"></i>
+                    Support informatique
+                  </div>
+
+                  <div class="emploi mt-2">
+                    <i class="fa-solid fa-server"></i>
+                    Administrateur systèmes junior
                   </div>
                 </div>
               </div>
@@ -142,32 +225,33 @@
             <div class="col-lg-3 reveal">
               <div class="card h-100 bg-primary text-white border-0 rounded-4">
                 <div class="card-body">
-                  <h3>Pourquoi choisir DMW ?</h3>
+                  <h3>Pourquoi choisir MINF ?</h3>
 
                   <hr />
 
                   <p>
-                    <i class="fa-solid fa-laptop-code"></i>
+                   <i class="fa-solid fa-computer"></i>
 
-                    Formation pratique
+                    Formation orientée vers la pratique
                   </p>
 
                   <p>
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
 
-                    Encadrement qualifié
+
+                    Maintenance et réparation des ordinateurs
                   </p>
 
                   <p>
-                    <i class="fa-solid fa-chart-line"></i>
+                    <i class="fa-solid fa-network-wired"></i>
 
-                    Insertion professionnelle
+                    Maîtrise des réseaux informatiques
                   </p>
 
                   <p>
-                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-briefcase"></i>
 
-                    Technologies modernes
+                    Excellentes perspectives d'emploi
                   </p>
                 </div>
               </div>
@@ -235,7 +319,7 @@
 
               <h5>Rentrée</h5>
 
-              <p>Septembre 2025</p>
+              <p>Septembre</p>
             </div>
           </div>
         </div>
@@ -244,7 +328,83 @@
     </main>
     <!-- fin du contenu de la page -->
     <!-- debut footer -->
+    <footer class="custom-footer text-white py-3">
+      <div class="container pt-3">
+        <div class="row gy-4 align-items-start">
+          <!-- Colonne 1 : Logo & Slogan -->
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="asset/image/logo_sans_fond.png"
+              alt="Logo Lycée Technique de Bikélé"
+              class="footer-logo mb-3"
+            />
+            <h5 class="footer-brand">
+              Lycée Technique <span class="highlight-text">de Bikélé</span>
+            </h5>
+            <p class="footer-slogan mt-2">
+              Compétence – Performance – Responsabilité
+            </p>
+          </div>
 
+          <!-- Colonne 2 : Navigation -->
+          <div class="col-12 col-md-4 text-center">
+            <h4 class="footer-title mb-3">Navigation</h4>
+            <ul class="list-unstyled footer-links">
+              <li>
+                <a href="Acceuil.html"> Accueil </a>
+              </li>
+              <li class="active" aria-current="page">
+                <a href="filieres.html">Filières</a>
+              </li>
+              <li><a href="actualité.html">Actualités</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 : Nous contacter -->
+          <div class="col-12 col-md-4 position">
+            <h4 class="footer-title mb-3 text-center text-md-start">
+              Nous contacter
+            </h4>
+            <ul class="list-unstyled footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Bikélé, Libreville - Gabon</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="">LTB@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">+241 62252332</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555487769984"
+                  target="_blank"
+                  rel="noopener"
+                  class="fbk color"
+                  title="Facebook - Notre page officielle"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ligne de séparation / Copyright -->
+        <div class="row mt-4 pt-3 border-top border-secondary-subtle">
+          <div class="col 12 text-center">
+            <p class="footer-copyright mb-0">
+              Copyright © 2026 Lycée Technique de Bikélé. Tous droits réservés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- fin du footer -->
 
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
