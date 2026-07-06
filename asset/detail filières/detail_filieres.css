@@ -113,6 +113,16 @@
 
 }
 
+/* .alignement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.font{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
 .hero-overlay {
 
     position: absolute;
@@ -126,6 +136,7 @@
     align-items: center;
 
 }
+
 
 .hero-content {
 
@@ -351,7 +362,7 @@ ul li i {
 
 }
 
-.card h2 {
+.card-body h2 {
 
     color: var(--primary);
 

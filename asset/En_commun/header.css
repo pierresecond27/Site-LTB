@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  /* --- COULEURS --- */
+  --navbar-bg: #283593;           /* Bleu de fond */
+  --navbar-text: #ffffff;         /* Couleur des liens par défaut */
+  --navbar-active: #fee90a;       /* Couleur du lien 'Accueil' (Jaune) */
+  --navbar-hover: #ffeb3b;        /* Couleur au survol des liens */
+  --brand-subtext-color: #fee90a; /* Couleur de 'DE BIKÉLÉ' (Jaune) */
+
+  /* --- TAILLES DE TEXTE --- */
+  --navbar-font-size: 1rem;       /* Taille des liens du menu */
+  --brand-title-size: 1rem;       /* Taille de 'LYCÉE TECHNIQUE' */
+  --brand-subtext-size: 0.9rem;   /* Taille de 'DE BIKÉLÉ' */
+
+  /* --- ÉPAISSEUR DU TEXTE --- */
+  --font-weight-links: 700;       /* Gras pour les liens */
+  --font-weight-brand: 800;       /* Gras pour le titre */
+  --type-de-police: "Poppins", sans-serif;
+}
+
+
+/* Fond de la barre */
+.custom-navbar {
+  background-color: var(--navbar-bg) !important;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* Textes du Logo/Brand */
+.custom-navbar .brand-text {
+    font-family: var(--type-de-police);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.custom-navbar .brand-title {
+  color: var(--navbar-text);
+  font-size: var(--brand-title-size);
+  font-weight: var(--font-weight-brand);
+     font-family: var(--type-de-police);
+}
+
+.custom-navbar .brand-subtext {
+  color: var(--brand-subtext-color);
+  font-size: var(--brand-subtext-size);
+  font-weight: var(--font-weight-brand);
+}
+
+/* Liens du menu */
+.custom-navbar .nav-link {
+  color: var(--navbar-text) !important;
+    font-family: var(--type-de-police);
+  font-size: var(--navbar-font-size);
+  font-weight: var(--font-weight-links);
+  transition: color 0.2s ease-in-out;
+}
+
+/* Survol des liens */
+.custom-navbar .nav-link:hover {
+  color: var(--navbar-hover) !important;
+}
+
+
+.custom-navbar .nav-link.active {
+  color: var(--navbar-active) !important;
+}
