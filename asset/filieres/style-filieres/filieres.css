@@ -1,0 +1,11 @@
+.banniere{
+    /* height: 300px; */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.75), rgba(20, 20, 20, 0.85)), url("../image-filieres/bannière.jpg");
+}
+
+.banniere > h2{
+    color: #FFEA0A;
+}
