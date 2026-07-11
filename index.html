@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site de l'école</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="py-3 bg-primary">
+      <nav class="container navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand d-flex align-items-center" href="#accueil">
+          <img src="" alt="Logo de l'école" width="50" height="50" class="rounded-circle me-2">
+          <span>LYCEE TECHNIQUE <br> DE BIKELE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#filières">Filières</a></li>
+            <li class="nav-item"><a class="nav-link" href="#actualités">Actualités</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-fill"></main>
+
+    <main>
+      <section id="accueil" class="hero-banner position-relative py-5">
+        <!-- Carrousel d'images en arrière-plan -->
+        <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="asset/image/Screenshot_20250215-172323_1.jpg" class="d-block w-100 h-100" alt="Bannière 1" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="asset/image/Screenshot_20250215-173300_1.jpg" class="d-block w-100 h-100" alt="Bannière 2" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="asset/image/Screenshot_20250215-181238_1.jpg" class="d-block w-100 h-100" alt="Bannière 3" style="object-fit: cover;">
+            </div>
+          </div>
+          <!-- Contrôles optionnels du carrousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- Overlay semi-transparent -->
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <!-- Contenu textuel -->
+        <div class="container position-relative" style="z-index: 10;">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-7">
+              <h1 class="display-5 fw-bold text-white">Bienvenue sur notre site</h1>
+              <p class="lead text-white">Découvrez notre Lycée Technique de Bikélé, ses filières, ses valeurs et l'ambiance qui y règne chaque jour.</p>
+              <a href="#filières" class="btn btn-primary btn-lg">Voir les filières</a>
+            </div>
+          </div>                                 
+        </div>
+      </section>
+
+      <section id="histoire" class="py-5 bg-white">
+        <div class="container position-relative">
+          <div class="row align-items-start gy-4">
+            <div class="col-lg-7">
+              <h5 class="text-primary small mb-2">Notre Histoire</h5>
+              <h3 class="mb-2">Le Lycée Technique de Bikélé</h3>
+              <p class="text-muted">Le Lycée Technique de BIKÉLÉ est officiellement ouvert avec ses portes le 8 février 2021. Situé à Bikélé, en périphérie de Libreville au Gabon, le Lycée Technique de Bikélé est un établissement public d’enseignement technique et professionnel reconnu pour la qualité de ses formations.</p>
+              <p class="text-muted">Depuis sa création, l’établissement s’est imposé comme un acteur incontournable de la formation technique au Gabon, en préparant des jeunes aux métiers du numérique, de l’industrie et de l’informatique.</p>
+              <p class="mb-0"><strong>Nos valeurs :</strong> <span class="text-warning">Compétence - performance - Responsabilité</span></p>
+            </div>
+            <div class="col-lg-5 position-relative">
+              <div class="story-image rounded"></div>
+            </div>
+          </div>
+
+          <div class="story-decor"></div>
+
+          <div class="row text-center g-4 mt-5">
+            <div class="col-md-4">
+              <div class="stat-card px-4 py-5 rounded shadow-sm">
+                <h3 class="stat-number">1500</h3>
+                <p class="mb-0 stat-label">Élèves inscrits +</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card px-4 py-5 rounded shadow-sm">
+                <h3 class="stat-number">90%</h3>
+                <p class="mb-0 stat-label">Taux de réussite</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card px-4 py-5 rounded shadow-sm">
+                <h3 class="stat-number">6+</h3>
+                <p class="mb-0 stat-label">Départements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="filières" class="py-5">
+        <div class="container">
+          <h2 class="mb-4 text-primary">Nos filières</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Filière 1 -->
+            <div class="col">
+              <div class="card filiere-card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                <img src="asset/image/Screenshot_20250215-172323_1.jpg" class="card-img" alt="Développement" style="object-fit: cover; height: 250px;">
+                <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end">
+                  <div class="p-3">
+                    <h5 class="card-title text-white fw-bold">Développement</h5>
+                    <p class="card-text text-white small">Maîtrisez la programmation et le développement d'applications modernes pour les technologies du futur.</p>
+                    <a href="#" class="btn btn-sm btn-primary">En savoir plus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filière 2 -->
+            <div class="col">
+              <div class="card filiere-card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                <img src="asset/image/Screenshot_20250215-181238_1.jpg" class="card-img" alt="Maintenance informatique" style="object-fit: cover; height: 250px;">
+                <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end">
+                  <div class="p-3">
+                    <h5 class="card-title text-white fw-bold">Maintenance informatique</h5>
+                    <p class="card-text text-white small">Formation complète en maintenance, dépannage et gestion des infrastructures informatiques.</p>
+                    <a href="#" class="btn btn-sm btn-primary">En savoir plus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filière 3 -->
+            <div class="col">
+              <div class="card filiere-card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                <img src="asset/image/Screenshot_20250215-173300_1.jpg" class="card-img" alt="Internet et informatique industrielle" style="object-fit: cover; height: 250px;">
+                <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end">
+                  <div class="p-3">
+                    <h5 class="card-title text-white fw-bold">Internet et informatique industrielle</h5>
+                    <p class="card-text text-white small">Découvrez l'IoT, l'automatisation industrielle et l'intégration des systèmes connectés.</p>
+                    <a href="#" class="btn btn-sm btn-primary">En savoir plus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="actualités" class="py-5 news-section position-relative text-white overflow-hidden">
+        <div class="news-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container position-relative" style="z-index: 2;">
+          <div class="row align-items-end">
+            <div class="col-lg-7">
+              <h2 class="mb-3 text-white">Actualités</h2>
+              <p class="lead text-white">Découvrez nos dernières nouvelles : événements, concours et projets étudiants dans un cadre moderne et dynamique.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <a href="#contact" class="btn btn-outline-light btn-lg">Contact rapide</a>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card news-card h-100 border-0">
+                <div class="card-body">
+                  <span class="news-badge">Nouveau</span>
+                  <h3 class="card-title">Portes ouvertes</h3>
+                  <p class="card-text">Participez à nos journées dédiées pour découvrir les installations et l’équipe pédagogique.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card news-card h-100 border-0">
+                <div class="card-body">
+                  <span class="news-badge">Événement</span>
+                  <h3 class="card-title">Concours inter-lycées</h3>
+                  <p class="card-text">Nos élèves se préparent pour un concours régional d’informatique et de robotique.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card news-card h-100 border-0">
+                <div class="card-body">
+                  <span class="news-badge">Focus</span>
+                  <h3 class="card-title">Projets étudiants</h3>
+                  <p class="card-text">Des projets concrets développés par les classes pour répondre aux besoins locaux.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="py-3 bg-primary text-white mt-auto">
+      <nav class="container navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand d-flex align-items-center" href="#accueil">
+          <img src="asset/image/logo-ltb-hd.png" alt="Logo de l'école" width="50" height="50" class="rounded-circle me-2">
+          <span>LYCEE TECHNIQUE <br> DE BIKELE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footerNav" aria-controls="footerNav" aria-expanded="false" aria-label="Basculer la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="footerNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#filières">Filières</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#actualités">Actualités</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="asset/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
