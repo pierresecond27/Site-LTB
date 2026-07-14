@@ -1,41 +1,78 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Site de l'école</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e6f374f6c0.js"
+      crossorigin="anonymous"
+    ></script>
 
   </head>
   <body>
-    <header class="py-3 bg-primary">
+    <header class="p-2 colour-header">
       <nav class="container navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand d-flex align-items-center" href="#accueil">
-          <img src="asset/image/logo-ltb-hd.png" alt="Logo de l'école" width="50" height="50" class="rounded-circle me-2">
-          <span>LYCEE TECHNIQUE <br> DE BIKELE</span>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="asset/image/logo_sans_fond.png"
+            alt="logo"
+            class="logo-header"
+          />
+          <h1 class="title-header">
+            Lycée Technique <br />
+            <span class="header-title-2">de Bikélé</span>
+          </h1>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Basculer la navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#accueil">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="#filières">Filières</a></li>
-            <li class="nav-item"><a class="nav-link" href="#actualités">Actualités</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item colour-1 colour-1-active">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item colour-1">
+              <a class="nav-link" href="#">Filières</a>
+            </li>
+            <li class="nav-item colour-1">
+              <a class="nav-link" href="#">Actualités</a>
+            </li>
+            <li class="nav-item colour-1">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="flex-fill"></main>
-
-
     <main>
       <section id="accueil" class="hero-banner position-relative py-5">
         <!-- Carrousel d'images en arrière-plan -->
         <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000">
+
+          <!-- Indicateurs, centrés en bas -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
           <div class="carousel-inner h-100">
             <div class="carousel-item active h-100">
               <img src="asset/image/lapin.jpg" class="d-block w-100 h-100" alt="Bannière 1" style="object-fit: cover;">
@@ -59,15 +96,17 @@
         <!-- Overlay semi-transparent -->
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
-        <!-- Contenu textuel -->
+        <!-- Contenu textuel centré -->
         <div class="container position-relative" style="z-index: 10;">
-          <div class="row align-items-center min-vh-100">
-            <div class="col-lg-7">
-              <h1 class="display-5 fw-bold text-white">Bienvenue sur notre site</h1>
-              <p class="lead text-white">Découvrez notre Lycée Technique de Bikélé, ses filières, ses valeurs et l'ambiance qui y règne chaque jour.</p>
-              <a href="#filières" class="btn btn-primary btn-lg">Voir les filières</a>
+          <div class="row">
+            <div class="col-12">
+              <div class="hero-content">
+                <h1 class="display-5 fw-bold text-white">Bienvenue sur notre site</h1>
+                <p class="lead text-white">Découvrez notre Lycée Technique de Bikélé, ses filières, ses valeurs et l'ambiance qui y règne chaque jour.</p>
+                <a href="#filières" class="btn btn-primary btn-lg">Voir les filières</a>
+              </div>
             </div>
-          </div>                                 
+          </div>
         </div>
       </section>
 
@@ -92,7 +131,7 @@
             <div class="container">
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <h5 class="text-primary small mb-0">Nos partenaires</h5>
-                <span class="text-muted small">Ils soutiennent le Lycée Technique de Bikélé</span>
+                <span class="text-muted small">Ils soutiennent le Lycée Technique de Bikélé <br>en prennant nos élèves en stages durant 1 à 2 mois</span>
               </div>
             </div>
 
@@ -106,8 +145,9 @@
                   <div class="partner-logo">
                     <img src="asset/image/NKOK.png" alt="Partenaire 2">
                   </div>
+                  <!-- Partenaire 3 supprimé (src vide causait une erreur console) -->
                   <div class="partner-logo">
-                    <img src="" alt="Partenaire 3">
+                    
                   </div>
                   <div class="partner-logo">
                     <img src="asset/image/site-logo-francophonie.png" alt="Partenaire 4">
@@ -117,23 +157,19 @@
                   </div>
                 </div>
 
+
                 <div class="marquee__group" aria-hidden="true">
                   <div class="partner-logo">
-                    <img src="" alt="Partenaire 1">
+                    <img src="asset/image/cyberschool.png" alt="Partenaire 1">
                   </div>
                   <div class="partner-logo">
-                    <img src="" alt="Partenaire 2">
+                    <img src="asset/image/site-logo-francophonie.png" alt="Partenaire 4">
                   </div>
                   <div class="partner-logo">
-                    <img src="" alt="Partenaire 3">
-                  </div>
-                  <div class="partner-logo">
-                    <img src="" alt="Partenaire 4">
-                  </div>
-                  <div class="partner-logo">
-                    <img src="" alt="Partenaire 5">
+                    <img src="asset/image/Centre gabonais.png" alt="Partenaire 5">
                   </div>
                 </div>
+
               </div>
             </div>
         </div>
@@ -188,44 +224,61 @@
         </div>
       </section>
 
-      <section id="actualités" class="py-5 news-section position-relative text-white overflow-hidden">
-        <div class="news-overlay position-absolute top-0 start-0 w-100 h-100"></div>
-        <div class="container position-relative" style="z-index: 2;">
-          <div class="row align-items-end">
-            <div class="col-lg-7">
-              <h2 class="mb-3 text-white">Actualités</h2>
-              <p class="lead text-white">Découvrez nos dernières nouvelles : événements, concours et projets étudiants dans un cadre moderne et dynamique.</p>
-            </div>
-            <div class="col-lg-5 text-lg-end">
-              <a href="#contact" class="btn btn-outline-light btn-lg">Contact rapide</a>
-            </div>
-          </div>
+      <!-- ============================================================ -->
+      <!-- ACTUALITÉS — journal de bord technique, fil chronologique      -->
+      <!-- ============================================================ -->
+      <section id="actualités" class="actu-section position-relative">
+        <div class="actu-grid-overlay"></div>
 
-          <div class="row g-4 mt-4">
-            <div class="col-md-6 col-lg-4">
-              <div class="card news-card h-100 border-0">
-                <div class="card-body">
-                  <span class="news-badge">Nouveau</span>
-                  <h3 class="card-title">Portes ouvertes</h3>
-                  <p class="card-text">Participez à nos journées dédiées pour découvrir les installations et l’équipe pédagogique.</p>
-                </div>
+        <div class="container position-relative">
+          <div class="actu-frame">
+            <span class="actu-corner actu-corner-tl"></span>
+            <span class="actu-corner actu-corner-tr"></span>
+            <span class="actu-corner actu-corner-bl"></span>
+            <span class="actu-corner actu-corner-br"></span>
+
+            <div class="row align-items-end mb-4">
+              <div class="col-lg-7">
+                <span class="actu-eyebrow">// Fil d'actualités</span>
+                <h2 class="actu-title">Actualités</h2>
+                <p class="actu-lead">Le journal de bord de l'établissement : événements, concours et projets, classés par date.</p>
+              </div>
+              <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+                <a href="#contact" class="actu-cta">Nous contacter <i class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card news-card h-100 border-0">
-                <div class="card-body">
-                  <span class="news-badge">Événement</span>
-                  <h3 class="card-title">Concours inter-lycées</h3>
-                  <p class="card-text">Nos élèves se préparent pour un concours régional d’informatique et de robotique.</p>
+
+            <div class="actu-timeline">
+              <div class="actu-item">
+                <div class="actu-node">
+                  <span class="actu-date">12<br>FÉV</span>
+                </div>
+                <div class="actu-content">
+                  <span class="actu-tag">Nouveau</span>
+                  <h3 class="actu-item-title">Portes ouvertes</h3>
+                  <p class="actu-item-text">Participez à nos journées dédiées pour découvrir les installations et l'équipe pédagogique.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card news-card h-100 border-0">
-                <div class="card-body">
-                  <span class="news-badge">Focus</span>
-                  <h3 class="card-title">Projets étudiants</h3>
-                  <p class="card-text">Des projets concrets développés par les classes pour répondre aux besoins locaux.</p>
+
+              <div class="actu-item">
+                <div class="actu-node">
+                  <span class="actu-date">03<br>MAR</span>
+                </div>
+                <div class="actu-content">
+                  <span class="actu-tag">Événement</span>
+                  <h3 class="actu-item-title">Concours inter-lycées</h3>
+                  <p class="actu-item-text">Nos élèves se préparent pour un concours régional d'informatique et de robotique.</p>
+                </div>
+              </div>
+
+              <div class="actu-item">
+                <div class="actu-node">
+                  <span class="actu-date">21<br>MAR</span>
+                </div>
+                <div class="actu-content">
+                  <span class="actu-tag">Focus</span>
+                  <h3 class="actu-item-title">Projets étudiants</h3>
+                  <p class="actu-item-text">Des projets concrets développés par les classes pour répondre aux besoins locaux.</p>
                 </div>
               </div>
             </div>
@@ -234,38 +287,73 @@
       </section>
     </main>
 
+    <!-- debut footer -->
 
-    <footer id="contact" class="py-5 bg-primary text-white mt-auto">
-      <div class="container">
-        <div class="row gy-4 align-items-center">
-          <div class="col-md-4 d-flex align-items-center">
+    <footer class="custom-footer">
+      <div class="container py-3">
+        <div class="row gy-4 text-center">
+          <!-- Logo -->
+          <div class="col-lg-5">
+            <div class="footer-brand">
+              <img
+                src="asset/image/logo_sans_fond.png"
+                class="footer-logo"
+                alt="Logo"
+              />
 
-            <img src="asset/image/WhatsApp Image 2026-07-10 at 12.10.11.jpeg" alt="Logo de l'école" width="64" height="64" class="rounded-circle me-3">
+              <h3 class="footer-title">Lycée Technique</h3>
+              <h2 class="footer-title-2">de Bikélé</h2>
 
-            <img src="asset/image/logo-ltb-hd.png" alt="Logo de l'école" width="64" height="64" class="rounded-circle me-3">
-
-            <div>
-              <h5 class="mb-0">LYCEE TECHNIQUE DE BIKELE</h5>
-              <small class="text-white-50">Éducation & technique • Bikélé</small>
             </div>
+
+            <p class="footer-text">
+              Établissement public d'enseignement technique et professionnel
+              situé à Bikélé, Libreville, Gabon. Nous formons les futurs
+              professionnels grâce à un enseignement de qualité adapté aux
+              besoins du monde du travail.
+            </p>
           </div>
 
-          <div class="col-md-4">
-            <h6 class="text-white">Contact</h6>
-            <p class="mb-1"><strong>Adresse :</strong> Gabon, Libreville</p>
-            <p class="mb-1"><strong>Tél :</strong> 241 45 67 89</p>
-            <p class="mb-0"><strong>Email :</strong> lyceetechnique@gmail.com</p>
+          <!-- Navigation -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-subtitle">Navigation</h5>
+
+            <ul class="footer-lien">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Filières</a></li>
+              <li><a href="#">Actualités</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
 
-          <div class="col-md-4">
-            <h6 class="text-white">Envoyez un message</h6>
-            <form class="d-flex gap-2" action="#" method="post">
-              <input type="email" name="email" class="form-control form-control-sm" placeholder="Votre email" required>
-              <button type="submit" class="btn btn-dark btn-sm">Envoyer</button>
-            </form>
-            <div class="mt-3">
-              <a class="text-white me-3 text-decoration-none" href="#">Facebook</a>
-              <a class="text-white text-decoration-none" href="#">Instagram</a>
+          <!-- Contact -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-subtitle">Nous contacter</h5>
+
+            <p class="footer-contact">
+              <i class="fa-solid fa-location-dot"></i>
+              Bikélé, Libreville - Gabon
+            </p>
+
+            <p class="footer-contact">
+              <i class="fa-solid fa-envelope"></i>
+              contact@ltbikele.ga
+            </p>
+
+            <p class="footer-contact">
+              <i class="fa-solid fa-phone"></i>
+              +241 62252332
+            </p>
+
+          
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com/profile.php?id=61555487769984&locale=fr_FR"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -280,7 +368,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

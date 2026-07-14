@@ -1,0 +1,97 @@
+
+
+
+/* Section Actualités */
+.actu-section {
+  background-color: var(--navy-dark);
+  position: relative;
+}
+.actu-underline {
+  width: 60px;
+  height: 4px;
+  background-color: var(--yellow);
+  margin-top: 15px;
+  border-radius: 2px;
+}
+
+/* Cartes Actualités (Nouveau Design Simplifié) */
+.actu-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.actu-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--yellow);
+  box-shadow: 0 10px 25px rgba(254, 233, 10, 0.1);
+}
+.actu-card-header {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.actu-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: var(--yellow);
+  color: var(--navy-dark);
+  font-weight: 700;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.actu-card-body {
+  padding: 25px;
+}
+.actu-date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--yellow);
+  display: block;
+  margin-bottom: 12px;
+}
+.actu-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.actu-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.actu-link {
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: letter-spacing 0.2s;
+}
+.actu-link:hover {
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-carousel-ctrl {
+    width: 40px;
+    height: 40px;
+  }
+  .carousel-control-prev.custom-carousel-ctrl {
+    left: 10px;
+  }
+  .carousel-control-next.custom-carousel-ctrl {
+    right: 10px;
+  }
+  .carousel-item {
+    height: 60vh;
+  }
+}
