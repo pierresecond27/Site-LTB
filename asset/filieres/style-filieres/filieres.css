@@ -97,6 +97,12 @@
     color: white;
 }
 
+.overlay h2{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
 .overlay span {
     color: #FFEA0A;
     font-weight: bold;
