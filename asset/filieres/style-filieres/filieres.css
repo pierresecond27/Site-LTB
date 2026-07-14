@@ -8,8 +8,8 @@
     justify-content: center;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(40, 40, 40, .75),
-            rgba(20, 20, 20, .85)),
+    background-image: linear-gradient(rgba(186, 186, 186, 0.75),
+            rgba(92, 92, 92, 0.711)),
         url("../image-filieres/bannière.jpg");
 }
 
