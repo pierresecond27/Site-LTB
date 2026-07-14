@@ -1,3 +1,6 @@
+
+
+/*Base de la page*/
 html,
 body {
   height: 100%;
@@ -16,135 +19,32 @@ main {
   flex: 1;
 }
 
-.hero-banner {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  height: 100vh;
-}
 
-#heroCarousel {
-  z-index: 1;
-  height: 100%;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
+/* Sur le carrousel en fondu */
 .carousel-fade .carousel-item {
-  opacity: 0;
   transition: opacity 0.6s ease-in-out;
   z-index: 1;
 }
 
-.carousel-fade .carousel-item.active {
-  opacity: 1;
-  z-index: 2;
-}
-
+/* Images du carrousel */
 .carousel-item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  padding-top: 20px;
   object-position: center;
+  padding-top: 0px;
 }
 
-/* Overlay semi-transparent sur les images */
+/*semi-transparent au-dessus des images */
 .hero-overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(13, 110, 253, 0.3) 100%);
+  padding-top: -900px;
+  background: linear-gradient(
+    135deg,
+    rgba(209, 202, 202, 0.4) 0%,
+    rgba(103, 102, 148, 0.3) 100%
+  );
   z-index: 5;
-}
-
-.news-section {
-  background-image: url('asset/image/Screenshot_20250215-181238_1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.news-overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(13, 110, 253, 0.55) 100%);
-  z-index: 1;
-}
-
-.news-card {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 1.25rem;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-}
-
-.news-card .card-body {
-  min-height: 220px;
-  color: #2ad1fb;
-}
-
-.news-card .card-title {
-  color: #2ad1fb;
-  font-size: 1.25rem;
-  margin-bottom: 0.85rem;
-}
-
-.news-card .card-text {
-  color: rgba(109, 107, 107, 0.85);
-}
-
-.news-badge {
-  display: inline-block;
-  background: rgba(193, 181, 181, 0.18);
-  padding: 0.35rem 0.9rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.footer-links li {
-  margin-bottom: 0.75rem;
-}
-
-.footer-links a:hover {
-  color: #ced4da;
-}
-
-.footer-contact-form .form-control {
-  background: rgba(253, 252, 252, 0.95);
-  border: 1px solid #dee2e6;
-}
-
-.footer-contact-form .btn {
-  min-height: 3.2rem;
-}
-
-/* Style du texte sur le carrousel */
-.hero-banner h1 {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  font-weight: 700;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-.hero-banner .lead {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.hero-banner .btn {
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  padding: 0.75rem 1.5rem;
 }
 
 /* Contrôles du carrousel */
@@ -159,38 +59,23 @@ main {
   transition: opacity 0.3s ease;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 1;
-}
-
-.carousel-control-prev {
-  left: 20px;
-}
-
-.carousel-control-next {
-  right: 20px;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 100%;
-  height: 100%;
   background-size: 100%;
   filter: drop-shadow(0 2px 4px rgba(6, 6, 6, 0.5));
 }
 
-/* Responsive Hero Banner */
+/* Responsive Hero */
 @media (max-width: 1200px) {
   .hero-banner {
     min-height: 90vh;
     height: 90vh;
   }
-  
+
   .hero-banner h1 {
     font-size: clamp(1.75rem, 4vw, 3rem);
   }
-  
+
   .hero-banner .lead {
     font-size: clamp(0.95rem, 2.2vw, 1.3rem);
   }
@@ -201,29 +86,15 @@ main {
     min-height: 80vh;
     height: 80vh;
   }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 45px;
-    height: 45px;
-  }
-  
-  .carousel-control-prev {
-    left: 15px;
-  }
-  
-  .carousel-control-next {
-    right: 15px;
-  }
-  
+
   .hero-banner h1 {
     font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   }
-  
+
   .hero-banner .lead {
     font-size: clamp(0.9rem, 2vw, 1.2rem);
   }
-  
+
   .hero-banner .btn {
     font-size: clamp(0.9rem, 1.8vw, 1rem);
     padding: 0.65rem 1.3rem;
@@ -235,31 +106,32 @@ main {
     min-height: 70vh;
     height: 70vh;
   }
-  
+
   .carousel-control-prev,
   .carousel-control-next {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
   }
-  
+
   .carousel-control-prev {
-    left: 10px;
+    left: 20px;
   }
-  
+
   .carousel-control-next {
-    right: 10px;
+    right: 20px;
   }
-  
+
   .hero-banner h1 {
     font-size: clamp(1.25rem, 3vw, 2rem);
     margin-bottom: 1rem;
   }
-  
+
   .hero-banner .lead {
     font-size: clamp(0.85rem, 1.8vw, 1.1rem);
     margin-bottom: 1.5rem;
   }
-  
+
   .hero-banner .btn {
     font-size: clamp(0.85rem, 1.5vw, 0.95rem);
     padding: 0.6rem 1.2rem;
@@ -272,52 +144,23 @@ main {
     height: 60vh;
     padding: 2rem 0;
   }
+
   
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 35px;
-    height: 35px;
-    top: 50%;
-  }
-  
+
   .carousel-control-prev {
     left: 5px;
   }
-  
-  .carousel-control-next {
-    right: 5px;
-  }
 
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .hero-banner h1 {
-    font-size: clamp(1rem, 2.5vw, 1.75rem);
-    margin-bottom: 0.75rem;
-  }
-  
-  .hero-banner .lead {
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  
-  .hero-banner .btn {
-    font-size: clamp(0.75rem, 1.2vw, 0.9rem);
-    padding: 0.5rem 1rem;
-  }
-  
+
   .container.position-relative {
     padding: 0 1rem;
   }
-  
+
   .row.align-items-center.min-vh-100 {
     min-height: auto !important;
     padding: 1.5rem 0;
+    border: 1px solid black;
   }
 }
 
@@ -326,36 +169,51 @@ main {
     min-height: 50vh;
     height: 50vh;
   }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 30px;
-    height: 30px;
-  }
-  
+
   .hero-banner h1 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .hero-banner .lead {
     font-size: 0.8rem;
     margin-bottom: 0.75rem;
   }
-  
+
   .hero-banner .btn {
     font-size: 0.75rem;
     padding: 0.4rem 0.8rem;
   }
 }
 
-
-/* Cartes des filières */
-.filiere-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  cursor: pointer;
+/* Décor histoire */
+.story-decor {
+  position: relative;
+  left: 63%;
+  top: 500%;
+  width: 96px;
+  height: 96px;
+  transform: translate(-90%, -90%) rotate(1deg);
+  background: #ff8b1a;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
 }
+
+@media (max-width: 991px) {
+  .story-decor {
+    left: 63px;
+    top: 500%;
+    width: 96px;
+    height: 96px;
+    transform: translate(-90%, -90%) rotate(1deg);
+  }
+
+  .story-image {
+    height: 180px;
+  }
+}
+
 
 .filiere-card:hover {
   transform: translateY(-8px);
@@ -363,7 +221,11 @@ main {
 }
 
 .filiere-overlay {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 80%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 80%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 10;
@@ -390,211 +252,120 @@ main {
   padding: 0.5rem 1rem;
 }
 
-#histoire {
-  background: #ffffff;
-}
-
-.story-card {
-  position: relative;
-  z-index: 2;
-}
-
-.story-decor {
-  width: 72px;
-  height: 72px;
-  top: 50%;
-  right: 2.5rem;
-  transform: translateY(-50%) rotate(8deg);
-  background: #ff8b1a;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-  z-index: 1;
-}
-
-.stat-card {
-  background: #e7f0ff;
-}
-
-@media (max-width: 991px) {
-  .story-decor {
-    width: 56px;
-    height: 56px;
-    right: 1.5rem;
-    top: 45%;
-    transform: translateY(-50%) rotate(6deg);
-  }
-
-  .story-card {
-    margin-top: 1rem;
-  }
-}
-
-.stat-card h3 {
-  font-weight: 700;
-}
-
-.stat-card p {
-  color: #495057;
-}
+/*Histoire / Stats*/
 
 .story-image {
-  background: #eef2f6;
-  height: 220px;
-  border: 1px solid #e6e9ee;
+  background-image: url( );
+  height: 240px;
+  top: 10px;
+  box-shadow: #222;
+  border: 1px solid black;
 }
 
-.story-decor {
-  position: relative;
-  left: 62%;
-  top: 98%;
-  width: 76px;
-  height: 76px;
-  transform: translate(-50%, -50%) rotate(6deg);
-  background: #ff8b1a;
-  border-radius: 12px;
-  box-shadow: 0 14px 36px rgba(0,0,0,0.18);
-  z-index: 3;
+/* Partenaires (barre défilante) */
+.partner-marquee {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 1.25rem 0;
 }
 
-.stat-card {
-  background: #2f6ce6;
-  color: #ffffff;
-}
-
-.stat-number {
-  color: #ffd166;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  color: rgba(255,255,255,0.95);
-}
-
-@media (max-width: 991px) {
-  .story-decor {
-    left: 85px;
-    top: 60%;
-    width: 56px;
-    height: 56px;
-    transform: translate(-50%, -50%) rotate(6deg);
-  }
-  .story-image { height: 180px; }
-}
-
-/* Styles généraux */
-.card.border-0 {
-  background-color: #ffffff;
-}
-
-footer {
-  margin-top: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.navbar-brand img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-
-/* Responsive navbar */
-header.py-3 {
-  padding: 1rem 0 !important;
-}
-
-.navbar {
-  padding: 0.5rem 0;
+.marquee {
+  overflow: hidden;
   width: 100%;
 }
 
-.navbar-brand {
-  font-weight: 700;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  white-space: nowrap;
+.marquee__track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: marqueeScroll 18s linear infinite;
 }
 
-.navbar-brand span {
-  font-size: clamp(0.75rem, 1.5vw, 1rem);
-  line-height: 1.2;
+.marquee__group {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.navbar-brand img {
-  width: clamp(40px, 8vw, 50px);
-  height: clamp(40px, 8vw, 50px);
-  margin-right: 0.5rem;
+.partner-logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.25rem;
 }
 
-.navbar-nav {
-  gap: 0.5rem;
+.partner-logo img {
+  height: 60px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  opacity: 0.95;
 }
 
-.nav-link {
-  font-size: clamp(0.875rem, 1vw, 1rem);
-  padding: 0.5rem 0.75rem !important;
-  white-space: nowrap;
-}
-
-.nav-link:hover {
-  color: rgba(255, 255, 255, 0.9) !important;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 0.375rem;
-}
-
-.navbar-toggler {
-  padding: 0.25rem 0.5rem;
-  border: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
-}
-
-/* Extra small screens */
-@media (max-width: 576px) {
-  .navbar-brand span {
-    font-size: 0.7rem;
-    margin-left: 0.25rem;
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
   }
-  
-  .navbar-collapse {
-    margin-top: 0.5rem;
-    background-color: rgba(13, 110, 253, 0.95);
-    border-radius: 0.375rem;
-    padding: 0.5rem;
-  }
-  
-  .nav-link {
-    padding: 0.75rem !important;
-    border-radius: 0.375rem;
-    font-size: 0.875rem;
+  to {
+    transform: translateX(-50%);
   }
 }
 
-/* Small screens */
-@media (max-width: 991px) {
-  .navbar-brand img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .navbar-nav {
-    gap: 0;
-  }
-  
-  .nav-link {
-    padding: 0.5rem 0.5rem !important;
-  }
+
+
+/*Actualités*/
+.news-section {
+  background-image: url(asset/image/PV.jpg);
+  background-size: cover;
+  background-position: center;
+  bottom: 30px;
+  border: 1px solid black;
+  background-repeat: no-repeat;
 }
 
-/* Medium screens and up */
-@media (min-width: 992px) {
-  .navbar-nav {
-    gap: 0.5rem;
-  }
-  
-  .nav-link {
-    padding: 0.5rem 1rem !important;
-  }
+.news-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(84, 94, 110, 0.55) 100%
+  );
 }
+
+.news-card {
+  border-radius: 20px;
+}
+
+.news-card .card-body {
+  min-height: 220px;
+  color: #2f6ce6;
+}
+
+.news-card .card-title {
+  color: #FFC900;
+  font-weight: 10px;
+ 
+}
+
+.news-card .card-text {
+  color: #f8f9fa;
+}
+
+.news-badge {
+  display: inline-block;
+  background: rgba(243, 243, 245, 0.18);
+  padding: 0.35rem 0.9rem;
+  border-radius: 99px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+
+/* Styles généraux cards */
+.card.border-0 {
+ background-color: rgb(28, 28, 28);
+}
+
+
+
 
