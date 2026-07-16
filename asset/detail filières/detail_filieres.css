@@ -46,3 +46,20 @@
     color: #FFEA0A;
     font-weight: bold;
 }
+
+.forme{
+    font-weight: 500;
+    color: #2a3591;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+.forme-p{
+    font-family: "Poppins", sans-serif;
+}
+
+.text-de-condition{
+    font-weight: 400;
+    color: #2a3591;
+    font-family: "Poppins", sans-serif;
+}

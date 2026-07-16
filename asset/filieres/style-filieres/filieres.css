@@ -61,7 +61,7 @@
 
 .colour-1-active a {
     color: #fee90a;
-      font-size: 16px;
+    font-size: 16px;
 }
 
 /* fin du header */
@@ -81,9 +81,15 @@
     object-fit: cover;
 }
 
-.colour-de-fond{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.621);
-    border: none !important;
+.colour-de-fond {
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.colour-de-fond:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+
 }
 
 .overlay {
@@ -104,7 +110,7 @@
     color: white;
 }
 
-.overlay h2{
+.overlay h2 {
     font-size: 24px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -113,6 +119,20 @@
 .overlay span {
     color: #FFEA0A;
     font-weight: bold;
+}
+
+
+/* Etat de départ */
+.reveal {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+/* Etat après apparition */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Fin des cards */
@@ -140,7 +160,7 @@
 }
 
 .footer-title {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
@@ -148,7 +168,7 @@
 }
 
 .footer-title-2 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     color: #fee90a;
