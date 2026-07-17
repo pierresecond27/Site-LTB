@@ -10,7 +10,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/e6f374f6c0.js"
       crossorigin="anonymous"
@@ -18,7 +17,7 @@
 
   </head>
   <body>
-    <header class="p-2 colour-header">
+    <header class="p-3 colour-header">
       <nav class="container navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img
@@ -62,11 +61,13 @@
     </header>
 
     <main>
+      <!-- ============================================================ -->
+      <!--                            ACCUEIL                           -->
+      <!-- ============================================================ -->
       <section id="accueil" class="hero-banner position-relative py-5">
         <!-- Carrousel d'images en arrière-plan -->
         <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000">
 
-          <!-- Indicateurs, centrés en bas -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -84,7 +85,6 @@
               <img src="asset/image/PV.jpg" class="d-block w-100 h-100" alt="Bannière 3" style="object-fit: cover;">
             </div>
           </div>
-          <!-- Contrôles optionnels du carrousel -->
           <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </button>
@@ -93,129 +93,105 @@
           </button>
         </div>
 
-        <!-- Overlay semi-transparent -->
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
-        <!-- Contenu textuel centré -->
         <div class="container position-relative" style="z-index: 10;">
           <div class="row">
             <div class="col-12">
               <div class="hero-content">
-                <h1 class="display-5 fw-bold text-white">Bienvenue sur notre site</h1>
-                <p class="lead text-white">Découvrez notre Lycée Technique de Bikélé, ses filières, ses valeurs et l'ambiance qui y règne chaque jour.</p>
-                <a href="#filières" class="btn btn-primary btn-lg">Voir les filières</a>
+                <span class="hero-eyebrow">Lycée Technique de Bikélé · Libreville, Gabon</span>
+                <h1>L'excellence technique prend racine à Bikélé</h1>
+                <p class="lead">
+                  Un établissement public d'enseignement technique et professionnel,
+                  reconnu pour la rigueur de ses formations en développement,
+                  maintenance informatique et informatique industrielle.
+                </p>
+                <div class="hero-cta-group">
+                  <a href="#filières" class="btn-ltb-gold">Découvrir nos filières</a>
+                  <a href="#histoire" class="btn-ltb-outline">Notre histoire</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="histoire" class="py-5 bg-white">
+     
+
+      <!-- ============================================================ -->
+      <!--                             NOTRE HISTOIRE                   -->
+      <!-- ============================================================ -->
+      <section id="histoire" class="bg-white">
         <div class="container position-relative">
-          <div class="row align-items-start gy-4">
+          <div class="row align-items-center gy-5">
             <div class="col-lg-7">
-              <h5 class="text-primary small mb-2">Notre Histoire</h5>
-              <h3 class="mb-2">Le Lycée Technique de Bikélé</h3>
-              <p class="text-muted">Le Lycée Technique de BIKÉLÉ est officiellement ouvert avec ses portes le 8 février 2021. Situé à Bikélé, en périphérie de Libreville au Gabon, le Lycée Technique de Bikélé est un établissement public d’enseignement technique et professionnel reconnu pour la qualité de ses formations.</p>
-              <p class="text-muted">Depuis sa création, l’établissement s’est imposé comme un acteur incontournable de la formation technique au Gabon, en préparant des jeunes aux métiers du numérique, de l’industrie et de l’informatique.</p>
-              <p class="mb-0"><strong>Nos valeurs :</strong> <span class="text-warning">Compétence - performance - Responsabilité</span></p>
+              <span class="section-eyebrow">Notre histoire</span>
+              <h3>Le Lycée Technique de Bikélé</h3>
+              <p class="text-muted">Le Lycée Technique de BIKÉLÉ est officiellement ouvert avec ses portes le 8 février 2021. Situé à Bikélé, en périphérie de Libreville au Gabon, le Lycée Technique de Bikélé est un établissement public d'enseignement technique et professionnel reconnu pour la qualité de ses formations.</p>
+              <p class="text-muted">Depuis sa création, l'établissement s'est imposé comme un acteur incontournable de la formation technique au Gabon, en préparant des jeunes aux métiers du numérique, de l'industrie et de l'informatique.</p>
+              <div class="values-line">
+                <strong>Nos valeurs</strong>
+                <p class="mb-0 mt-2"><span class="text-warning">Compétence — Performance — Responsabilité</span></p>
+              </div>
             </div>
-            <div class="col-lg-5 position-relative">
-              <div class="story-image rounded"></div>
+            <div class="col-lg-5">
+             
+                <div class="story-image"></div>
+                <div class="ltb-seal" aria-hidden="true">
+                 
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="story-decor"></div>
-
-          <div class="partner-marquee mt-5">
-            <div class="container">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <h5 class="text-primary small mb-0">Nos partenaires</h5>
-                <span class="text-muted small">Ils soutiennent le Lycée Technique de Bikélé <br>en prennant nos élèves en stages durant 1 à 2 mois</span>
+          <!-- Vidéo de présentation -->
+          <div class="video-present">
+            <div class="row align-items-stretch gy-4">
+              <div class="col-lg-6">
+                <span class="section-eyebrow">Présentation</span>
+                <h3>Un aperçu de notre quotidien</h3>
+                <p class="text-muted mb-0">
+                  Découvrez la structure du Lycée Technique de Bikélé à travers une vidéo de présentation.
+                </p>
               </div>
-            </div>
-
-            <div class="marquee" aria-label="Logos des partenaires" role="region">
-              <div class="marquee__track">
-                <!-- Défilement : on duplique les logos pour un flux continu -->
-                <div class="marquee__group">
-                  <div class="partner-logo">
-                    <img src="asset/image/logo_ANINF-1.webp" alt="Partenaire 1">
-                  </div>
-                  <div class="partner-logo">
-                    <img src="asset/image/NKOK.png" alt="Partenaire 2">
-                  </div>
-                  <!-- Partenaire 3 supprimé (src vide causait une erreur console) -->
-                  <div class="partner-logo">
+              <div class="col-lg-6">
+                <div class="video-frame"
+                >
+                  <video
+                    class="video-element"
+                    controls
+                  > 
+                    <source
+                      src="asset/image/video de présentation/VIDEO D'ÉCOLE .mp4"
+                      type="video/mp4"
+                    />
                     
-                  </div>
-                  <div class="partner-logo">
-                    <img src="asset/image/site-logo-francophonie.png" alt="Partenaire 4">
-                  </div>
-                  <div class="partner-logo">
-                    <img src="asset/image/Centre gabonais.png" alt="Partenaire 5">
-                  </div>
-                </div>
-
-
-                <div class="marquee__group" aria-hidden="true">
-                  <div class="partner-logo">
-                    <img src="asset/image/cyberschool.png" alt="Partenaire 1">
-                  </div>
-                  <div class="partner-logo">
-                    <img src="asset/image/site-logo-francophonie.png" alt="Partenaire 4">
-                  </div>
-                  <div class="partner-logo">
-                    <img src="asset/image/Centre gabonais.png" alt="Partenaire 5">
-                  </div>
-                </div>
-
-              </div>
-            </div>
-        </div>
-      </section>
-
-      <section id="filières" class="py-5">
-        <div class="container">
-          <h2 class="mb-4 text-primary">Nos filières</h2>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <!-- Filière 1 -->
-            <div class="col">
-              <div class="card filiere-card h-100 shadow-sm border-0 position-relative overflow-hidden">
-                <img src="asset/image/entrepreunariat.jpg" class="card-img" alt="Développement" style="object-fit: cover; height: 250px;">
-                <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end">
-                  <div class="p-3">
-                    <h5 class="card-title text-white fw-bold">Développement</h5>
-                    <p class="card-text text-white small">Maîtrisez la programmation et le développement d'applications modernes pour les technologies du futur.</p>
-                    <a href="#" class="btn btn-sm btn-primary">En savoir plus</a>
-                  </div>
+                  </video>
+                  <div class="video-glow" aria-hidden="true"></div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Filière 2 -->
-            <div class="col">
-              <div class="card filiere-card h-100 shadow-sm border-0 position-relative overflow-hidden">
-                <img src="asset/image/lapin.jpg" class="card-img" alt="Maintenance informatique" style="object-fit: cover; height: 250px;">
-                <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end">
-                  <div class="p-3">
-                    <h5 class="card-title text-white fw-bold">Maintenance informatique</h5>
-                    <p class="card-text text-white small">Formation complète en maintenance, dépannage et gestion des infrastructures informatiques.</p>
-                    <a href="#" class="btn btn-sm btn-primary">En savoir plus</a>
-                  </div>
-                </div>
+          <!-- Barre horizontale partenaires -->
+          <div class="partners-horizontal" aria-label="Logos des partenaires" role="region">
+            <div class="partners-horizontal__inner">
+              <div class="partners-horizontal__header">
+                <h5 class="partners-horizontal__title">Ils nous font confiance</h5>
+                <p class="partners-horizontal__subtitle">Des partenaires qui accueillent nos élèves en stage durant 1 à 2 mois, au plus près des métiers.</p>
               </div>
-            </div>
+              
+              <div class="partners-horizontal__marquee" aria-hidden="true">
+                <div class="marquee__track marquee__track--horizontal">
+                  <div class="marquee__group marquee__group--horizontal">
+                    <div class="partner-logo"><img src="asset/image/Image des Partenaires/CBS.png" alt="Partenaire 1">CYBERSCHOOL</div>
+                    <div class="partner-logo"><img src="asset/image/Image des Partenaires/centre gabon.png" alt="Partenaire 2">CENTRE GABONAIS </div>
+                    <div class="partner-logo"><img src="asset/image/Image des Partenaires/ingénierie frontières.png" alt="Partenaire 4">INGENIERIE FRONTIERE</div>
+                    <div class="partner-logo"><img src="asset/image/Image des Partenaires/zone economic.png" alt="Partenaire 5">NKOK</div>
+                    <div class="partner-logo"><img src="asset/image/Image des Partenaires/logo_ANINF-1.webp" alt="Partenaire 1">ANINF</div>
+                    
+      
 
-            <!-- Filière 3 -->
-            <div class="col">
-              <div class="card filiere-card h-100 shadow-sm border-0 position-relative overflow-hidden">
-                <img src="asset/image/PA.jpg" class="card-img" alt="Internet et informatique industrielle" style="object-fit: cover; height: 250px;">
-                <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end">
-                  <div class="p-3">
-                    <h5 class="card-title text-white fw-bold">Internet et informatique industrielle</h5>
-                    <p class="card-text text-white small">Découvrez l'IoT, l'automatisation industrielle et l'intégration des systèmes connectés.</p>
-                    <a href="#" class="btn btn-sm btn-primary">En savoir plus</a>
                   </div>
                 </div>
               </div>
@@ -225,7 +201,114 @@
       </section>
 
       <!-- ============================================================ -->
-      <!-- ACTUALITÉS — journal de bord technique, fil chronologique      -->
+      <!--              ENGAGEMENTS                                     -->
+      <!-- ============================================================ -->
+      <section class="engagements-section">
+        <div class="container">
+          <span class="section-eyebrow">Pourquoi nous choisir</span>
+          <h3 class="mb-4" style="font-family: var(--ltb-serif); font-weight:800; color: var(--ltb-deep);">Une formation exigeante, tournée vers le concret</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="engagement-card">
+       
+                <h4>Encadrement de proximité</h4>
+                <p>Des enseignants qualifiés suivent chaque élève tout au long de son parcours, du premier cours aux examens.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="engagement-card">
+                
+                <h4>Plateaux techniques équipés</h4>
+                <p>Ateliers et laboratoires pensés pour la pratique : réseaux, développement, automatismes industriels.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="engagement-card">
+          
+                <h4>Partenariats entreprises</h4>
+                <p>Des stages de 1 à 2 mois auprès d'acteurs reconnus, pour ancrer la théorie dans le réel dès la formation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--               FILIÈRES         -->
+      <!-- ============================================================ -->
+      <section id="filières" class="bg-white">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-eyebrow">Nos formations</span>
+            <h2>Nos filières</h2>
+            <p>Trois parcours techniques (NTIC), chacun pensé pour mener vers un métier précis et recherché.</p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Filière 1 -->
+            <div class="col">
+              <div class="card filiere-card h-100 shadow-sm border-0">
+                <div class="filiere-img-wrap">
+                  <span class="filiere-code">PRG · DEV</span>
+                  <img src="asset/image/entrepreunariat.jpg" alt="Développement">
+                  <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+                </div>
+                <div class="card-body-custom">
+                  <h5 class="card-title">Développement</h5>
+                  <p class="card-text">Maîtrisez la programmation et le développement d'applications modernes pour les technologies du futur.</p>
+                  <div class="filiere-meta">
+                    <div>Diplôme<strong>Bac Techno</strong></div>
+                    <div>Durée<strong>3 ans</strong></div>
+                  </div>
+                  <a href="#" class="btn-ltb-line">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filière 2 -->
+            <div class="col">
+              <div class="card filiere-card h-100 shadow-sm border-0">
+                <div class="filiere-img-wrap">
+                  <span class="filiere-code">PRG · MAINT</span>
+                  <img src="asset/image/lapin.jpg" alt="Maintenance informatique">
+                  <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+                </div>
+                <div class="card-body-custom">
+                  <h5 class="card-title">Maintenance informatique</h5>
+                  <p class="card-text">Formation complète en maintenance, dépannage et gestion des infrastructures informatiques.</p>
+                  <div class="filiere-meta">
+                    <div>Diplôme<strong>Bac Techno</strong></div>
+                    <div>Durée<strong>3 ans</strong></div>
+                  </div>
+                  <a href="#" class="btn-ltb-line">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filière 3 -->
+            <div class="col">
+              <div class="card filiere-card h-100 shadow-sm border-0">
+                <div class="filiere-img-wrap">
+                  <span class="filiere-code">PRG · III</span>
+                  <img src="asset/image/PA.jpg" alt="Internet et informatique industrielle">
+                  <div class="filiere-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+                </div>
+                <div class="card-body-custom">
+                  <h5 class="card-title">Internet et informatique industrielle</h5>
+                  <p class="card-text">Découvrez l'IoT, l'automatisation industrielle et l'intégration des systèmes connectés.</p>
+                  <div class="filiere-meta">
+                    <div>Diplôme<strong>Bac Techno</strong></div>
+                    <div>Durée<strong>3 ans</strong></div>
+                  </div>
+                  <a href="#" class="btn-ltb-line">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--                   ACTUALITÉS                                 -->
       <!-- ============================================================ -->
       <section id="actualités" class="actu-section position-relative">
         <div class="actu-grid-overlay"></div>
@@ -239,7 +322,7 @@
 
             <div class="row align-items-end mb-4">
               <div class="col-lg-7">
-                <span class="actu-eyebrow">// Fil d'actualités</span>
+                <span class="actu-eyebrow"> Fil d'actualités</span>
                 <h2 class="actu-title">Actualités</h2>
                 <p class="actu-lead">Le journal de bord de l'établissement : événements, concours et projets, classés par date.</p>
               </div>
@@ -285,6 +368,37 @@
           </div>
         </div>
       </section>
+
+      <!-- ============================================================ -->
+      <!--                ADMISSION — bandeau de clôture                -->
+      <!-- ============================================================ -->
+      <section class="admission-section">
+        <div class="container">
+          <div class="admission-inner">
+            <div class="ltb-seal ltb-seal--light" aria-hidden="true">
+              <svg viewBox="0 0 200 200" class="ltb-seal__svg">
+                <defs>
+                  <path id="sealTopCta" d="M 22,100 A 78,78 0 1,1 178,100" fill="none"/>
+                  <path id="sealBottomCta" d="M 178,100 A 78,78 0 1,1 22,100" fill="none"/>
+                </defs>
+      
+                <circle cx="100" cy="100" r="80" class="ltb-seal__disc"/>
+                
+                <text class="ltb-seal__arc-text">
+
+                </text>
+
+                <text x="100" y="112" class="ltb-seal__monogram" text-anchor="middle">LTB</text>
+              </svg>
+            </div>
+            <div class="admission-text">
+              <h2>Construisez votre avenir technique à Bikélé</h2>
+              <p>Inscriptions et renseignements toute l'année. Notre équipe vous accompagne dans le choix de votre filière.</p>
+              <a href="#contact" class="btn-ltb-gold">Nous contacter</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- debut footer -->
@@ -307,14 +421,12 @@
             </div>
 
             <p class="footer-text">
-              Établissement public d'enseignement technique et professionnel
-              situé à Bikélé, Libreville, Gabon. Nous formons les futurs
-              professionnels grâce à un enseignement de qualité adapté aux
-              besoins du monde du travail.
+            Compétence — Performance — Responsabilité
             </p>
           </div>
 
-          <!-- Navigation -->
+          <!--          Navigation        -->
+
           <div class="col-lg-3 col-md-6">
             <h5 class="footer-subtitle">Navigation</h5>
 
@@ -326,7 +438,8 @@
             </ul>
           </div>
 
-          <!-- Contact -->
+          <!--        Contact      -->
+
           <div class="col-lg-4 col-md-6">
             <h5 class="footer-subtitle">Nous contacter</h5>
 
@@ -360,15 +473,17 @@
 
         <div class="d-flex justify-content-between align-items-center mt-4">
 
-          <small class="text-white-50">Copyright ©  2026 LTB. Tous droits réservés.</small>
-
           <small class="text-white-50">Copyright © 2026 LTB. Tous droits réservés.</small>
-
+          
           <small class="text-white-50">Conçu pour la communauté</small>
         </div>
       </div>
     </footer>
 
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+
+    </script>
   </body>
 </html>
