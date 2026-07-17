@@ -123,17 +123,6 @@
 
 
 /* Etat de départ */
-.reveal {
-    opacity: 0;
-    transform: translateY(80px);
-    transition: all 0.8s ease;
-}
-
-/* Etat après apparition */
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* Fin des cards */
 
@@ -186,7 +175,7 @@
 }
 
 /* Titres */
-.footer-subtitle {
+.footer-subtitle{
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
