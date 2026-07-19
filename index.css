@@ -303,7 +303,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-#histoire .text-warning { !important; font-weight: bold; }
+#histoire .text-warning {  font-weight: bold; }
  
 
 
@@ -467,10 +467,17 @@ body {
 #filières .section-heading h2 { font-weight: bold;border-top: 1px solid var(--ltb-line) }
 #filières .section-heading p { }
 
-.filiere-card { border-radius: 16px; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--ltb-line) !important; }
+.filiere-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid var(--ltb-line) !important;
+}
 .filiere-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(16, 20, 61, 0.22) !important; }
 
-.filiere-card .filiere-img-wrap { position: relative; height: 240px; overflow: hidden; }
+.filiere-card .filiere-img-wrap { position: relative; height: 240px; overflow: hidden; flex: 0 0 auto; }
 .filiere-card .filiere-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .filiere-card:hover .filiere-img-wrap img { transform: scale(1.06); }
 
@@ -489,15 +496,23 @@ body {
 
 .filiere-overlay { background: linear-gradient(180deg, rgba(16, 20, 61, 0.05) 0%, rgba(16, 20, 61, 0.9) 88%); z-index: 3; }
 
-.filiere-card .card-body-custom { padding: 1.5rem 1.4rem 1.6rem; background: #f0eded; }
+.filiere-card .card-body-custom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1.5rem 1.4rem 1.6rem;
+  background: #f0eded;
+}
 .filiere-card .card-title { font-weight:bold; }
+.filiere-card .card-text { flex: 0 0 auto; }
 
-.filiere-meta { display: flex; gap: 1.4rem; margin-bottom: 1.2rem; border-top: 1px solid var(--ltb-line); }
+.filiere-meta { display: flex; gap: 1.4rem; margin-top: auto; margin-bottom: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--ltb-line); }
 .filiere-meta div {  font-size: 15px; }
 .filiere-meta strong { display: block;  font-weight: bold;}
 
 .filiere-card .btn-ltb-line {
   display: inline-flex;
+  align-self: flex-start;
   align-items: center;
   gap: 0.5rem;
   background: transparent;
@@ -594,7 +609,7 @@ body {
 }
 
 /* ============================================================ */
-/* Admission — bandeau de clôture                                */
+                     /*Admission*/
 /* ============================================================ */
 
 .admission-section { position: relative; background: linear-gradient(135deg, var(--ltb-blue) 0%, var(--ltb-deep) 100%); overflow: hidden; padding-top: 5rem; padding-bottom: 5rem; }
