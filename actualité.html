@@ -11,72 +11,54 @@
 </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <body>
-    <header class="p-3 colour-header">
-      <nav class="container navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="asset/image/logo_sans_fond.png"
-            alt="logo"
-            class="logo-header"
-          />
-          <h1 class="title-header">
-            Lycée Technique <br />
-            <span class="header-title-2">de Bikélé</span>
-          </h1>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Basculer la navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item colour-1 ">
-              <a class="nav-link" href="Acceuil.html">Accueil</a>
-            </li>
-            <li class="nav-item colour-1">
-              <a class="nav-link" href="filieres.html">Filières</a>
-            </li>
-            <li class="nav-item colour-1 colour-1-active">
-              <a class="nav-link" href="actualité.html">Actualités</a>
-            </li>
-            <li class="nav-item colour-1">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-            
-      <main>
+    
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-      <div class="row">
-        <div class="col border py-5">
- <div class="text-center ">
-            <h2 class="titre-actualite"> Actualités</h2>
-            <p class="sous-titre">
-                Découvrez les dernières activités du Lycée Technique de Bikélé.
+    <link rel="stylesheet" href="style.css">
+
+    <title>Actualités</title>
+</head>
+<body>
+
+<!--==========================
+        BANNIERE
+===========================-->
+
+<section class="news-banner">
+
+    <div class="overlay">
+
+        <div class="container text-center">
+
+            <h1>Actualités</h1>
+
+            <div class="line"></div>
+
+            <p>
+                Restez informés des dernières nouvelles et évènements
+                de notre établissement.
             </p>
-        </div>
-       </div>
 
-      </div>
+        </div>
 
     </div>
-  
-    
 
-   </div>
+</section>
 
-<!-- ================= CARTES ================= -->
+<!--==========================
+      ACTUALITES
+===========================-->
 
 <section class="py-5">
 
@@ -84,183 +66,193 @@
 
 <div class="row g-4">
 
-<!-- Carte 1 -->
+<!-- CARD 1 -->
 
 <div class="col-lg-4 col-md-6">
 
-<div class="card actualite-card">
+<div class="card shadow-sm border-0 h-100">
 
-<img src="asset/actualité.html/actualité_image/IMG-20260219-WA0029.jpg"
-class="card-img-top">
+<img src="asset/actualité.html/actualité_image/IMG-20260219-WA0028.jpg" class="card-img-top news-img">
 
 <div class="card-body">
 
-<h5 class="card-title">
-Visite à Sobraga
+<span class="badge bg-warning text-dark">
+Sortie scolaire
+</span>
+
+<h5 class="mt-3 fw-bold">
+Visite à sobraga
 </h5>
 
-<p class="card-text">
-Sobraga est une entreprise dynamique.
-Les élèves découvrent son activité,
-ses différents services et son fonctionnement.
+
+
+<p>
+Échange et découverte d'exemples et bonnes pratiques
+pour améliorer notre système éducatif.
 </p>
 
-</div>
+
 
 </div>
 
 </div>
 
-<!-- Carte 2 -->
+</div>
+
+<!-- CARD 2 -->
 
 <div class="col-lg-4 col-md-6">
 
-<div class="card actualite-card">
+<div class="card shadow-sm border-0 h-100">
 
-<img src="asset/actualité.html/actualité_image/unnamed (5).webp"
-class="card-img-top">
+<img src="asset/actualité.html/actualité_image/unnamed (5).webp" class="card-img-top news-img">
 
 <div class="card-body">
 
-<h5 class="card-title">
-Nos différentes salles de classe
+<span class="badge bg-warning text-dark">
+Éducation
+</span>
+
+<h5 class="mt-3 fw-bold">
+le lyceé technique de bikele offre un cadre propre et accuiellant
 </h5>
 
-<p class="card-text">
-Le Lycée Technique de Bikélé offre
-un cadre propre, moderne et accueillant.
+
+<p>
+De nouveaux ouvrages sont disponibles
+pour enrichir vos connaissance.
 </p>
 
-</div>
+
 
 </div>
 
 </div>
 
-<!-- Carte 3 -->
+</div>
+
+<!-- CARD 3 -->
 
 <div class="col-lg-4 col-md-6">
 
-<div class="card actualite-card">
+<div class="card shadow-sm border-0 h-100">
 
-<img src="asset/actualité.html/actualité_image/file_000000005d987243a20f251b07813571.png"
-class="card-img-top">
+<img src="asset/actualité.html/actualité_image/file_000000005d987243a20f251b07813571.png" class="card-img-top news-img">
 
 <div class="card-body">
 
-<h5 class="card-title">
-La pratique au cœur de la formation
+<span class="badge bg-warning text-dark">
+Technologie
+</span>
+
+<h5 class="mt-3 fw-bold">
+La Fibre optique à l'œuvre
 </h5>
 
-<p class="card-text">
+
+<p>
 Les élèves développent leurs compétences
-à travers des travaux pratiques.
+à travers des projets techniques.
 </p>
 
-</div>
 
 </div>
 
 </div>
 
-<!-- Carte 4 -->
+</div>
+
+</div>
+
+<!-- Deuxième ligne -->
+
+<div class="row g-4 mt-1">
+
+<!-- CARD 4 -->
 
 <div class="col-lg-4 col-md-6">
 
-<div class="card actualite-card">
+<div class="card shadow-sm border-0 h-100">
 
-<img src="asset/actualité.html/actualité_image/images.jpeg"
-class="card-img-top">
+<img src="asset/actualité.html/actualité_image/images (6).jpeg" class="card-img-top news-img">
 
 <div class="card-body">
 
-<h5 class="card-title">
-Des élèves ouverts sur le monde
+<span class="badge bg-warning text-dark">
+Moment de pratique
+</span>
+
+<h5 class="mt-3 fw-bold">
+moment de convivialité au lyceé technique bikele
 </h5>
 
-<p class="card-text">
-Les visites, expositions et événements
-développent leurs connaissances.
+
+<p>
+Les élèves analysent les réalités
+d'une bonne pratique.
 </p>
 
-</div>
 
 </div>
 
 </div>
 
-<!-- Carte 5 -->
-   
+</div>
+
+<!-- CARD 5 -->
 
 <div class="col-lg-4 col-md-6">
 
-<div class="card actualite-card">
+<div class="card shadow-sm border-0 h-100">
 
-<img src="asset/actualité.html/actualité_image/unnamed_1.webp"
-class="card-img-top">
+<img src="asset/actualité.html/actualité_image/images.jpeg" class="card-img-top news-img">
 
 <div class="card-body">
 
-<h5 class="card-title">
-Cadre d'apprentissage moderne
+<span class="badge bg-warning text-dark">
+Infrastructure
+</span>
+
+<h5 class="mt-3 fw-bold">
+Des élèves ouverte sur le monde et les nouvelles opportunité
 </h5>
 
-<p class="card-text">
-Des bâtiments modernes favorisent
-l'apprentissage et l'épanouissement.
+
+<p>
+ Un moment de joie pour nos aprenant
 </p>
 
-</div>
 
 </div>
 
 </div>
 
-<!-- Carte 6 -->
+</div>
+
+<!-- CARD 6 -->
 
 <div class="col-lg-4 col-md-6">
 
-<div class="card actualite-card">
+<div class="card shadow-sm border-0 h-100">
 
-<img src="asset/actualité.html/actualité_image/images (5)_1.jpeg"
-class="card-img-top">
+<img src="asset/actualité.html/actualité_image/images (5)_1.jpeg" class="card-img-top news-img">
 
 <div class="card-body">
 
-<h5 class="card-title">
+<span class="badge bg-warning text-dark">
+Évènement
+</span>
+
+<h5 class="mt-3 fw-bold">
 Journée portes ouvertes
 </h5>
 
-<p class="card-text">
-Le Lycée Technique de Bikélé vous invite
-à découvrir ses différentes filières.
+
+<p>
+Venez découvrir notre établissement
+et nos formations.
 </p>
 
-</div>
-
-</div>
-
-</div>
-
-<!-- Carte 7 -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card actualite-card">
-
-<img src="asset/actualité.html/actualité_image/images (6).jpeg"
-class="card-img-top">
-
-<div class="card-body">
-
-<h5 class="card-title">
-Moment de convivialité
-</h5>
-
-<p class="card-text">
-Un moment de travail et de partage
-entre les élèves.
-</p>
 
 </div>
 
@@ -274,87 +266,10 @@ entre les élèves.
 
 </section>
 
-      <footer class="custom-footer">
-      <div class="container py-3 my-3">
-        <div class="row gy-4 text-center">
-          <!-- Logo -->
-          <div class="col-lg-4">
-            <div class="footer-brand">
-              <img
-                src="asset/image/logo_sans_fond.png"
-                class="footer-logo"
-                alt="Logo"
-              />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-              <h3 class="footer-title">Lycée Technique</h3>
-              <h2 class="footer-title-2">de Bikélé</h2>
-            </div>
-
-            <p class="footer-text text-justify">
-             Compétence - Performance - Responsabilité
-            </p>
-          </div>
-
-          <!-- Navigation -->
-          <div class="col-lg-4 col-md-6">
-            <h5 class="footer-subtitle">Navigation</h5>
-
-            <ul class="footer-lien">
-              <li><a href="Acceuil.html">Accueil</a></li>
-              <li><a href="filieres.html">Filières</a></li>
-              <li><a href="actualité.html">Actualités</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div class="col-lg-4 col-md-6">
-            <h5 class="footer-subtitle">Nous contacter</h5>
-
-            <p class="footer-contact">
-              <i class="fa-solid fa-location-dot"></i>
-              Bikélé, Libreville - Gabon
-            </p>
-
-            <p class="footer-contact">
-              <i class="fa-solid fa-envelope"></i>
-              contact@ltbikele.ga
-            </p>
-
-            <p class="footer-contact">
-              <i class="fa-solid fa-phone"></i>
-              +241 62252332
-            </p>
-
-            <div class="social-icon">
-              <a
-                href="https://www.facebook.com/profile.php?id=61555487769984&locale=fr_FR"
-                aria-label="Facebook"
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-facebook"></i>
-                <p>Facebook</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <hr class="footer-line" />
-
-        <div class="text-center">
-          <p class="mb-0">
-            Copyright © 2026 Lycée Technique de Bikélé. Tous droits réservés.
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!-- fin du footer -->
-   
-
-
-    <script src="asset/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
 </body>
 
 </html>
