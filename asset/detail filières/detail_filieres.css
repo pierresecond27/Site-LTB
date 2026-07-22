@@ -139,10 +139,11 @@
 
 
 .hero-content {
-
     color: white;
-    max-width: 650px;
-
+    max-width: 760px;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
 }
 
 .badge-filiere {
