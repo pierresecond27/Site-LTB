@@ -15,6 +15,29 @@
     font-family: var(--type-de-police);
   }
 
+
+  /* debut du banniere */
+.banniere {
+  min-height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+   background-image: linear-gradient(rgba(186, 186, 186, 0.75),
+            rgba(92, 92, 92, 0.711)),
+         url("../contact-image/bannière.img");
+}
+
+
+.banniere>h2 {
+    color: #fee90a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* fin de la banniere */
+
   .contact-wrapper{
     padding: 40px 20px;
   }
@@ -40,7 +63,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    background: rgba(11,61,145,.85);
+    background: rgba(3, 10, 109, 0.85);
     color: #fff;
     font-weight: 700;
     font-size: .8rem;
@@ -58,7 +81,7 @@
   
 
   .contact-card h4{
-    color: var(--brand-blue);
+    color: var(--bg-page);
     font-weight: 800;
     margin-bottom: 4px;
   }
@@ -71,7 +94,7 @@
   }
 
   .contact-card p.lead-text{
-    color: #6c757d;
+    color: var(--brand-blue-dark);
     font-size: .85rem;
     margin-bottom: 20px;
   }
@@ -88,8 +111,8 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background: var(--brand-blue);
-    color: #fff;
+    background: var(--brand-blue-dark);
+    color: #fee90a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +120,7 @@
   }
 
   .info-row .label{
-    color: var(--accent-gold);
+    color: var(--brand-blue-dark);
     font-weight: 700;
     font-size: .72rem;
     letter-spacing: .5px;
@@ -155,7 +178,7 @@
   }
 
   .form-card h4{
-    color: var(--accent-gold);
+    color: var(--brand-blue);
     font-weight: 800;
     margin: 0;
   }
