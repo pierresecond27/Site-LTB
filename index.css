@@ -96,20 +96,20 @@ body {
    SECTION 1 : HERO (Bannière d'accueil)
    ============================================================ */
 
-/* Overlay foncé par-dessus le carousel */
+/* Fond bleu foncé en dessous du carousel */
+#accueil {
+  background: var(--ltb-blue-deep);
+}
+
+/* Overlay semi-transparent par-dessus le carousel pour faire ressortir les textes */
 .hero-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(19, 27, 82, 0.85),
-    rgba(40, 53, 147, 0.65),
-    rgba(19, 27, 82, 0.88)
-  );
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.70) 0%, rgba(19, 27, 82, 0.55) 100%
+  195%, rgba(0, 0, 0, 0.70) 60%);
 }
 
 /* Bouton doré (CTA principal) */
 .btn-ltb-gold {
   background: linear-gradient(135deg, var(--ltb-gold), var(--ltb-gold-deep));
-  color: var(--ltb-blue-deep);
   font-weight: 700;
   padding: 0.85rem 1.9rem;
   border-radius: 999px; /* Bouton arrondi */
@@ -129,31 +129,21 @@ body {
 /* Bouton contour blanc (CTA secondaire) */
 .btn-ltb-outline {
   background: transparent;
-  color: #fff;
+  color: #f5ab0ae8;
   font-weight: 700;
   padding: 0.85rem 1.9rem;
   border-radius: 999px;
   text-decoration: none;
   display: inline-block;
-  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border: 4px solid rgba(255, 188, 5, 0.795);
   transition: 0.25s;
 }
 
-/* Texte "Lycée Technique de Bikélé · Libreville" au-dessus du titre */
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--ltb-gold);
-  font-weight: 700;
-}
 
 /* ============================================================
    SECTION 2 : NOTRE HISTOIRE
    ============================================================ */
+
 
 
 .section-card {
@@ -182,6 +172,7 @@ body {
   border-radius: 22px;
   background: var(--ltb-blue-deep);
 }
+
 
 /* ============================================================
    SECTION 3 : ENGAGEMENTS (Pourquoi nous choisir)
@@ -294,18 +285,26 @@ body {
    SECTION 5 : ACTUALITÉS (Fil d'actualités)
    ============================================================ */
 
-/* Point de la timeline (cercle bleu) */
+/* Cercle (rond) de la timeline */
 .actu-node {
-  margin-top: 35px;
-  width: 66px;
-  height: 66px;
+  width: 68px;
+  height: 68px;
+  background: var(--ltb-blue-deep);
   border-radius: 50%;
-  flex-shrink: 0;
-  background: linear-gradient(135deg, var(--ltb-blue), var(--ltb-blue-light));
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  border: 3px solid var(--ltb-gold);
+  box-shadow: 0 0 0 3px rgba(19, 27, 82, 0.12);
+}
+
+/* Point de la timeline (cercle bleu) */
+.section-card{
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 3rem 0;
+  box-shadow: 0 20px 60px rgba(19, 27, 82, 0.10);
 }
 
 /* Date dans le cercle */
