@@ -17,8 +17,8 @@
     <!-- lien du css filieres -->
     <link rel="stylesheet" href="asset/detail filières/detail_filieres.css" />
     <!-- police google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <!-- lien du header -->
      <link rel="stylesheet" href="asset/En_commun/header.css">
     <!-- lien du footer -->
@@ -84,225 +84,190 @@
     <!-- fin du header -->
 
     <!-- le contenu de la page -->
-    <main class="container my-5">
-      <!-- ------------------- -->
-      <div class="card border-0 rounded-4 overflow-hidden ombre reveal font">
-        <!--HERO -->
+    <main class="container py-4">
+      <div class="card shadow-sm">
+        <!-- Card Header dynamique -->
+        <section class="card-header text-white fond p-4">
+          <p class="badge-filiere text-uppercase fw-bold">FILIÈRE</p>
+          <h2 class="text-uppercase fw-bold text-white hero-h2">
+            Développement <br />
+            Multimédia Web
+          </h2>
+          <h2 class="fw-bold text-uppercase hero">DMW</h2>
+          <div class="hero-p" >
+            <p>Concevoir aujourd'hui les solutions digitales de demain. </p>
+          </div>
+          <a
+            href="filieres.html"
+            class="btn btn-warning me-3 px-4 hero-btn"
+            title="Retour"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+            Retour
+          </a>
+        </section>
+          
+        <!-- Card Body -->
+        <section class="content-section">
+          <div class="container py-3 reveal">
+            <div class="row g-4">
+              <!-- OBJECTIFS -->
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
 
-        <div class="hero-dmw position-relative">
-          <img
-            src="asset/filieres/image-filieres/DMW.png"
-            class="w-100 hero-img"
-            alt="DMW"
-          />
+                    <h3 class="section-title">OBJECTIFS</h3>
 
-          <div class="hero-overlay ">
-            <div class="container  alignement p-5">
-              <div class="hero-content ">
-                <p class="badge-filiere">FILIÈRE</p>
-
-                <h1>
-                  Développement <br />
-                  Multimédia Web
-                </h1>
-
-                <h2>DMW</h2>
-
-                <p class="lead">
-                  Concevoir aujourd'hui les solutions digitales de demain.
-                </p>
-
-                <div>
-                  <a href="filieres.html" class="btn btn-warning me-3 px-4"
-                   title="Retour"
-                  >
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Retour
-                  </a>
+                    <p>
+                      Former des développeurs capables de concevoir des
+                      applications web et mobiles modernes utilisant les
+                      technologies actuelles.
+                     </p>
+                  </div>
                 </div>
+              </div>
+
+              <!-- MATIERES -->
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <h3 class="section-title">MATIÈRES</h3>
+
+                    <ul class="list-unstyled ">
+                      <li>
+                        <i class="fa-solid fa-check"></i>HTML / CSS / JavaScript
+                      </li>
+                      <li><i class="fa-solid fa-check"></i>Backend</li>
+                      <li><i class="fa-solid fa-check"></i>Bases de données</li>
+                      <li><i class="fa-solid fa-check"></i>UX / UI Design</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DEBOUCHES -->
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3 class="section-title">DÉBOUCHÉS</h3>
+
+                    <div class="emploi">
+                      <i class="fa-solid fa-code"></i>
+
+                      Développeur Web
+                    </div>
+
+                    <div class="emploi mt-2">
+                      <i class="fa-solid fa-mobile-screen"></i>
+
+                      Développeur Mobile
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- POURQUOI -->
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="card h-100 text-white border-0 rounded-4 card-4"
+                >
+                  <div class="card-body">
+                    <h3 class="fw-bold">Pourquoi choisir DMW ?</h3>
+
+                    <hr />
+
+                    <p>
+                      <i class="fa-solid fa-laptop-code"></i> Formation pratique
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-users"></i> Encadrement qualifié
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-chart-line"></i> Insertion
+                      professionnelle
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-layer-group"></i> Technologies
+                      modernes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ADMISSION -->
+            <div class="card shadow-sm border-0 rounded-4 mt-5 reveal">
+              <div class="card-body">
+                <div class="row align-items-center text-center">
+                  <div class="col-12 admi">
+                    <h2>Conditions d'admission</h2>
+
+                    <p>
+                      <i class="fa-solid fa-graduation-cap text-primary"></i>
+                      Être titulaire du Certificat d'Études Primaires (CEP).
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-user-check text-primary"></i>
+                      Avoir le niveau requis pour la classe demandée, être de
+                      passage ou actuellement en classe de Seconde ou plus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- BAS -->
+            <div class="row text-center mt-5 g-3 reveal">
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-regular fa-clock fa-2x text-primary"></i>
+
+                <h5>Durée</h5>
+
+                <p>3 ans</p>
+              </div>
+
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-solid fa-award fa-2x text-primary"></i>
+
+                <h5>Diplôme</h5>
+
+                <p>Baccalauréat Technique</p>
+              </div>
+
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-solid fa-location-dot fa-2x text-primary"></i>
+
+                <h5>Lieu</h5>
+
+                <p>Lycée Technique de Bikélé</p>
+              </div>
+
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-solid fa-calendar-days fa-2x text-primary"></i>
+
+                <h5>Rentrée</h5>
+
+                <p>Septembre</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <!--  CONTENU -->
-
-        <div class="container py-5 reveal">
-          <div class="row g-4">
-            <!-- OBJECTIFS -->
-
-            <div class="col-lg-3">
-              <div class="card h-100 border-0 shadow-sm rounded-4">
-                <div class="card-body">
-                  <div class="icon-box">
-                    <i class="fa-solid fa-bullseye"></i>
-                  </div>
-
-                  <h3 class="section-title">OBJECTIFS</h3>
-
-                  <p>
-                    Former des développeurs capables de concevoir des
-                    applications web et mobiles modernes utilisant les
-                    technologies actuelles.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- MATIERES -->
-
-            <div class="col-lg-3 reveal reveal">
-              <div class="card h-100 border-0 shadow-sm rounded-4">
-                <div class="card-body">
-                  <div class="icon-box">
-                    <i class="fa-solid fa-book-open"></i>
-                  </div>
-
-                  <h3 class="section-title">MATIÈRES</h3>
-
-                  <ul class="list-unstyled">
-                    <li>
-                      <i class="fa-solid fa-check"></i>HTML / CSS / JavaScript</li>
-
-                    <li><i class="fa-solid fa-check"></i> Backend</li>
-
-                    <li><i class="fa-solid fa-check"></i>Bases de données </li>
-
-                    <li><i class="fa-solid fa-check"></i> UX / UI Design</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- DEBOUCHES -->
-
-            <div class="col-lg-3 reveal reveal">
-              <div class="card h-100 border-0 shadow-sm rounded-4">
-                <div class="card-body">
-                  <div class="icon-box">
-                    <i class="fa-solid fa-briefcase"></i>
-                  </div>
-                  <h3 class="section-title">DÉBOUCHÉS</h3>
-
-                  <div class="emploi">
-                    <i class="fa-solid fa-code"></i>
-
-                    Développeur Web
-                  </div>
-
-                  <div class="emploi mt-2">
-                    <i class="fa-solid fa-mobile-screen"></i>
-
-                    Développeur Mobile
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- POURQUOI -->
-
-            <div class="col-lg-3 reveal">
-              <div class="card h-100 bg-primary text-white border-0 rounded-4">
-                <div class="card-body">
-                  <h3>Pourquoi choisir DMW ?</h3>
-
-                  <hr />
-
-                  <p>
-                    <i class="fa-solid fa-laptop-code"></i>
-
-                    Formation pratique
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-users"></i>
-
-                    Encadrement qualifié
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-chart-line"></i>
-
-                    Insertion professionnelle
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-layer-group"></i>
-
-                    Technologies modernes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ADMISSION -->
-
-          <div class="card shadow-sm border-0 rounded-4 mt-5 reveal">
-            <div class="card-body">
-              <div class="row align-items-center text-center">
-                <!-- <div class="col-md-3 text-center">
-                  <i class="fa-solid fa-school fa-4x text-primary"></i>
-                </div> -->
-
-                <div class="col-12">
-                  <h2>Conditions d'admission</h2>
-
-                  <p>
-                    <i class="fa-solid fa-graduation-cap text-primary"></i>
-
-                    Être titulaire du Certificat d'Études Primaires (CEP).
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-user-check text-primary"></i>
-
-                    Avoir le niveau requis pour la classe demandée, être de
-                    passage ou actuellement en classe de Seconde ou plus.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- BAS -->
-
-          <div class="row text-center mt-5 g-3 reveal">
-            <div class="col-md-3">
-              <i class="fa-regular fa-clock fa-2x text-primary"></i>
-
-              <h5>Durée</h5>
-
-              <p>3 ans</p>
-            </div>
-
-            <div class="col-md-3">
-              <i class="fa-solid fa-award fa-2x text-primary"></i>
-
-              <h5>Diplôme</h5>
-
-              <p>Baccalauréat Technique</p>
-            </div>
-
-            <div class="col-md-3">
-              <i class="fa-solid fa-location-dot fa-2x text-primary"></i>
-
-              <h5>Lieu</h5>
-
-              <p>Lycée Technique de Bikélé</p>
-            </div>
-
-            <div class="col-md-3">
-              <i class="fa-solid fa-calendar-days fa-2x text-primary"></i>
-
-              <h5>Rentrée</h5>
-
-              <p>Septembre</p>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
-      <!-- -------------------------- -->
     </main>
     <!-- fin du contenu de la page -->
     <!-- debut footer -->
