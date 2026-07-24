@@ -86,107 +86,87 @@
     <!-- fin du header -->
 
     <!-- le contenu de la page -->
-    <main class="container my-5">
-      <!-- ------------------- -->
-      <div class="card border-0 rounded-4 overflow-hidden ombre reveal font">
-        <!--HERO -->
-
-        <div class="hero-dmw position-relative">
-          <img
-            src="asset/filieres/image-filieres/Minf.jpg"
-            class="w-100 hero-img"
-            alt="DMW"
-          />
-
-          <div class="hero-overlay">
-            <div class="container alignement p-5">
-              <div class="hero-content">
-                <p class="badge-filiere">FILIÈRE</p>
-
-                <h1>Maintenance <br />Informatique</h1>
-
-                <h2>MINF</h2>
-
-                <p class="lead">
-                  Assurer le bon fonctionnement, la maintenance et la sécurité
-                  des équipements informatiques d'aujourd'hui et de demain.
-                </p>
-
-                <div>
-                  <a
-                    href="filieres.html"
-                    class="btn btn-warning me-3 px-4"
-                    title="Retour"
-                  >
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Retour
-                  </a>
-                </div>
-              </div>
-            </div>
+    <main class="container py-4">
+      <div class="card shadow-sm">
+        <!-- Card Header dynamique -->
+        <section class="card-header text-white fond p-4">
+          <p class="badge-filiere text-uppercase fw-bold">FILIÈRE</p>
+          <h2 class="text-uppercase fw-bold text-white hero-h2">
+            Maintenance <br />
+            Informatique
+          </h2>
+          <h2 class="fw-bold text-uppercase hero">MINF</h2>
+          <div class="hero-p">
+            <p>
+              Assurer le bon fonctionnement, la maintenance et la sécurité des
+              équipements informatiques d'aujourd'hui et de demain.
+            </p>
           </div>
-        </div>
+          <a
+            href="filieres.html"
+            class="btn btn-warning me-3 px-4 hero-btn"
+            title="Retour"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+            Retour
+          </a>
+        </section>
 
-        <!--  CONTENU -->
+        <!-- Card Body -->
+        <section class="content-section">
+          <div class="container py-3 reveal">
+            <div class="row  g-4">
+              <!-- OBJECTIFS -->
+              <div class="col-12 col-md-6 col-lg-3 survol">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
 
-        <div class="container py-5 reveal">
-          <div class="row g-4">
-            <!-- OBJECTIFS -->
+                    <h3 class="section-title">OBJECTIFS</h3>
 
-            <div class="col-lg-3">
-              <div class="card h-100 border-0 shadow-sm rounded-4">
-                <div class="card-body">
-                  <div class="icon-box">
-                    <i class="fa-solid fa-bullseye"></i>
+                    <p>
+                      Former des techniciens qualifiés capables d'installer,
+                      configurer, diagnostiquer, entretenir et réparer les
+                      équipements informatiques, les réseaux ainsi que les
+                      systèmes d'exploitation afin de garantir leur bon
+                      fonctionnement.
+                    </p>
                   </div>
-
-                  <h3 class="section-title">OBJECTIFS</h3>
-
-                  <p>
-                    Former des techniciens qualifiés capables d'installer,
-                    configurer, diagnostiquer, entretenir et réparer les
-                    équipements informatiques, les réseaux ainsi que les
-                    systèmes d'exploitation afin de garantir leur bon
-                    fonctionnement.
-                  </p>
                 </div>
               </div>
-            </div>
 
-            <!-- MATIERES -->
+              <!-- MATIERES -->
+              <div class="col-12 col-md-6 col-lg-3 survol">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
 
-            <div class="col-lg-3 reveal reveal">
-              <div class="card h-100 border-0 shadow-sm rounded-4">
-                <div class="card-body">
-                  <div class="icon-box">
-                    <i class="fa-solid fa-book-open"></i>
+                    <h3 class="section-title">MATIÈRES</h3>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa-solid fa-check"></i>
+                        Réseaux informatiques
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i>Maintenance des
+                        systemes informatique
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> Architecture et
+                        Technologie d'ordinateur
+                      </li>
+                    </ul>
                   </div>
-
-                  <h3 class="section-title">MATIÈRES</h3>
-
-                  <ul class="list-unstyled">
-                    <li>
-                      <i class="fa-solid fa-check"></i> Réseaux informatiques
-                    </li>
-
-                    <li>
-                      <i class="fa-solid fa-check"></i>Maintenance des systemes
-                      informatique
-                    </li>
-
-                    <li>
-                      <i class="fa-solid fa-check"></i> Architecture et
-                      Technologie d'ordinateur
-                    </li>
-                  </ul>
                 </div>
               </div>
-            </div>
 
-            <!-- DEBOUCHES -->
-
-            <div class="col-lg-3 reveal">
-              <div class="card h-100 border-0 shadow-sm rounded-4">
+              <!-- DEBOUCHES -->
+              <div class="col-12 col-md-6 col-lg-3 shadow-sm survol rounded-4">
                 <div class="card-body">
                   <div class="icon-box">
                     <i class="fa-solid fa-briefcase"></i>
@@ -208,117 +188,102 @@
                     <i class="fa-solid fa-headset"></i>
                     Support informatique
                   </div>
+                </div>
+              </div>
 
+              <!-- POURQUOI -->
+              <div class="col-12 col-md-6 col-lg-3 survol">
+                <div class="card h-100 text-white border-0 rounded-4 card-4">
+                  <div class="card-body">
+                    <h3 class="fw-bold">Pourquoi choisir MINF ?</h3>
+
+                    <hr />
+
+                    <p>
+                      <i class="fa-solid fa-computer"></i>
+                      Formation orientée vers la pratique
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-screwdriver-wrench"></i>
+                      Maintenance et réparation des ordinateurs
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-network-wired"></i>
+                      Maîtrise des réseaux informatiques
+                    </p>
+
+                    <p>
+                      <i class="fa-solid fa-briefcase"></i>
+
+                      Excellentes perspectives d'emploi
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- POURQUOI -->
+            <!-- ADMISSION -->
+            <div class="card shadow-sm border-0 rounded-4 mt-5 reveal survol">
+              <div class="card-body">
+                <div class="row align-items-center text-center">
+                  <div class="col-12 admi">
+                    <h2>Conditions d'admission</h2>
 
-            <div class="col-lg-3 reveal">
-              <div class="card h-100 bg-primary text-white border-0 rounded-4">
-                <div class="card-body">
-                  <h3>Pourquoi choisir MINF ?</h3>
+                    <p>
+                      <i class="fa-solid fa-graduation-cap text-primary"></i>
+                      Être titulaire du Certificat d'Études Primaires (CEP).
+                    </p>
 
-                  <hr />
-
-                  <p>
-                   <i class="fa-solid fa-computer"></i>
-
-                    Formation orientée vers la pratique
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-
-
-                    Maintenance et réparation des ordinateurs
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-network-wired"></i>
-
-                    Maîtrise des réseaux informatiques
-                  </p>
-
-                  <p>
-                    <i class="fa-solid fa-briefcase"></i>
-
-                    Excellentes perspectives d'emploi
-                  </p>
+                    <p>
+                      <i class="fa-solid fa-user-check text-primary"></i>
+                      Avoir le niveau requis pour la classe demandée, être de
+                      passage ou actuellement en classe de Seconde ou plus.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- ADMISSION -->
+            <!-- BAS -->
+            <div class="row text-center mt-5 g-3 reveal">
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-regular fa-clock fa-2x text-primary"></i>
 
-          <div class="card shadow-sm border-0 rounded-4 mt-5 reveal">
-            <div class="card-body">
-              <div class="row align-items-center text-center">
-                <!-- <div class="col-md-3 text-center">
-                  <i class="fa-solid fa-school fa-4x text-primary"></i>
-                </div> -->
+                <h5>Durée</h5>
 
-                <div class="col-12">
-                  <h2>Conditions d'admission</h2>
+                <p>3 ans</p>
+              </div>
 
-                  <p>
-                    <i class="fa-solid fa-graduation-cap text-primary"></i>
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-solid fa-award fa-2x text-primary"></i>
 
-                    Être titulaire du Certificat d'Études Primaires (CEP).
-                  </p>
+                <h5>Diplôme</h5>
 
-                  <p>
-                    <i class="fa-solid fa-user-check text-primary"></i>
+                <p>Baccalauréat Technique</p>
+              </div>
 
-                    Avoir le niveau requis pour la classe demandée, être de
-                    passage ou actuellement en classe de Seconde ou plus.
-                  </p>
-                </div>
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-solid fa-location-dot fa-2x text-primary"></i>
+
+                <h5>Lieu</h5>
+
+                <p>Lycée Technique de Bikélé</p>
+              </div>
+
+              <div class="col-6 col-md-3 couleur-icons">
+                <i class="fa-solid fa-calendar-days fa-2x text-primary"></i>
+
+                <h5>Rentrée</h5>
+
+                <p>Septembre</p>
               </div>
             </div>
           </div>
-
-          <!-- BAS -->
-
-          <div class="row text-center mt-5 g-3 reveal">
-            <div class="col-md-3">
-              <i class="fa-regular fa-clock fa-2x text-primary"></i>
-
-              <h5>Durée</h5>
-
-              <p>3 ans</p>
-            </div>
-
-            <div class="col-md-3">
-              <i class="fa-solid fa-award fa-2x text-primary"></i>
-
-              <h5>Diplôme</h5>
-
-              <p>Baccalauréat Technique</p>
-            </div>
-
-            <div class="col-md-3">
-              <i class="fa-solid fa-location-dot fa-2x text-primary"></i>
-
-              <h5>Lieu</h5>
-
-              <p>Lycée Technique de Bikélé</p>
-            </div>
-
-            <div class="col-md-3">
-              <i class="fa-solid fa-calendar-days fa-2x text-primary"></i>
-
-              <h5>Rentrée</h5>
-
-              <p>Septembre</p>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
-      <!-- -------------------------- -->
-    </main>
+    </main>      
     <!-- fin du contenu de la page -->
     <!-- debut footer -->
     <footer class="custom-footer text-white py-3">
