@@ -1,451 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-/* debut des cards  */
-.image-card {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 4px 4px 0 0;
-    box-shadow: inset;
-}
-
-.image-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.colour-de-fond {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.621);
-    border: none !important;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-
-    background: linear-gradient(rgba(92, 152, 255, .8),
-            rgba(92, 152, 255, .4));
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay h2,
-.overlay h3 {
-    color: white;
-}
-
-.overlay h2 {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-}
-
-.overlay span {
-    color: #FFEA0A;
-    font-weight: bold;
-}
-
-.forme {
-    font-weight: 500;
-    color: #2a3591;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-}
-
-.forme-p {
-    font-family: "Poppins", sans-serif;
-}
-
-.text-de-condition {
-    font-weight: 400;
-    color: #2a3591;
-    font-family: "Poppins", sans-serif;
-}
-
-
-
-
-/* ===========================
-   VARIABLES
-=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-
-    --primary: #0D47A1;
-    --secondary: #1565C0;
-    --yellow: #fee90a;
-    --white: #ffffff;
-    --light: #f5f7fb;
-    --text: #333;
-    --shadow: 0 10px 25px rgba(0, 0, 0, .10);
-
+  --coulour-jaune: #fee90a;
+  --type-de-police: "Poppins", sans-serif;
+  --primary: #283593;
+  --blanc: white;
+  --blanc2: #f8f9ff;
 }
 
-
-.card {
-
-    border: none;
-
+body {
+  font-family: var(--type-de-police);
 }
 
+.fond {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(92, 152, 255, .8), rgba(92, 152, 255, .4)), url("DMW.png");
 
-/* ===========================
-   HERO
-=========================== */
-
-.hero-dmw {
-
-    position: relative;
-    overflow: hidden;
-
-}
-
-.hero-img {
-
-    height: 430px;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-/* .alignement{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-.font{
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-}
-
-.hero-overlay {
-
-    position: absolute;
-    inset: 0;
-
-    background: linear-gradient(to right,
-            rgba(13, 71, 161, .92),
-            rgba(13, 71, 161, .55));
-
-    display: flex;
-    align-items: center;
-
-}
-
-
-.hero-content {
-    color: white;
-    max-width: 760px;
-    width: 100%;
-    padding: 1.5rem 2rem;
-    box-sizing: border-box;
 }
 
 .badge-filiere {
-
-    color: var(--yellow);
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
+  color: var(--coulour-jaune);
 }
 
-.hero-content h1 {
-
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.1;
-
+.hero-h2 {
+  font-size: 3rem;
 }
-
-.hero-content h2 {
-
-    color: var(--yellow);
-    font-size: 3rem;
-    font-weight: bold;
-
-}
-
-.hero-content p {
-
-    font-size: 20px;
-
-}
-
-
-
-/* BOUTONS de retour */
-
-
-.btn-warning {
-
-    background: var(--yellow);
-    border: none;
-    font-weight: 600;
-    border-radius: 12px;
-
-}
-
-.btn-warning:hover {
-    background: var(--light);
-    color: var(--text)
-}
-
-.btn-outline-light {
-
-    border-radius: 12px;
-
-}
-
-
-
-/*  debut de la cart body CARTES */
-
-.card {
-
-    border-radius: 20px;
-
-}
-
-.shadow-sm {
-
-    box-shadow: var(--shadow) !important;
-
-}
-
-.card-body {
-
-    padding: 30px;
-
-}
-
-.card:hover {
-
-    transform: translateY(-8px);
-
-    transition: .4s;
-
-}
-
 
 /* debut des ICONES */
 
-
 .icon-box {
-
-    width: 65px;
-    height: 65px;
-    border-radius: 18px;
-    background: var(--primary);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
+/* fin des ICONES */
 
-/* ===========================
-   TITRES
-=========================== */
+
+.hero-p {
+  font-weight: 300;
+  max-width: 50%;
+  text-align: justify;
+}
+
+.hero {
+  color: var(--coulour-jaune);
+}
+
+.hero-btn {
+  background-color: var(--coulour-jaune);
+}
+
+.survol {
+  transition: transform 0.3s ease;
+}
+
+.survol:hover {
+  transform: translateY(-18px);
+}
+
+/* Section principale */
+.content-section {
+  padding: 30px 0;
+}
+
+/* Cartes */
+.card {
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-body {
+  padding: 30px;
+}
 
 .section-title {
-
-    color: var(--primary);
-    font-weight: 700;
-    margin-bottom: 25px;
-
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
+/* ul{
 
-/* ===========================
-   LISTE
-=========================== */
+  padding-left: 0;
 
-ul {
+} */
 
-    padding-left: 0;
-
+.card-4{
+  background-color: var(--primary);
 }
 
 ul li {
 
-    list-style: none;
+  list-style: none;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    font-size: 17px;
+  font-size: 17px;
 
 }
 
 ul li i {
-
-    color: var(--primary);
-    margin-right: 10px;
-
+  color: var(--primary);
+  margin-right: 10px;
 }
 
 
-/* ===========================
-   DEBOUCHES
-=========================== */
-
 .emploi {
-
-    background: #f8f9ff;
-
-    padding: 18px;
-
-    border-radius: 15px;
-
-    font-weight: 600;
-
-    border: 1px solid #dfe7ff;
-
+  background: var(--blanc2);
+  padding: 18px;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid var(--blanc2);
 }
 
 .emploi i {
-
-    color: var(--primary);
-
-    margin-right: 12px;
-
+  color: var(--primary);
+  margin-right: 12px;
 }
 
-
-
-/* POURQUOI DMW */
-
-
-.bg-primary {
-
-    background: linear-gradient(135deg,
-            #0D47A1,
-            #1565C0) !important;
-
-}
-
-.bg-primary h3 {
-
-    font-weight: bold;
-
-}
-
-.bg-primary p {
-
-    margin-top: 25px;
-
-    font-size: 17px;
-
-}
-
-.bg-primary i {
-
-    width: 30px;
-
-}
-
-
-
-/* ADMISSION */
-
-
-.fa-school {
-
-    color: var(--primary);
-
-}
-
-.card-body h2 {
-
-    color: var(--primary);
-
-}
-
-
+/* --------------- */
 
 /* BARRE BAS */
 
 
-.row.text-center i {
+.couleur-icons i {
 
     margin-bottom: 15px;
 
 }
 
-.row.text-center h5 {
+.couleur-icons h5 {
 
     color: var(--primary);
-
     font-weight: 700;
+}
+
+.admi >h2{
+  font-family: var(--type-de-police);
+  font-weight: bold;
+  color: var(--primary)
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .fond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    padding: 2rem 1rem !important;
+  }
+
+  .hero-h2{
+    font-size: 2rem;
+  }
+
+  .hero{
+    font-size: 1.8rem;
+  }
+
+  .hero-p{
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-btn{
+    margin-top: 15px;
+  }
 
 }
 
-
-   /* RESPONSIVE */
-
-
-@media(max-width:992px) {
-
-    .hero-img {
-
-        height: 500px;
-
-    }
-
-    .hero-content {
-
-        text-align: center;
-
-    }
-
-    .hero-content h1 {
-
-        font-size: 2.8rem;
-
-    }
-
-    .hero-content h2 {
-
-        font-size: 2rem;
-
-    }
-
-}
-
-
-@media(max-width:768px) {
-
-    .hero-img {
-
-        height: 600px;
-
-    }
-
-    .hero-content h1 {
-
-        font-size: 2.2rem;
-
-    }
-
-    .hero-content p {
-
-        font-size: 16px;
-
-    }
-
-    .btn {
-
-        display: block;
-        margin-bottom: 15px;
-
-    }
-
-}
