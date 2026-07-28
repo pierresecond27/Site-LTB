@@ -17,7 +17,7 @@ body {
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(92, 152, 255, .8), rgba(92, 152, 255, .4)), url("../filieres/image-filieres/PA.webp");
+  background-image: linear-gradient(rgba(92, 152, 255, .8), rgba(92, 152, 255, .4)), url("../filieres/image-filieres/Minf.jpg");
   border-radius: 10px;
 }
 
@@ -50,7 +50,6 @@ body {
 .hero-p {
   font-weight: 300;
   max-width: 50%;
-  text-align: justify;
 }
 
 .hero {
