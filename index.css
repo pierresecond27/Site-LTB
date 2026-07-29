@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* ----- VARIABLES (couleurs de la marque) ----- */
-/* :root = toute la page. On stocke les couleurs pour les réutiliser */
+/* ----- VARIABLES ----- */
+/*  On stocke les couleurs pour les réutiliser */
 :root {
   --ltb-blue-deep: #131b52;      /* Bleu très foncé (footer, fonds) */
   --ltb-blue: #283593;           /* Bleu principal (navbar, titres) */
@@ -129,13 +129,13 @@ body {
 /* Bouton contour blanc (CTA secondaire) */
 .btn-ltb-outline {
   background: transparent;
-  color: #f5ab0ae8;
+  color: #ffe608fb;
   font-weight: 700;
   padding: 0.85rem 1.9rem;
   border-radius: 999px;
   text-decoration: none;
   display: inline-block;
-  border: 4px solid rgba(255, 188, 5, 0.795);
+  border: 2px solid rgba(255, 188, 5, 0.795);
   transition: 0.25s;
 }
 
@@ -294,7 +294,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid var(--ltb-gold);
   box-shadow: 0 0 0 3px rgba(19, 27, 82, 0.12);
 }
 
@@ -352,8 +351,10 @@ body {
 
 
 /* ============================================================
-   SECTION 6 : PARTENAIRES (Marquee animée)
+   SECTION 6 : PARTENAIRES 
    ============================================================ */
+
+
 
 
 /* Piste infinie pour le défilement */
@@ -421,7 +422,7 @@ body {
 }
 
 /* ============================================================
-   SECTION 7 : ADMISSION (Bandeau d'appel à l'action)
+                      FOOTER
    ============================================================ */
 
 :root {
