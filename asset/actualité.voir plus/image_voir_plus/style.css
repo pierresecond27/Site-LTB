@@ -8,6 +8,9 @@
   --navbar-active: #fee90a;       /* Couleur du lien 'Accueil' (Jaune) */
   --navbar-hover: #ffeb3b;        /* Couleur au survol des liens */
   --brand-subtext-color: #fee90a; /* Couleur de 'DE BIKÉLÉ' (Jaune) */
+      --yellow: #fee90a;
+    --white: #ffffff;
+    --light: #f5f7fb;
 
   /* --- TAILLES DE TEXTE --- */
   --navbar-font-size: 1rem;       /* Taille des liens du menu */
@@ -58,6 +61,30 @@
   font-weight: var(--font-weight-links);
   transition: color 0.2s ease-in-out;
 }
+
+/* button retour */
+
+.btn-warning {
+
+    background: var(--yellow);
+    border: none;
+    font-weight: 600;
+    border-radius: 12px;
+
+}
+
+.btn-warning:hover {
+    background: var(--light);
+    color: var(--text)
+}
+
+.btn-outline-light {
+
+    border-radius: 12px;
+
+}
+
+/* button retour */
 
 /* Survol des liens */
 .custom-navbar .nav-link:hover {
