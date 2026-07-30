@@ -4,7 +4,7 @@
     --brand-blue: #0b3d91;
     --brand-blue-dark: #072a66;
     --brand-blue-light: #1a56c4;
-    --accent-gold: #fee90a;
+    --accent-gold: rgb(248, 247, 241);
     --bg-page: #0b3d91;
     --blanc: #f1f1f1;
      --type-de-police: "Poppins", sans-serif;
@@ -113,7 +113,7 @@
     height: 34px;
     border-radius: 50%;
     background: var(--brand-blue-dark);
-    color: #fee90a;
+    color: #fafaf7;
     display: flex;
     align-items: center;
     justify-content: center;
