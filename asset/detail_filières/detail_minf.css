@@ -42,6 +42,7 @@ body {
   align-items: center;
   font-size: 28px;
   margin-bottom: 20px;
+  transform: rotate(-8deg);
 }
 
 /* fin des ICONES */
@@ -50,6 +51,7 @@ body {
 .hero-p {
   font-weight: 300;
   max-width: 50%;
+
 }
 
 .hero {
@@ -137,16 +139,32 @@ ul li i {
 /* BARRE BAS */
 
 
-.couleur-icons i {
-
+.couleur-icons i{
+    color: var(--primary);
+    background: rgba(40, 53, 147, 0.08);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    margin-top: 15px;
+    border-radius: 9px;
     margin-bottom: 15px;
+    transition: .3s ease;
+}
 
+.couleur-icons i:hover{
+    background: var(--primary);
+    color: var(--coulour-jaune);
+    transform: rotate(8deg);
 }
 
 .couleur-icons h5 {
-
     color: var(--primary);
     font-weight: 700;
+
 }
 
 .admi >h2{
