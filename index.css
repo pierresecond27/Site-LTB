@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /* ----- VARIABLES ----- */
-/*  On stocke les couleurs pour les réutiliser */
+/* les couleurs pour les réutiliser */
 :root {
   --ltb-blue-deep: #131b52;      /* Bleu très foncé (footer, fonds) */
   --ltb-blue: #283593;           /* Bleu principal (navbar, titres) */
-  --ltb-blue-light: #4453c2;     /* Bleu clair (hover) */
   --ltb-gold: #FFC107;           /* Jaune/or (CTA, badges) */
   --ltb-gold-deep: #FF8F00;      /* Or foncé (dégradés) */
-  --ltb-cream: #F7F6F1;          /* Fond beige clair */
   --ltb-text-muted: rgba(16, 20, 43, 0.72); /* Texte grisé */
   --font: "Poppins", sans-serif; /* Police par défaut */
 }
@@ -101,34 +99,39 @@ body {
   background: var(--ltb-blue-deep);
 }
 
+/* Cacher les indicateurs (petits points) superposés sur les images du carrousel */
+#heroCarousel .carousel-indicators {
+  display: none;
+}
+
 /* Overlay semi-transparent par-dessus le carousel pour faire ressortir les textes */
 .hero-overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.70) 0%, rgba(19, 27, 82, 0.55) 100%
-  195%, rgba(0, 0, 0, 0.70) 60%);
+  width: 10px;
+  height: 50px;
+  background-position: center;
+  top: 80px;
+  bottom: 60px;
+  background: linear-gradient(135deg,  rgba(19, 27, 82, 0.55) 100%
+  195%, rgba(28, 34, 121, 0.7) 60%);
 }
 
 /* Bouton doré (CTA principal) */
 .btn-ltb-gold {
   background: linear-gradient(135deg, var(--ltb-gold), var(--ltb-gold-deep));
-  font-weight: 700;
+  font-weight: bold;
   padding: 0.85rem 1.9rem;
   border-radius: 999px; /* Bouton arrondi */
   text-decoration: none;
   display: inline-block;
   transition: 0.25s; /* Animation au survol */
+  color: white;
   border: none;
-  box-shadow: 0 14px 28px rgba(255, 143, 0, 0.32);
 }
 
-.btn-ltb-gold:hover {
-  transform: translateY(-3px); /* Effet de lévitation */
-  box-shadow: 0 18px 32px rgba(255, 143, 0, 0.42);
-  color: var(--ltb-blue-deep);
-}
 
 /* Bouton contour blanc (CTA secondaire) */
 .btn-ltb-outline {
-  background: transparent;
+  background: rgba(255, 188, 5, 0.795);
   color: #ffe608fb;
   font-weight: 700;
   padding: 0.85rem 1.9rem;
@@ -136,7 +139,6 @@ body {
   text-decoration: none;
   display: inline-block;
   border: 2px solid rgba(255, 188, 5, 0.795);
-  transition: 0.25s;
 }
 
 
@@ -369,7 +371,6 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem; /* Espacement entre les logos */
-  font-weight: 700;
 }
 
 /* Une vignette partenaire */
@@ -400,14 +401,11 @@ body {
 }
 
 /* Animation au survol */
-.partner-logo:hover {
-  border-color: var(--ltb-blue-light);
-  background: rgba(0, 184, 212, 0.08);
-  box-shadow: 0 6px 20px rgba(0, 184, 212, 0.20);
-}
+
 
 .partner-logo:hover img {
-  transform: scale(1.08);
+  transform: scale(2.0);
+  transition: 0,3s;
   opacity: 1;
 }
 
@@ -423,7 +421,7 @@ body {
 
 /* ============================================================
                       FOOTER
-   ============================================================ */
+   ==================================================== */
 
 :root {
   --bg-footer-color: #2b3a8c;    /* Couleur de fond bleu foncé */
@@ -555,6 +553,86 @@ body {
   }
   .actu-date {
     font-size: 0.65rem;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE : HERO & CARROUSEL
+   ============================================================ */
+
+/* Tablettes (768px - 991px) */
+@media (max-width: 991px) {
+  #accueil {
+    min-height: 70vh;
+    height: auto;
+  }
+  #accueil h1.display-4 {
+    font-size: 2.2rem;
+  }
+  #accueil p.lead {
+    font-size: 1rem !important;
+  }
+  .story-image {
+    height: 260px;
+  }
+  .video-element {
+    height: 260px;
+  }
+}
+
+/* Mobiles (<768px) */
+@media (max-width: 767px) {
+  #accueil {
+    min-height: 60vh;
+    height: auto;
+  }
+  #accueil h1.display-4 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  #accueil p.lead {
+    font-size: 0.9rem !important;
+  }
+  .btn-ltb-gold,
+  .btn-ltb-outline {
+    padding: 0.65rem 1.4rem;
+    font-size: 0.9rem;
+  }
+  .story-image {
+    height: 220px;
+  }
+  .video-element {
+    height: 220px;
+  }
+  .filiere-img-wrap {
+    height: 200px;
+  }
+  .section-card {
+    padding: 1.5rem 0;
+    border-radius: 16px;
+  }
+}
+
+/* Très petits écrans (<480px) */
+@media (max-width: 480px) {
+  #accueil {
+    min-height: 50vh;
+  }
+  #accueil h1.display-4 {
+    font-size: 1.3rem;
+  }
+  #accueil p.lead {
+    font-size: 0.82rem !important;
+  }
+  .partners-track {
+    animation-duration: 12s;
+  }
+  .partner-logo {
+    min-width: 120px;
+    min-height: 90px;
+  }
+  .partner-logo img {
+    height: 40px;
   }
 }
 
