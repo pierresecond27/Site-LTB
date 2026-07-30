@@ -130,6 +130,14 @@ body {
 }
 
 
+/* Titre Hero (H1 accueil) */
+.hero-title {
+  color: #fdf147;
+  border: rgb(245, 211, 16) 3px solid;
+  border-radius: 50px;
+  padding-bottom: 50px;
+}
+
 /* Bouton contour blanc (CTA secondaire) */
 .btn-ltb-outline {
   background: rgba(255, 188, 5, 0.795);
@@ -579,6 +587,9 @@ body {
   .video-element {
     height: 260px;
   }
+  .hero-title {
+    border-radius: 30px;
+  }
 }
 
 /* Mobiles (<768px) */
@@ -612,6 +623,9 @@ body {
     padding: 1.5rem 0;
     border-radius: 16px;
   }
+  .hero-title {
+    border-radius: 20px;
+  }
 }
 
 /* Très petits écrans (<480px) */
@@ -634,6 +648,10 @@ body {
   }
   .partner-logo img {
     height: 40px;
+  }
+  .hero-title {
+    border-radius: 14px;
+    padding-bottom: 24px;
   }
 }
 
