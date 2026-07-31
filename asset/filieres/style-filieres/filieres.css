@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* debut du banniere */
 
 .banniere {
     min-height: 148px;
@@ -13,11 +12,11 @@
         url("../image-filieres/bannière.jpg");
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-body p{
+body p {
     font-weight: 300;
 }
 
@@ -27,60 +26,12 @@ body p{
     font-weight: bold;
 }
 
-/* fin de la banniere */
-
-
-/* debut du header */
-.colour-header {
-    background: #2A3591;
-    color: #ffffff;
-}
-
-.logo-header {
-    width: 60px;
-    height: 60px;
-}
-
-.title-header {
-    font-size: 23px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-}
-
-.header-title-2 {
-    font-size: 23px;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    color: #fee90a;
-    text-transform: uppercase;
-}
-
-.colour-1 a {
-    color: #f1f1f1;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.colour-1 a:hover {
-    color: #fee90a;
-}
-
-.colour-1-active a {
-    color: #fee90a;
-    font-size: 16px;
-}
-
-/* fin du header */
-
-/* debut des cards  */
+/* Cards filières */
 .image-card {
     position: relative;
     height: 200px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
-    box-shadow: inset;
 }
 
 .image-card img {
@@ -90,23 +41,19 @@ body p{
 }
 
 .colour-de-fond {
-    transition: box-shadow 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .colour-de-fond:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
-
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-
     background: linear-gradient(rgba(92, 152, 255, .8),
             rgba(92, 152, 255, .4));
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,14 +76,6 @@ body p{
     font-weight: bold;
 }
 
-
-/* description filières */
-.description-filieres{
+.description-filieres {
     background-color: rgba(186, 186, 186, 0.2);
 }
-
-/* fin de description filières */
-
-/* debut du footer  */
-
-/* findu  du footer  */
