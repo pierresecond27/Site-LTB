@@ -17,10 +17,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-body p{
-    font-weight: 300;
-}
-
 .banniere>h2 {
     color: #FFEA0A;
     text-transform: uppercase;
