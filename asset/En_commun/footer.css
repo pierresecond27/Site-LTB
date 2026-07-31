@@ -1,0 +1,125 @@
+/* Footer styles - minimal, Bootstrap handles most styling */
+/* Only custom overrides that Bootstrap cannot provide */
+
+:root {
+  --bg-footer-color: #2b3a8c;    /* Couleur de fond bleu foncé */
+  --text-yellow: #e2df1b;        /* Couleur jaune pour titres et accents */
+  --text-white: #ffffff;         /* Couleur du texte principal */
+  --text-muted: #d0d4f0;         /* Couleur du texte secondaire/copyright */
+  
+  --font-size-title: 1.35rem;    /* Taille des titres de colonnes */
+  --font-size-body: 0.95rem;     /* Taille des textes/liens */
+  --font-size-small: 0.85rem;    /* Taille du copyright */
+   --type-de-police: "Poppins", sans-serif;
+}
+
+
+
+.custom-footer {
+  background-color: var(--bg-footer-color);
+  color: var(--text-white);
+    font-family: var(--type-de-police);
+}
+
+/* --- LOGO & SLOGAN --- */
+.footer-logo {
+  max-width: 90px; /* Ajustez la taille du logo ici */
+  height: auto;
+}
+
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-slogan {
+  font-size: var(--font-size-body);
+  color: var(--text-muted);
+}
+
+/* Texte Jaune (ex: "de Bikélé" et Titres) */
+.footer-title {
+  color: var(--text-yellow);
+  font-weight: 700;
+  font-size: var(--font-size-title);
+}
+
+.highlight-text{
+  color: var(--text-yellow);
+}
+
+.position{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- LIENS DE NAVIGATION --- */
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: var(--font-size-body);
+  transition: color 0.2s ease;
+}
+
+/* lien active */
+
+.footer-links li.active a {
+  color: var(--text-yellow);
+  font-weight: 700;
+}
+
+/* lien active */
+
+.footer-links a:hover {
+  color: var(--text-yellow); /* Survol des liens en jaune */
+}
+
+/* --- COORDONNÉES DE CONTACT --- */
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centré sur mobile */
+  margin-bottom: 0.75rem;
+  font-size: var(--font-size-body);
+}
+
+/* Alignement à gauche sur grands écrans */
+@media (min-width: 768px) {
+  .footer-contact li {
+    justify-content: flex-start;
+  }
+}
+
+.footer-contact i {
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--text-yellow);
+}
+
+.footer-contact a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--text-yellow);
+}
+
+/* .position{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* --- COPYRIGHT --- */
+.footer-copyright {
+  font-size: var(--font-size-small);
+  color: var(--text-muted);
+}

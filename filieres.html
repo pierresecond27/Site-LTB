@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="asset/image/logo_sans_fond.png"
+      type="image/x-icon"
+    />
+    <title>Lycée Technique de Bikélé</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e6f374f6c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- lien de la feuille de style filieres.csss -->
+  <link rel="stylesheet" href="asset/filieres/style-filieres/filieres.css" />
+  <!-- lien du style css du header   -->
+  <link rel="stylesheet" href="asset/En_commun/header.css" />
+  <!-- lien  du style css au footer -->
+  <link rel="stylesheet" href="asset/En_commun/footer.css" />
+  <!-- lien du scroll -->
+  <link rel="stylesheet" href="asset/filieres/style-filieres/scroll.css" />
+  <!-- Favicone -->
+  <link
+    rel="shortcut icon"
+    href="asset/image/logo_sans_fond.png"
+    type="image/x-icon"
+  />
+
+  <body>
+    <!-- debut de en-tete -->
+
+    <nav
+      class="navbar navbar-expand-lg custom-navbar"
+      data-bs-theme="dark container"
+    >
+      <div class="container-fluid container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="asset/image/logo_sans_fond.png"
+            alt="Logo Lycée Technique"
+            class="navbar-logo"
+            width="45"
+            height="45"
+          />
+          <div class="brand-text">
+            <span class="brand-title">LYCÉE TECHNIQUE</span>
+            <span class="brand-subtext">DE BIKÉLÉ</span>
+          </div>
+        </a>
+
+        <!-- Bouton Burger (Mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens de navigation -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="filieres.html">Filières</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="actualité.html">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- fin de en-tete -->
+
+    <!-- debut de la banière -->
+
+    <section class="banniere">
+      <h2 class="text-center container py-5 fw-bold">filières</h2>
+    </section>
+    <!-- debut du corp -->
+    <section class="description-filieres shadow-sm mb-4 reveal">
+      <div class="container description-filieres-p p-3">
+        <p class="text-secondary-emphasis text-center" title="déscription filieres">
+          Explorez les filières du Lycée Technique de Bikélé. Chaque parcours
+          offre une formation technique adaptée aux métiers d'aujourd'hui et de
+          demain. Choisissez la spécialité qui correspond à vos ambitions.
+        </p>
+      </div>
+    </section>
+    <main class="container py-2 mb-4">
+      <div class="row g-4">
+        <!-- ================= Card 1 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/DMW.png" alt="DMW" />
+
+              <div class="overlay text-center">
+                <h2>Développement Multimédia Web</h2>
+                <h3><span>DMW</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text text-secondary-emphasis">
+                La filière Développement Multimédia Web (DMW) forme des
+                professionnels capables de concevoir, développer et gérer des
+                solutions numériques innovantes, les élèves acquièrent des
+                compétences en programmation...
+              </p>
+
+              <a
+                href="detail_filieres_dmw.html"
+                class="text-decoration-none fw-semibold"
+                title="Développement Multimédia Web (DMW)"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 2 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/Minf.jpg" alt="Minf" />
+
+              <div class="overlay text-center">
+                <h2>Maintenance Informatique</h2>
+                <h3><span>MINF</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Maintenance Informatique (MINF) forme des techniciens
+                en informatique. Elle développe des compétences techniques
+                essentielles. Une formation tournée vers les métiers du
+                numérique...
+              </p>
+              <a
+                href="detail_filieres_minf.html"
+                class="text-decoration-none fw-semibold"
+                title="Maintenance Informatique (MINF)"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 3 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/III.jpg" alt="III" />
+
+              <div class="overlay text-center">
+                <h2>Internet et Informatique industrielle</h2>
+                <h3><span>III</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Internet et Informatique Industrielle (III) forme des
+                techniciens spécialisés en réseaux et systèmes connectés. Elle
+                permet d'acquérir des compétences techniques adaptées au monde
+                industriel...
+              </p>
+              <a
+                href="detail_filieres_III.html"
+                class="text-decoration-none fw-semibold"
+                title="Internet et Informatique Industrielle (III)"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 4 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/MVA.png" alt="MVA" />
+
+              <div class="overlay text-center">
+                <h2>Maintenance des Véhicules Automobiles</h2>
+                <h3><span>MVA </span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Maintenance des Véhicules Automobiles (MVA) forme des
+                techniciens spécialisés en maintenance automobile. Elle
+                développe des compétences en diagnostic et en entretien des
+                véhicules...
+              </p>
+
+              <a
+                href="detail_MVA.html"
+                class="text-decoration-none fw-semibold"
+                title="Maintenance des Véhicules Automobiles (MVA)"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 5 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/orgo.jpg" alt="Orgo" />
+
+              <div class="overlay text-center">
+                <h2>Organisation et Réalisation du Gros Œuvre</h2>
+                <h3><span>ORGO</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Organisation et Réalisation du Gros Œuvre (ORGO)
+                forme des techniciens spécialisés dans les métiers de la
+                construction et du bâtiment. Les élèves acquièrent des
+                compétences en lecture de plans...
+              </p>
+              <a
+                href="detail_ORGO.html"
+                class="text-decoration-none fw-semibold"
+                title="Organisation et Réalisation du Gros Œuvre"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 6 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/PA.webp" alt="PA" />
+
+              <div class="overlay text-center">
+                <h2>Production Animale</h2>
+                <h3><span>PA</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Production Animale (PA) forme des techniciens
+                spécialisés dans les métiers de l'élevage et de la production
+                animale. Les élèves acquièrent des compétences en nutrition
+                animale, en reproduction, en santé animale...
+              </p>
+
+              <a
+                href="detail_PA.html"
+                class="text-decoration-none fw-semibold"
+                title="Production Animale (PA)"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 7 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/pv.jpg" alt="PV" />
+
+              <div class="overlay text-center">
+                <h2>Production Végétale</h2>
+                <h3><span>PV</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Production Végétale (PV) prépare des professionnels
+                capables de produire et de gérer des cultures vivrières et
+                maraîchères. Les élèves développent des compétences en
+                protection des cultures, en irrigation...
+              </p>
+
+              <a
+                href="detail_pv.html"
+                class="text-decoration-none fw-semibold"
+                title="Production Végétale (PV)"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Card 8 ================= -->
+        <div class="col-md-6">
+          <div class="card h-100 rounded-3 colour-de-fond reveal">
+            <div class="image-card">
+              <img src="asset/filieres/image-filieres/MEH.jpg" alt="DMW" />
+
+              <div class="overlay text-center">
+                <h2>Maintenance des Équipements Hospitaliers</h2>
+                <h3><span>MEH</span></h3>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <p class="card-text">
+                La filière Maintenance des Équipements Hospitaliers (MEH) forme
+                des techniciens qualifiés capables d'assurer l'installation, la
+                maintenance préventive et corrective, ainsi que le contrôle du
+                leurs fonctionnement...
+              </p>
+
+              <a
+                href="detail_filieres_MEH.html"
+                class="text-decoration-none fw-semibold"
+                title="Maintenance des Équipements Hospitaliers"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Fin du corp -->
+
+    <!-- debut du footer -->
+
+    <footer class="custom-footer text-white py-3">
+      <div class="container pt-3">
+        <div class="row gy-4 align-items-start">
+          <!-- Colonne 1 : Logo & Slogan -->
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="asset/image/logo_sans_fond.png"
+              alt="Logo Lycée Technique de Bikélé"
+              class="footer-logo mb-3"
+            />
+            <h5 class="footer-brand">
+              Lycée Technique <span class="highlight-text">de Bikélé</span>
+            </h5>
+            <p class="footer-slogan mt-2">
+              Compétence – Performance – Responsabilité
+            </p>
+          </div>
+
+          <!-- Colonne 2 : Navigation -->
+          <div class="col-12 col-md-4 text-center">
+            <h4 class="footer-title mb-3">Navigation</h4>
+            <ul class="list-unstyled footer-links">
+              <li>
+                <a href="index.html"> Accueil </a>
+              </li>
+              <li class="active" aria-current="page">
+                <a href="filieres.html">Filières</a>
+              </li>
+              <li><a href="actualité.html">Actualités</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 : Nous contacter -->
+          <div class="col-12 col-md-4 position">
+            <h4 class="footer-title mb-3 text-center text-md-start">
+              Nous contacter
+            </h4>
+            <ul class="list-unstyled footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Bikélé, Libreville - Gabon</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">LTB@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">+241 62252332</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555487769984"
+                  target="_blank"
+                  rel="noopener"
+                  class="fbk color"
+                  title="Facebook - Notre page officielle"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ligne de séparation / Copyright -->
+        <div class="row mt-4 pt-3 border-top border-secondary-subtle">
+          <div class="col 12 text-center">
+            <p class="footer-copyright mb-0">
+              Copyright © 2026 Lycée Technique de Bikélé. Tous droits réservés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- fin du footer -->
+    <script src="asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="asset/filieres/script-filieres/script_filires.js"></script>
+  </body>
+</html>

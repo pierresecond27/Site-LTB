@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --coulour-jaune: #fee90a;
+  --type-de-police: "Poppins", sans-serif;
+  --primary: #283593;
+  --blanc: white;
+  --blanc2: #f8f9ff;
+}
+
+body {
+  font-family: var(--type-de-police);
+}
+
+.fond {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(92, 152, 255, .8), rgba(92, 152, 255, .4)), url("../filieres/image-filieres/pv.jpg");
+  border-radius: 10px;
+}
+
+.badge-filiere {
+  color: var(--coulour-jaune);
+}
+
+.hero-h2 {
+  font-size: 3rem;
+}
+
+/* debut des ICONES */
+
+.icon-box {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  transform: rotate(-8deg);
+}
+
+/* fin des ICONES */
+
+
+.hero-p {
+  font-weight: 300;
+  max-width: 50%;
+  
+}
+
+.hero {
+  color: var(--coulour-jaune);
+}
+
+.hero-btn {
+  background-color: var(--coulour-jaune);
+}
+
+.survol {
+  transition: transform 0.3s ease;
+}
+
+.survol:hover {
+  transform: translateY(-18px);
+}
+
+/* Section principale */
+.content-section {
+  padding: 30px 0;
+}
+
+/* Cartes */
+.card {
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.section-title {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* ul{
+
+  padding-left: 0;
+
+} */
+
+.card-4{
+  background-color: var(--primary);
+}
+
+ul li {
+
+  list-style: none;
+
+  margin-bottom: 15px;
+
+  font-size: 17px;
+
+}
+
+ul li i {
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+
+.emploi {
+  background: var(--blanc2);
+  padding: 18px;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid var(--blanc2);
+}
+
+.emploi i {
+  color: var(--primary);
+  margin-right: 12px;
+}
+
+/* --------------- */
+
+/* BARRE BAS */
+
+
+.couleur-icons i{
+    color: var(--primary);
+    background: rgba(40, 53, 147, 0.08);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    margin-top: 15px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    transition: .3s ease;
+}
+
+.couleur-icons i:hover{
+    background: var(--primary);
+    color: var(--coulour-jaune);
+    transform: rotate(8deg);
+}
+
+.couleur-icons h5 {
+    color: var(--primary);
+    font-weight: 700;
+
+}
+
+.admi >h2{
+  font-family: var(--type-de-police);
+  font-weight: bold;
+  color: var(--primary)
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .fond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    padding: 2rem 1rem !important;
+  }
+
+  .hero-h2{
+    font-size: 2rem;
+  }
+
+  .hero{
+    font-size: 1.8rem;
+  }
+
+  .hero-p{
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-btn{
+    margin-top: 15px;
+  }
+
+}
+
