@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /* ----- VARIABLES ----- */
-/* les couleurs pour les réutiliser */
+/*  On stocke les couleurs pour les réutiliser */
 :root {
   --ltb-blue-deep: #131b52;      /* Bleu très foncé (footer, fonds) */
   --ltb-blue: #283593;           /* Bleu principal (navbar, titres) */
+  --ltb-blue-light: #4453c2;     /* Bleu clair (hover) */
   --ltb-gold: #FFC107;           /* Jaune/or (CTA, badges) */
   --ltb-gold-deep: #FF8F00;      /* Or foncé (dégradés) */
   --ltb-text-muted: rgba(16, 20, 43, 0.72); /* Texte grisé */
@@ -128,6 +129,14 @@ body {
   border: none;
 }
 
+
+/* Titre Hero (H1 accueil) */
+.hero-title {
+  color: #fdf147;
+  border: rgb(245, 211, 16) 3px solid;
+  border-radius: 50px;
+  padding-bottom: 50px;
+}
 
 /* Bouton contour blanc (CTA secondaire) */
 .btn-ltb-outline {
@@ -578,6 +587,9 @@ body {
   .video-element {
     height: 260px;
   }
+  .hero-title {
+    border-radius: 30px;
+  }
 }
 
 /* Mobiles (<768px) */
@@ -611,6 +623,9 @@ body {
     padding: 1.5rem 0;
     border-radius: 16px;
   }
+  .hero-title {
+    border-radius: 20px;
+  }
 }
 
 /* Très petits écrans (<480px) */
@@ -634,5 +649,8 @@ body {
   .partner-logo img {
     height: 40px;
   }
+  .hero-title {
+    border-radius: 14px;
+    padding-bottom: 24px;
+  }
 }
-
