@@ -1,31 +1,28 @@
-<!doctype html>
+<!Doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lycée Technique de Bikélé</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- lien du header -->
+     <link rel="stylesheet" href="asset/En_commun/header.css" />
+    <!-- lien du footer -->
+    <link rel="stylesheet" href="asset/En_commun/footer.css" />
+
     <script
       src="https://kit.fontawesome.com/e6f374f6c0.js"
       crossorigin="anonymous"
     ></script>
-  <link rel="shortcut icon" href="asset/image/logo_sans_fond.png" type="image/x-icon">
   </head>
   <body>
-  
-    <!--debut du heade -->
-
-    <nav
-      class="navbar navbar-expand-lg custom-navbar"
-      data-bs-theme="dark container"
-    >
+    
+    
+    <!-- debut du header -->
+    <nav class="navbar navbar-expand-lg custom-navbar" data-bs-theme="dark">
       <div class="container-fluid container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="filieres.html">
+        <a class="navbar-brand d-flex align-items-center gap-2 me-3" href="index.html">
           <img
             src="asset/image/logo_sans_fond.png"
             alt="Logo Lycée Technique"
@@ -38,10 +35,10 @@
             <span class="brand-subtext">DE BIKÉLÉ</span>
           </div>
         </a>
-        
+
         <!-- Bouton Burger (Mobile) -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
@@ -54,9 +51,9 @@
 
         <!-- Liens de navigation -->
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3 align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" href="Acceuil.html">Accueil</a>
+              <a class="nav-link active" href="index.html" aria-current="page">Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="filieres.html">Filières</a>
@@ -71,57 +68,63 @@
         </div>
       </div>
     </nav>
-
-    <!-- fin du heade -->
+    <!-- fin du header -->
 
     <main>
 
       <!-- ============================================================ -->
       <!-- SECTION 1 : HERO (Bannière d'accueil avec carrousel)        -->
       <!-- ============================================================ -->
-      <section id="accueil" class="position-relative vh-100 d-flex align-items-center overflow-hidden">
+      <section id="accueil" class="position-relative d-flex align-items-center overflow-hidden hero-section">
+        <div class="hero-media-shell">
+          <!-- Carousel en arrière-plan -->
+          <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Indicateurs cachés -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Image 1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Image 2"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Image 3"></button>
+            </div>
 
-        <!-- Carousel en arrière-plan -->
-        <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000" >
-          <!-- Indicateurs (petits points en bas) -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Image 1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Image 2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Image 3"></button>
+            <!-- Images du carousel -->
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <picture>
+                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
+                  <img src="asset/image/video de présentation/Copilot_20260725_143617.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 1" loading="eager" decoding="async">
+                </picture>
+              </div>
+              <div class="carousel-item h-100">
+                <picture>
+                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
+                  <img src="asset/image/Image des Partenaires/PA.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 2" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="carousel-item h-100">
+                <picture>
+                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
+                  <img src="asset/image/PV.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 3" loading="lazy" decoding="async">
+                </picture>
+              </div>
+            </div>
           </div>
 
-          <!-- Images du carousel -->
-          <div class="carousel-inner h-100" >
-            <div class="carousel-item active h-100">
-              <img src="asset/image/video de présentation/Copilot_20260725_143617.png" class="d-block w-100 h-100" alt="Bannière 1" style="object-fit: cover;">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="asset/image/Image des Partenaires/PA.png" class="d-block w-100 h-100" alt="Bannière 2" style="object-fit: cover;">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="asset/image/PV.png" class="d-block w-100 h-100" alt="Bannière 3" style="object-fit: cover;">
-            </div>
-          </div>
-
+          <!-- Overlay foncé (semi-transparent) -->
+          <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
         </div>
-               
-        <!-- Overlay foncé (semi-transparent) -->
-        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" ></div>
 
         <!-- Contenu texte centré sur le carousel -->
-         
-        <div class="container position-relative text-center" style="z-index: 10; " >
-    
-<h1 class="display- fw-bold hero-title" style="border: 3px solid rgb(247, 202, 57); padding-top: 25px;">L'excellence Technique prend racine à Bikélé</h1>
-          <p class="lead" style="font-weight: bold; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.6); font-size: 1.3rem;">
+        <div class="container position-relative text-center z-1 hero-content">
+          <h1 class="display-4 fw-bold hero-title">L'excellence Technique prend racine à Bikélé</h1>
+          <p class="lead hero-lead">
             Un établissement public d'enseignement technique et professionnel,
             reconnu pour la rigueur de ses formations en développement,
             maintenance informatique et informatique industrielle.
           </p>
           <!-- Boutons d'action (CTA) -->
           <div class="d-flex flex-wrap gap-3 justify-content-center">
-            <a href="filieres.html" class="btn-ltb-gold" style=" color: #131b52;">Découvrir nos filières</a>
-            <a href="#histoire" class="btn-ltb-gold" style="color: white;">Notre histoire</a>
+            <a href="filieres.html" class="btn-ltb-gold btn-ltb-gold-dark">Découvrir nos filières</a>
+            <a href="#histoire" class="btn-ltb-gold text-white">Notre histoire</a>
           </div>
         </div>
       </section>
@@ -134,17 +137,15 @@
           <!-- Rangée 1 : Texte + Image -->
           <div class="row align-items-center g-5 mb-5">
             <div class="col-lg-7">
-              <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase mb-2" style="letter-spacing: 0.16em; font-size: 0.72rem;">
-                Notre histoire
-              </span>
-              <h2 class="fw-bold border-top border-primary pt-3 mt-2" style="color: var(--ltb-blue-deep);">Le Lycée Technique de Bikélé</h2>
+              <span class="badge section-badge">Notre histoire</span>
+              <h2 class="section-title fw-bold border-top border-primary pt-3 mt-2">Le Lycée Technique de Bikélé</h2>
               <p class="text-muted lh-lg">
-                Le Lycée Technique de BIKÉLÉ est à officiellement ouvert avec ses portes le 8 février 2021. 
-                Situé à Bikélé, en périphérie de Libreville au Gabon, le Lycée Technique de Bikélé est 
+                Le Lycée Technique de BIKÉLÉ est à officiellement ouvert avec ses portes le 8 février 2021.
+                Situé à Bikélé, en périphérie de Libreville au Gabon, le Lycée Technique de Bikélé est
                 un établissement public d'enseignement technique et professionnel reconnu pour la qualité de ses formations.
               </p>
               <p class="text-muted lh-lg">
-                Depuis sa création, l'établissement s'est imposé comme un acteur incontournable de la formation 
+                Depuis sa création, l'établissement s'est imposé comme un acteur incontournable de la formation
                 technique au Gabon, en préparant des jeunes aux métiers du numérique, de l'industrie et de l'informatique.
               </p>
               <div class="border-top pt-3 mt-3">
@@ -160,19 +161,18 @@
           <!-- Rangée 2 : Vidéo de présentation -->
           <div class="row g-5">
             <div class="col-lg-6">
-              <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase" style="letter-spacing: 0.16em; font-size: 0.72rem;margin-bottom: 10px;">
-                Présentation
-              </span>
-              <h3 class="fw-bold border-top border-primary pt-3" style="color: var(--ltb-blue-deep);">Un aperçu de notre quotidien</h3>
+              <span class="badge section-badge mb-2">Présentation</span>
+              <h3 class="section-title fw-bold border-top border-primary pt-3">Un aperçu de notre quotidien</h3>
               <p class="text-muted">
                 Découvrez la structure du Lycée Technique de Bikélé à travers une vidéo de présentation.
               </p>
             </div>
             <div class="col-lg-6">
-              <div class="shadow-lg rounded-4 overflow-hidden" style="margin-top: -10px;">
-                <video class="video-element" controls>
-                  <source src="asset/image/video de présentation/VIDEO D'ÉCOLE .mp4" type="video/mp4"  />
+              <div class="video-wrap shadow-lg rounded-4 overflow-hidden position-relative">
+                <video class="video-element" autoplay muted loop playsinline poster="asset/image/Image des Partenaires/logo_ANINF-1.webp" aria-label="Vidéo de présentation du lycée">
+                  <source src="asset/image/video de présentation/VIDEO D'ÉCOLE .mp4" type="video/mp4" />
                 </video>
+                <div class="video-overlay"></div>
               </div>
             </div>
           </div>
@@ -184,10 +184,8 @@
       <!-- ============================================================ -->
       <section class="section-card my-5">
         <div class="container">
-          <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase mb-2" style="letter-spacing: 0.16em; font-size: 0.72rem;">
-            Pourquoi nous choisir
-          </span>
-          <h2 class="fw-bold border-top border-primary pt-3 mt-2" style="color: var(--ltb-blue-deep);">Une formation exigeante, tournée vers le concret</h2>
+          <span class="badge section-badge mb-2">Pourquoi nous choisir</span>
+          <h2 class="section-title fw-bold border-top border-primary pt-3 mt-2">Une formation exigeante, tournée vers le concret</h2>
 
           <div class="row g-4">
             <!-- Carte 1 -->
@@ -195,10 +193,10 @@
               <div class="card h-100 border-0 engagement-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <div class="bg-warning rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                    <div class="icon-circle">
                       <i class="fa-solid fa-chalkboard-user fs-5 text-dark"></i>
                     </div>
-                    <h4 class="card-title fw-bold mb-0" style="color: var(--ltb-blue-deep);">Encadrement de proximité</h4>
+                    <h4 class="card-title fw-bold mb-0">Encadrement de proximité</h4>
                   </div>
                   <p class="card-text text-muted">Des enseignants qualifiés suivent chaque élève tout au long de son parcours, du premier cours aux examens.</p>
                 </div>
@@ -210,10 +208,10 @@
               <div class="card h-100 border-0 engagement-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <div class="bg-warning rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                    <div class="icon-circle">
                       <i class="fa-solid fa-microchip fs-5 text-dark"></i>
                     </div>
-                    <h4 class="card-title fw-bold mb-0" style="color: var(--ltb-blue-deep);">Plateaux techniques équipés</h4>
+                    <h4 class="card-title fw-bold mb-0">Plateaux techniques équipés</h4>
                   </div>
                   <p class="card-text text-muted">Ateliers et laboratoires pensés pour la pratique : réseaux, développement, automatismes industriels.</p>
                 </div>
@@ -225,10 +223,10 @@
               <div class="card h-100 border-0 engagement-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <div class="bg-warning rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                    <div class="icon-circle">
                       <i class="fa-solid fa-handshake fs-5 text-dark"></i>
                     </div>
-                    <h4 class="card-title fw-bold mb-0" style="color: var(--ltb-blue-deep);">Partenariats entreprises</h4>
+                    <h4 class="card-title fw-bold mb-0">Partenariats entreprises</h4>
                   </div>
                   <p class="card-text text-muted">Des stages de 1 à 2 mois auprès d'acteurs reconnus, pour ancrer la théorie dans le réel dès la formation.</p>
                 </div>
@@ -241,36 +239,27 @@
       <!-- ============================================================ -->
       <!-- SECTION 4 : NOS FILIÈRES                                     -->
       <!-- ============================================================ -->
-  
       <section id="filières" class="section-card my-5">
         <div class="container">
           <!-- En-tête -->
-          <div class="mb-5" style="max-width: 640px;">
-            <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase mb-2" style="letter-spacing: 0.16em; font-size: 0.72rem;">
-              Nos formations
-            </span>
-            <h2 class="fw-bold border-top border-primary pt-3" style="color: var(--ltb-blue-deep);">Nos filières</h2>
+          <div class="mb-5 text-narrow">
+            <span class="badge section-badge mb-2">Nos formations</span>
+            <h2 class="section-title fw-bold border-top border-primary pt-3">Nos filières</h2>
             <p class="text-muted">Trois parcours techniques (NTIC), chacun pensé pour mener vers un métier précis et recherché.</p>
           </div>
 
-          
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <!-- Filière 1 : DMW -->
             <div class="col">
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
-                  <!-- Badge "PRG · DEV" positionné sur l'image -->
-                  <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-bold" 
-                        style="background: linear-gradient(135deg, var(--ltb-gold), var(--ltb-gold-deep)); color: var(--ltb-blue-deep); font-size: 0.72rem; letter-spacing: 0.08em; z-index: 5;">
-                    PRG · DEV
-                  </span>
-                  <img src="asset/filieres/image-filieres/DMW.png" alt="Développement" class="w-100 h-100" style="object-fit: cover;">
+                  <span class="badge filiere-badge">PRG · DEV</span>
+                  <img src="asset/filieres/image-filieres/DMW.png" alt="Développement" class="w-100 h-100 object-fit-cover">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
-                  <h5 class="fw-bold" style="color: var(--ltb-blue);">Développement</h5>
+                  <h5 class="filiere-title fw-bold">Développement</h5>
                   <p class="card-text text-muted flex-grow-1">Maîtrisez la programmation et le développement d'applications modernes pour les technologies du futur.</p>
-                  <!-- Métadonnées : Diplôme + Durée -->
                   <div class="d-flex gap-4 border-top pt-3 mt-2 mb-3">
                     <div class="text-muted small">Diplôme <strong class="d-block text-dark">Bac Techno</strong></div>
                     <div class="text-muted small">Durée <strong class="d-block text-dark">3 ans</strong></div>
@@ -286,15 +275,12 @@
             <div class="col">
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
-                  <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-bold"
-                        style="background: linear-gradient(135deg, var(--ltb-gold), var(--ltb-gold-deep)); color: var(--ltb-blue-deep); font-size: 0.72rem; letter-spacing: 0.08em; z-index: 5;">
-                    PRG · MAINT
-                  </span>
-                  <img src="asset/filieres/image-filieres/Minf.jpg" alt="Maintenance informatique" class="w-100 h-100" style="object-fit: cover;">
+                  <span class="badge filiere-badge">PRG · MAINT</span>
+                  <img src="asset/filieres/image-filieres/Minf.jpg" alt="Maintenance informatique" class="w-100 h-100 object-fit-cover">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
-                  <h5 class="fw-bold" style="color: var(--ltb-blue);">Maintenance informatique</h5>
+                  <h5 class="filiere-title fw-bold">Maintenance informatique</h5>
                   <p class="card-text text-muted flex-grow-1">Formation complète en maintenance, dépannage et gestion des infrastructures informatiques.</p>
                   <div class="d-flex gap-4 border-top pt-3 mt-2 mb-3">
                     <div class="text-muted small">Diplôme <strong class="d-block text-dark">Bac Techno</strong></div>
@@ -311,15 +297,12 @@
             <div class="col">
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
-                  <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-bold"
-                        style="background: linear-gradient(135deg, var(--ltb-gold), var(--ltb-gold-deep)); color: var(--ltb-blue-deep); font-size: 0.72rem; letter-spacing: 0.08em; z-index: 5;">
-                    PRG · III
-                  </span>
-                  <img src="asset/filieres/image-filieres/III.jpg" alt="Internet et informatique industrielle" class="w-100 h-100" style="object-fit: cover;">
+                  <span class="badge filiere-badge">PRG · III</span>
+                  <img src="asset/filieres/image-filieres/III.jpg" alt="Internet et informatique industrielle" class="w-100 h-100 object-fit-cover">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
-                  <h5 class="fw-bold" style="color: var(--ltb-blue);">Internet et informatique industrielle</h5>
+                  <h5 class="filiere-title fw-bold">Internet et informatique industrielle</h5>
                   <p class="card-text text-muted flex-grow-1">Découvrez l'IoT, l'automatisation industrielle et l'intégration des systèmes connectés.</p>
                   <div class="d-flex gap-4 border-top pt-3 mt-2 mb-3">
                     <div class="text-muted small">Diplôme <strong class="d-block text-dark">Bac Techno</strong></div>
@@ -338,17 +321,13 @@
       <!-- ============================================================ -->
       <!-- SECTION 5 : ACTUALITÉS (Fil d'actualités)                    -->
       <!-- ============================================================ -->
-      
-      
       <section id="actualités" class="section-card my-5">
         <div class="container">
           <!-- En-tête avec bouton -->
           <div class="d-flex flex-wrap align-items-end justify-content-between mb-4">
             <div>
-              <span class="badge bg-primary bg-opacity-10 text-primary fw-bold text-uppercase mb-2" style="letter-spacing: 0.16em; font-size: 0.72rem;">
-                Fil d'actualités
-              </span>
-              <h2 class="fw-bold border-top border-primary pt-3" style="color: var(--ltb-blue-deep);">Actualités</h2>
+              <span class="badge section-badge mb-2">Fil d'actualités</span>
+              <h2 class="section-title fw-bold border-top border-primary pt-3">Actualités</h2>
               <p class="text-muted">Le journal de bord de l'établissement : événements, concours et projets, classés par date.</p>
             </div>
             <a href="actualité.html" class="btn btn-warning fw-bold rounded-pill px-4 py-2 shadow">
@@ -365,8 +344,8 @@
               </div>
               <div>
                 <span class="actu-tag">Événement</span>
-                <h5 class="fw-bold mt-2" style="color: var(--ltb-blue-deep);">Portes ouvertes</h5>
-                <p class="text-muted" style="max-width: 60ch;">Participez à nos journées dédiées pour découvrir les installations et l'équipe pédagogique.</p>
+                <h5 class="fw-bold mt-2 text-limited">Portes ouvertes</h5>
+                <p class="text-muted text-limited">Participez à nos journées dédiées pour découvrir les installations et l'équipe pédagogique.</p>
               </div>
             </div>
 
@@ -377,8 +356,8 @@
               </div>
               <div>
                 <span class="actu-tag">Événement</span>
-                <h5 class="fw-bold mt-2" style="color: var(--ltb-blue-deep);">Concours inter-lycées</h5>
-                <p class="text-muted" style="max-width: 60ch;">Nos élèves se préparent pour un concours régional d'informatique et de robotique.</p>
+                <h5 class="fw-bold mt-2 text-limited">Concours inter-lycées</h5>
+                <p class="text-muted text-limited">Nos élèves se préparent pour un concours régional d'informatique et de robotique.</p>
               </div>
             </div>
 
@@ -389,54 +368,46 @@
               </div>
               <div>
                 <span class="actu-tag">Réalisation</span>
-                <h5 class="fw-bold mt-2" style="color: var(--ltb-blue-deep);">Projets étudiants</h5>
-                <p class="text-muted" style="max-width: 60ch;">Des projets concrets développés par les classes pour répondre aux besoins locaux.</p>
+                <h5 class="fw-bold mt-2 text-limited">Projets étudiants</h5>
+                <p class="text-muted text-limited">Des projets concrets développés par les classes pour répondre aux besoins locaux.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    
 
       <!-- ============================================================ -->
       <!-- SECTION 6 : ADMISSION (Bandeau d'appel à l'action)           -->
       <!-- ============================================================ -->
-    
-         <section id="actualités" class="section-card">
+      <section class="section-card">
         <div class="container text-center">
-          <div class="bg  px-1 py-1 rounded-pill fw-bold mb-5 shadow-sm">
-             Inscriptions ouvertes
-          </div>
+          <div class="bg- px-1 py-1 rounded-pill fw-bold mb-5 shadow-sm">Inscriptions ouvertes</div>
           <h2 class="fw-bold mb-3">Construisez votre avenir technique à Bikélé</h2>
           <p>
             Inscriptions et renseignements toute l'année. Notre équipe vous accompagne dans le choix de votre filière.
           </p>
           <a href="contact.html" class="btn-ltb-gold">Nous contacter</a>
         </div>
-       </section>
+      </section>
 
     </main>
 
     <!-- ============================================================ -->
-    <!-- SECTION 7 : PARTENAIRES (Marquee plein écran avec logos)    -->
+    <!-- SECTION 7 : PARTENAIRES (Marquee plein écran avec logos)     -->
     <!-- ============================================================ -->
-   
     <section class="text-center py-5 w-100 overflow-hidden" aria-label="Logos des partenaires">
-      <!-- Texte d'introduction -->
       <div class="container">
-        <h5 class="fw-bold mb-1" style="color: var(--ltb-blue-deep); font-size: 30px; padding-bottom: 50px;">Ils nous font confiance</h5>
-        <p class="text-muted mb-4 mx-auto" style="max-width: 46ch;">
+        <h5 class="partner-title fw-bold mb-1">Ils nous font confiance</h5>
+        <p class="text-muted mb-4 mx-auto text-narrow">
           Des partenaires qui accueillent nos élèves en stage durant 1 à 2 mois, au plus près des métiers.
         </p>
       </div>
     </section>
 
-      <!-- Piste de défilement des logos partenaires -->
-
-       <section id="actualités" class="section-card">
+    <!-- Piste de défilement des logos partenaires -->
+    <section class="section-card">
       <div class="overflow-hidden py-3">
         <div class="partners-track">
-          <!-- Groupe 1 -->
           <div class="partners-group">
             <div class="partner-logo">
               <img src="asset/image/Image des Partenaires/CBS.png" alt="CYBERSCHOOL">
@@ -474,7 +445,7 @@
             <div class="partner-logo">
               <img src="asset/image/Image des Partenaires/centre gabon.png" alt="CENTRE GABONAIS">
               <span>CENTRE GABONAIS</span>
-            </div> 
+            </div>
             <div class="partner-logo">
               <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
               <span>MIKA SERVICE</span>
@@ -516,21 +487,17 @@
               <img src="asset/image/Image des Partenaires/logo_ANINF-1.webp" alt="ANINF">
               <span>ANINF</span>
             </div>
-             <div class="partner-logo">
+            <div class="partner-logo">
               <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
-          </div>
-        </section>
-
           </div>
         </div>
       </div>
     </section>
 
-<!-- debut du footer -->
-
-    <footer class="custom-footer text-white py-3">
+    <!-- debut du footer -->
+    <footer class="custom-footer text-white py-3" style="background-color:#2b3a8c; color:#ffffff;">
       <div class="container pt-3">
         <div class="row gy-4 align-items-start">
           <!-- Colonne 1 : Logo & Slogan -->
@@ -540,44 +507,42 @@
               alt="Logo Lycée Technique de Bikélé"
               class="footer-logo mb-3"
             />
-            <h5 class="footer-brand">
-              Lycée Technique <span class="highlight-text">de Bikélé</span>
+            <h5 class="footer-brand" style="color:#ffffff;">
+              Lycée Technique <span class="highlight-text" style="color:#e2df1b;">de Bikélé</span>
             </h5>
-            <p class="footer-slogan mt-2">
+            <p class="footer-slogan mt-2" style="color:#d0d4f0;">
               Compétence – Performance – Responsabilité
             </p>
           </div>
 
           <!-- Colonne 2 : Navigation -->
           <div class="col-12 col-md-4 text-center">
-            <h4 class="footer-title mb-3">Navigation</h4>
+            <h4 class="footer-title mb-3" style="color:#e2df1b;">Navigation</h4>
             <ul class="list-unstyled footer-links">
               <li class="active">
-                <a href="Acceuil.html" aria-current="page"> Accueil </a>
+                <a href="Acceuil.html" aria-current="page" style="color:#e2df1b;"> Accueil </a>
               </li>
-              <li><a href="filieres.html">Filières</a></li>
-              <li><a href="actualité.html">Actualités</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="filieres.html" style="color:#ffffff;">Filières</a></li>
+              <li><a href="actualité.html" style="color:#ffffff;">Actualités</a></li>
+              <li><a href="contact.html" style="color:#ffffff;">Contact</a></li>
             </ul>
           </div>
 
           <!-- Colonne 3 : Nous contacter -->
-          <div class="col-12 col-md-4 position">
-            <h4 class="footer-title mb-3 text-center text-md-start">
-              Nous contacter
-            </h4>
+          <div class="col-12 col-md-4 footer-contact-column">
+            <h4 class="footer-title mb-3 text-center text-md-start" style="color:#e2df1b;">Nous contacter</h4>
             <ul class="list-unstyled footer-contact">
               <li>
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Bikélé, Libreville - Gabon</span>
+                <i class="fa-solid fa-location-dot" style="color:#e2df1b;"></i>
+                <span style="color:#ffffff;">Bikélé, Libreville - Gabon</span>
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="#">LTB@gmail.com</a>
+                <i class="fa-solid fa-envelope" style="color:#e2df1b;"></i>
+                <a href="#" style="color:#ffffff;">LTB@gmail.com</a>
               </li>
               <li>
-                <i class="fa-solid fa-phone"></i>
-                <a href="#">+241 62252332</a>
+                <i class="fa-solid fa-phone" style="color:#e2df1b;"></i>
+                <a href="#" style="color:#ffffff;">+241 62252332</a>
               </li>
               <li>
                 <a
@@ -586,8 +551,9 @@
                   rel="noopener"
                   class="fbk color"
                   title="Facebook - Notre page officielle"
+                  style="color:#ffffff;"
                 >
-                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-facebook-f" style="color:#e2df1b;"></i>
                   Facebook
                 </a>
               </li>
@@ -597,7 +563,7 @@
 
         <!-- Ligne de séparation / Copyright -->
         <div class="row mt-4 pt-3 border-top border-secondary-subtle">
-          <div class="col 12 text-center">
+          <div class="col-12 text-center">
             <p class="footer-copyright mb-0">
               Copyright © 2026 Lycée Technique de Bikélé. Tous droits réservés.
             </p>
@@ -605,10 +571,8 @@
         </div>
       </div>
     </footer>
-
     <!-- fin du footer -->
-    
-    
+
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="asset/filieres/script-filieres/script_filires.js"></script>
   </body>
