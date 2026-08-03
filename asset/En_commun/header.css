@@ -3,9 +3,9 @@
   /* --- COULEURS --- */
   --navbar-bg: #283593;           /* Bleu de fond */
   --navbar-text: #ffffff;         /* Couleur des liens par défaut */
-  --navbar-active: #fee90a;       /* Couleur du lien 'Accueil' (Jaune) */
+  --navbar-active: #fee909;       /* Couleur du lien 'Accueil' (Jaune) */
   --navbar-hover: #ffeb3b;        /* Couleur au survol des liens */
-  --brand-subtext-color: #fee90a; /* Couleur de 'DE BIKÉLÉ' (Jaune) */
+  --brand-subtext-color: #fee909; /* Couleur de 'DE BIKÉLÉ' (Jaune) */
 
   /* --- TAILLES DE TEXTE --- */
   --navbar-font-size: 1rem;       /* Taille des liens du menu */
