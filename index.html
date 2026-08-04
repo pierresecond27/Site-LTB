@@ -169,10 +169,13 @@
             </div>
             <div class="col-lg-6">
               <div class="video-wrap shadow-lg rounded-4 overflow-hidden position-relative">
-                <video class="video-element" autoplay muted loop playsinline poster="asset/image/Image des Partenaires/logo_ANINF-1.webp" aria-label="Vidéo de présentation du lycée">
+                <video class="video-element" id="presentationVideo" preload="metadata" muted playsinline poster="asset/image/Image des Partenaires/logo_ANINF-1.webp" aria-label="Vidéo de présentation du lycée">
                   <source src="asset/image/video de présentation/VIDEO D'ÉCOLE .mp4" type="video/mp4" />
                 </video>
                 <div class="video-overlay"></div>
+                <button class="video-play-btn" type="button" data-video-target="presentationVideo" aria-label="Lire la vidéo">
+                  <i class="fa-solid fa-play"></i>
+                </button>
               </div>
             </div>
           </div>
