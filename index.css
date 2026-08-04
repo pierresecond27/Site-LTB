@@ -97,8 +97,8 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   width: 100%;
 }
 
-.hero-title {
-  color: #fdf147;
+.hero-content .hero-title.titre-1 {
+  color: #FEE909 !important;
   padding: 0.8rem clamp(1rem, 2.2vw, 1.6rem);
   margin: 0 auto 1rem;
   background: rgba(19, 27, 82, 0.16);
@@ -106,6 +106,12 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   font-size: clamp(1.45rem, 3.2vw, 2.7rem);
   line-height: 1.2;
   max-width: 100%;
+}
+
+.hero-content .btn-decouvrir {
+  background: #FEE909 !important;
+  color: var(--ltb-blue-deep) !important;
+  border-color: #FEE909 !important;
 }
 
 .hero-lead {
@@ -133,24 +139,6 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   letter-spacing: 0.01em;
 }
 
-.btn:hover,
-.btn-ltb-gold:hover,
-.btn-ltb-outline:hover,
-.btn-ltb-line:hover,
-.btn-warning:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(19, 27, 82, 0.22);
-}
-
-.btn:focus-visible,
-.btn-ltb-gold:focus-visible,
-.btn-ltb-outline:focus-visible,
-.btn-ltb-line:focus-visible,
-.btn-warning:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 0.22rem rgba(254, 233, 9, 0.35);
-}
-
 .btn-ltb-gold,
 .btn-warning {
   background: linear-gradient(135deg, var(--ltb-gold), #f8ec4f);
@@ -166,30 +154,7 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   min-width: 180px;
 }
 
-.btn-ltb-gold:hover,
-.btn-warning:hover {
-  color: var(--ltb-blue-deep);
-  background: linear-gradient(135deg, #f8ec4f, var(--ltb-gold));
-}
 
-.btn-ltb-gold-dark {
-  background: linear-gradient(135deg, var(--ltb-blue), var(--ltb-blue-light));
-  color: #ffffff;
-  border: none;
-  padding: 0.85rem 1.9rem;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  min-width: 180px;
-}
-
-.btn-ltb-gold-dark:hover {
-  color: #ffffff;
-  background: linear-gradient(135deg, var(--ltb-blue-light), var(--ltb-blue));
-}
 
 .btn-ltb-outline {
   background: transparent;
@@ -200,7 +165,6 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   display: inline-block;
   border: 2px solid var(--ltb-gold);
 }
-
 
 
 .btn-ltb-line {
