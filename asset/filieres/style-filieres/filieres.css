@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --color-yellow: #FEE909;
+    --color-white: #fff;
+    --color-gray-1: rgba(186, 186, 186, 0.75);
+    --color-gray-2: rgba(92, 92, 92, 0.711);
+    --color-overlay-start: rgba(92, 152, 255, .8);
+    --color-overlay-end: rgba(92, 152, 255, .4);
+    --color-bg-light: rgba(186, 186, 186, 0.2);
+    --color-shadow: rgba(0, 0, 0, 0.2);
+    --radius-card-top: 4px 4px 0 0;
+    --radius-card: 4px;
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+}
+
 .banniere {
     min-height: 148px;
     display: flex;
@@ -7,9 +22,9 @@
     justify-content: center;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(186, 186, 186, 0.75),
-            rgba(92, 92, 92, 0.711)),
-        url("../image-filieres/bannière.jpg");
+    background-image: linear-gradient(var(--color-gray-1),
+            var(--color-gray-2)),
+        url("../image-filieres/bannière.webp");
 }
 
 body {
@@ -17,9 +32,9 @@ body {
 }
 
 .banniere>h2 {
-    color: #FFEA0A;
+    color: var(--color-yellow);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
 
 /* Cards filières */
@@ -27,7 +42,7 @@ body {
     position: relative;
     height: 200px;
     overflow: hidden;
-    border-radius: 4px 4px 0 0;
+    border-radius: var(--radius-card-top);
 }
 
 .image-card img {
@@ -41,15 +56,15 @@ body {
 }
 
 .colour-de-fond:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--color-shadow);
     transform: translateY(-5px);
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(rgba(92, 152, 255, .8),
-            rgba(92, 152, 255, .4));
+    background: linear-gradient(var(--color-overlay-start),
+            var(--color-overlay-end));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,20 +73,20 @@ body {
 
 .overlay h2,
 .overlay h3 {
-    color: white;
+    color: var(--color-white);
 }
 
 .overlay h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     font-family: "Poppins", sans-serif;
 }
 
 .overlay span {
-    color: #FFEA0A;
-    font-weight: bold;
+    color: var(--color-yellow);
+    font-weight: var(--font-weight-bold);
 }
 
 .description-filieres {
-    background-color: rgba(186, 186, 186, 0.2);
+    background-color: var(--color-bg-light);
 }
