@@ -6,6 +6,12 @@
     <title>Lycée Technique de Bikélé</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
+     <!-- Favicone -->
+    <link
+      rel="shortcut icon"
+      href="asset/image/logo_sans_fond.png"
+      type="image/x-icon"
+    />
     <!-- lien du header -->
      <link rel="stylesheet" href="asset/En_commun/header.css" />
     <!-- lien du footer -->
@@ -90,20 +96,20 @@
             <div class="carousel-inner h-100">
               <div class="carousel-item active h-100">
                 <picture>
-                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
-                  <img src="asset/image/video de présentation/Copilot_20260725_143617.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 1" loading="eager" decoding="async">
+                  <source srcset="asset/image/video de présentation/IMG .jpg" type="image/png">
+                  <img src="asset/image/video de présentation/IMG .jpg" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 1" loading="eager" decoding="async" fetchpriority="high">
                 </picture>
               </div>
               <div class="carousel-item h-100">
                 <picture>
-                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
-                  <img src="asset/image/Image des Partenaires/PA.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 2" loading="lazy" decoding="async">
+                  <source srcset="asset/image/video de présentation/CAMELIA.jpg" type="image/webp">
+                  <img src="asset/image/video de présentation/CAMELIA.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 2" loading="lazy" decoding="async" fetchpriority="low">
                 </picture>
               </div>
               <div class="carousel-item h-100">
                 <picture>
-                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
-                  <img src="asset/image/PV.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 3" loading="lazy" decoding="async">
+                  <source srcset="asset/image/Image des Partenaires/PA.png" type="image/webp">
+                  <img src="asset/image/Image des Partenaires/PA.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 3" loading="lazy" decoding="async" fetchpriority="low">
                 </picture>
               </div>
             </div>
@@ -124,7 +130,7 @@
           <!-- Boutons d'action (CTA) -->
           <div class="d-flex flex-wrap gap-3 justify-content-center">
             <a href="filieres.html" class="btn-ltb-gold btn-ltb-gold-dark">Découvrir nos filières</a>
-            <a href="#histoire" class="btn-ltb-gold text-white">Notre histoire</a>
+            <a href="#histoire" class="btn-ltb-gold">Notre histoire</a>
           </div>
         </div>
       </section>
@@ -150,7 +156,7 @@
               </p>
               <div class="border-top pt-3 mt-3">
                 <strong>Nos valeurs</strong>
-                <p class="mt-2"><span class="badge bg-warning text-dark fs-6 px-3 py-2">Compétence — Performance — Responsabilité</span></p>
+                <p class="mt-2"><span class="badge bg-warning text-dark fs-6">Compétence — Performance — Responsabilité</span></p>
               </div>
             </div>
             <div class="col-lg-5">
@@ -169,8 +175,8 @@
             </div>
             <div class="col-lg-6">
               <div class="video-wrap shadow-lg rounded-4 overflow-hidden position-relative">
-                <video class="video-element" id="presentationVideo" preload="metadata" muted playsinline poster="asset/image/Image des Partenaires/logo_ANINF-1.webp" aria-label="Vidéo de présentation du lycée">
-                  <source src="asset/image/video de présentation/VIDEO D'ÉCOLE .mp4" type="video/mp4" />
+                <video class="video-element" id="presentationVideo" preload="auto" muted playsinline poster="asset/image/logo_sans_fond.png" aria-label="Vidéo de présentation du lycée">
+                  <source src="asset/image/video%20de%20pr%C3%A9sentation/VIDEO%20D'%C3%89COLE%20.mp4" type="video/mp4" />
                 </video>
                 <div class="video-overlay"></div>
                 <button class="video-play-btn" type="button" data-video-target="presentationVideo" aria-label="Lire la vidéo">
@@ -257,7 +263,7 @@
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
                   <span class="badge filiere-badge">PRG · DEV</span>
-                  <img src="asset/filieres/image-filieres/DMW.png" alt="Développement" class="w-100 h-100 object-fit-cover">
+                  <img src="asset/image/Image des Partenaires/DMW.jpg" alt="Développement" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -279,7 +285,7 @@
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
                   <span class="badge filiere-badge">PRG · MAINT</span>
-                  <img src="asset/filieres/image-filieres/Minf.jpg" alt="Maintenance informatique" class="w-100 h-100 object-fit-cover">
+                  <img src="asset/image/Image des Partenaires/Minf.jpg" alt="Maintenance informatique" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -301,7 +307,7 @@
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
                   <span class="badge filiere-badge">PRG · III</span>
-                  <img src="asset/filieres/image-filieres/III.jpg" alt="Internet et informatique industrielle" class="w-100 h-100 object-fit-cover">
+                  <img src="asset/image/Image des Partenaires/III copy.jpg" alt="Internet et informatique industrielle" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -417,7 +423,7 @@
               <span>CYBERSCHOOL</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -433,7 +439,7 @@
               <span>NKOK</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -450,7 +456,7 @@
               <span>CENTRE GABONAIS</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -471,7 +477,7 @@
               <span>CYBERSCHOOL</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -578,5 +584,25 @@
 
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="asset/filieres/script-filieres/script_filires.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const playButton = document.querySelector('.video-play-btn');
+        const video = document.getElementById('presentationVideo');
+        const wrap = document.querySelector('.video-wrap');
+
+        if (playButton && video && wrap) {
+          playButton.addEventListener('click', async () => {
+            try {
+              wrap.classList.add('is-playing');
+              playButton.classList.add('is-playing');
+              video.muted = true;
+              await video.play();
+            } catch (error) {
+              console.error('Erreur de lecture vidéo:', error);
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
