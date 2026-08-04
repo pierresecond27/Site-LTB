@@ -108,10 +108,9 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   max-width: 100%;
 }
 
-.hero-content .btn-decouvrir {
-  background: #FEE909 !important;
-  color: var(--ltb-blue-deep) !important;
-  border-color: #FEE909 !important;
+.hero-content{
+  color: white !important;
+  border-color: #283599 !important;
 }
 
 .hero-lead {
@@ -134,52 +133,14 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 24px rgba(19, 27, 82, 0.16);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
 
-.btn-ltb-gold,
-.btn-warning {
-  background: linear-gradient(135deg, var(--ltb-gold), #f8ec4f);
-  color: var(--ltb-blue-deep);
-  border: none;
-  padding: 0.85rem 1.9rem;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  min-width: 180px;
+.btn-decouvrir{
+  background: #283599 !important;
+  color: white !important;
 }
-
-
-
-.btn-ltb-outline {
-  background: transparent;
-  color: var(--ltb-blue-deep);
-  padding: 0.85rem 1.9rem;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-block;
-  border: 2px solid var(--ltb-gold);
-}
-
-
-.btn-ltb-line {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: 1.5px solid var(--ltb-gold);
-  color: var(--ltb-blue-deep);
-  font-weight: 600;
-  padding: 0.5rem 1.1rem;
-  border-radius: 999px;
-  text-decoration: none;
-}
-
-
 
 /* ============================================================
    SECTIONS & TITRES COMMUNS
