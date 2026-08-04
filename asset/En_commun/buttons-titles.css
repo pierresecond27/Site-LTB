@@ -7,7 +7,7 @@
     --dégradé: #2b3a8c6b;
     --type-de-police: "Poppins", sans-serif;
     --font-size-title-1: 2rem;
-    --font-size-title-h2: 1.35rem;
+    --font-size-title-h2: 1.50rem;
     --font-size-title-h3: 1.25rem;
     --font-size-title-h4: 1.15rem;
     --tails-paragraphe: 1rem;
@@ -35,7 +35,7 @@
 }
 
 .hero-btn-1:hover {
-    background-color: var(--dégradé);
+    background-color: var(--primary-color);
     color: var(--blanc);
 }
 
@@ -70,9 +70,9 @@
 
 .titre-2{
     font-family: var(--type-de-police);
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
     font-size: var(--font-size-title-h2);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .titre-3{
@@ -89,9 +89,9 @@
     font-weight: 700;
 }
 
-p{
+/* p{
     font-family: var(--type-de-police);
     color: var(--color-text);
     font-size: var(--tails-paragraphe);
-}
+} */
 
