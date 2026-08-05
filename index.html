@@ -6,11 +6,18 @@
     <title>Lycée Technique de Bikélé</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
+     <!-- Favicone -->
+    <link
+      rel="shortcut icon"
+      href="asset/image/logo_sans_fond.png"
+      type="image/x-icon"
+    />
     <!-- lien du header -->
      <link rel="stylesheet" href="asset/En_commun/header.css" />
     <!-- lien du footer -->
     <link rel="stylesheet" href="asset/En_commun/footer.css" />
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+     <link rel="stylesheet" href="asset/En_commun/buttons-titles.css" />
     <script
       src="https://kit.fontawesome.com/e6f374f6c0.js"
       crossorigin="anonymous"
@@ -73,7 +80,7 @@
     <main>
 
       <!-- ============================================================ -->
-      <!-- SECTION 1 : HERO (Bannière d'accueil avec carrousel)        -->
+      <!-- SECTION 1 : HERO (Bannière d'accueil avec carrousel)         -->
       <!-- ============================================================ -->
       <section id="accueil" class="position-relative d-flex align-items-center overflow-hidden hero-section">
         <div class="hero-media-shell">
@@ -90,20 +97,20 @@
             <div class="carousel-inner h-100">
               <div class="carousel-item active h-100">
                 <picture>
-                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
-                  <img src="asset/image/video de présentation/Copilot_20260725_143617.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 1" loading="eager" decoding="async">
+                  <source srcset="asset/image/video de présentation/IMG .jpg" type="image/png">
+                  <img src="asset/image/video de présentation/IMG .jpg" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 1" loading="eager" decoding="async" fetchpriority="high">
                 </picture>
               </div>
               <div class="carousel-item h-100">
                 <picture>
-                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
-                  <img src="asset/image/Image des Partenaires/PA.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 2" loading="lazy" decoding="async">
+                  <source srcset="asset/image/video de présentation/CAMELIA.jpg" type="image/webp">
+                  <img src="asset/image/video de présentation/CAMELIA.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 2" loading="lazy" decoding="async" fetchpriority="low">
                 </picture>
               </div>
               <div class="carousel-item h-100">
                 <picture>
-                  <source srcset="asset/image/Image des Partenaires/logo_ANINF-1.webp" type="image/webp">
-                  <img src="asset/image/PV.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 3" loading="lazy" decoding="async">
+                  <source srcset="asset/image/Image des Partenaires/PA.png" type="image/webp">
+                  <img src="asset/image/Image des Partenaires/PA.png" class="d-block w-100 h-100 object-fit-cover" alt="Bannière 3" loading="lazy" decoding="async" fetchpriority="low">
                 </picture>
               </div>
             </div>
@@ -115,7 +122,7 @@
 
         <!-- Contenu texte centré sur le carousel -->
         <div class="container position-relative text-center z-1 hero-content">
-          <h1 class="display-4 fw-bold hero-title">L'excellence Technique prend racine à Bikélé</h1>
+          <h1 class="titre-1 hero-title">L'excellence Technique prend racine à Bikélé</h1>
           <p class="lead hero-lead">
             Un établissement public d'enseignement technique et professionnel,
             reconnu pour la rigueur de ses formations en développement,
@@ -123,8 +130,8 @@
           </p>
           <!-- Boutons d'action (CTA) -->
           <div class="d-flex flex-wrap gap-3 justify-content-center">
-            <a href="filieres.html" class="btn-ltb-gold btn-ltb-gold-dark">Découvrir nos filières</a>
-            <a href="#histoire" class="btn-ltb-gold text-white">Notre histoire</a>
+            <a href="filieres.html" class="btn btn-decouvrir">Découvrir nos filières</a>
+            <a href="#histoire" class="btn hero-btn-1">Notre histoire</a>
           </div>
         </div>
       </section>
@@ -138,7 +145,7 @@
           <div class="row align-items-center g-5 mb-5">
             <div class="col-lg-7">
               <span class="badge section-badge">Notre histoire</span>
-              <h2 class="section-title fw-bold border-top border-primary pt-3 mt-2">Le Lycée Technique de Bikélé</h2>
+              <h2 class="titre-2 section-title fw-bold border-top border-primary pt-3 mt-2">Le Lycée Technique de Bikélé</h2>
               <p class="text-muted lh-lg">
                 Le Lycée Technique de BIKÉLÉ est à officiellement ouvert avec ses portes le 8 février 2021.
                 Situé à Bikélé, en périphérie de Libreville au Gabon, le Lycée Technique de Bikélé est
@@ -150,7 +157,7 @@
               </p>
               <div class="border-top pt-3 mt-3">
                 <strong>Nos valeurs</strong>
-                <p class="mt-2"><span class="badge bg-warning text-dark fs-6 px-3 py-2">Compétence — Performance — Responsabilité</span></p>
+                <p class="mt-2"><span class="badge bg-warning text-dark fs-6">Compétence — Performance — Responsabilité</span></p>
               </div>
             </div>
             <div class="col-lg-5">
@@ -162,17 +169,20 @@
           <div class="row g-5">
             <div class="col-lg-6">
               <span class="badge section-badge mb-2">Présentation</span>
-              <h3 class="section-title fw-bold border-top border-primary pt-3">Un aperçu de notre quotidien</h3>
+              <h3 class="titre-3 section-title fw-bold border-top border-primary pt-3">Un aperçu de notre quotidien</h3>
               <p class="text-muted">
                 Découvrez la structure du Lycée Technique de Bikélé à travers une vidéo de présentation.
               </p>
             </div>
             <div class="col-lg-6">
               <div class="video-wrap shadow-lg rounded-4 overflow-hidden position-relative">
-                <video class="video-element" autoplay muted loop playsinline poster="asset/image/Image des Partenaires/logo_ANINF-1.webp" aria-label="Vidéo de présentation du lycée">
-                  <source src="asset/image/video de présentation/VIDEO D'ÉCOLE .mp4" type="video/mp4" />
+                <video class="video-element" id="presentationVideo" preload="auto" muted playsinline poster="asset/image/logo_sans_fond.png" aria-label="Vidéo de présentation du lycée">
+                  <source src="asset/image/video%20de%20pr%C3%A9sentation/VIDEO%20D'%C3%89COLE%20.mp4" type="video/mp4" />
                 </video>
                 <div class="video-overlay"></div>
+                <button class="video-play-btn" type="button" data-video-target="presentationVideo" aria-label="Lire la vidéo">
+                  <i class="fa-solid fa-play"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -184,8 +194,8 @@
       <!-- ============================================================ -->
       <section class="section-card my-5">
         <div class="container">
-          <span class="badge section-badge mb-2">Pourquoi nous choisir</span>
-          <h2 class="section-title fw-bold border-top border-primary pt-3 mt-2">Une formation exigeante, tournée vers le concret</h2>
+          <span class="badge section-badge">Pourquoi nous choisir</span>
+<h2 class="titre-2 section-title fw-bold border-top border-primary pt-3 mt-2">Une formation exigeante, tournée vers le concret</h2>
 
           <div class="row g-4">
             <!-- Carte 1 -->
@@ -237,14 +247,14 @@
       </section>
 
       <!-- ============================================================ -->
-      <!-- SECTION 4 : NOS FILIÈRES                                     -->
+      <!--                SECTION 4 : NOS FILIÈRES                      -->
       <!-- ============================================================ -->
       <section id="filières" class="section-card my-5">
         <div class="container">
           <!-- En-tête -->
           <div class="mb-5 text-narrow">
             <span class="badge section-badge mb-2">Nos formations</span>
-            <h2 class="section-title fw-bold border-top border-primary pt-3">Nos filières</h2>
+            <h2 class="titre-2 section-title fw-bold border-top border-primary pt-3">Nos filières</h2>
             <p class="text-muted">Trois parcours techniques (NTIC), chacun pensé pour mener vers un métier précis et recherché.</p>
           </div>
 
@@ -254,7 +264,7 @@
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
                   <span class="badge filiere-badge">PRG · DEV</span>
-                  <img src="asset/filieres/image-filieres/DMW.png" alt="Développement" class="w-100 h-100 object-fit-cover">
+                  <img src="asset/image/Image des Partenaires/DMW.jpg" alt="Développement" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -264,7 +274,7 @@
                     <div class="text-muted small">Diplôme <strong class="d-block text-dark">Bac Techno</strong></div>
                     <div class="text-muted small">Durée <strong class="d-block text-dark">3 ans</strong></div>
                   </div>
-                  <a href="detail_filieres_dmw.html" class="btn-ltb-line align-self-start">
+                  <a href="detail_filieres_dmw.html" class="btn btn-decouvrir align-self-start">
                     En savoir plus <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>
@@ -276,7 +286,7 @@
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
                   <span class="badge filiere-badge">PRG · MAINT</span>
-                  <img src="asset/filieres/image-filieres/Minf.jpg" alt="Maintenance informatique" class="w-100 h-100 object-fit-cover">
+                  <img src="asset/image/Image des Partenaires/Minf.jpg" alt="Maintenance informatique" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -286,7 +296,7 @@
                     <div class="text-muted small">Diplôme <strong class="d-block text-dark">Bac Techno</strong></div>
                     <div class="text-muted small">Durée <strong class="d-block text-dark">3 ans</strong></div>
                   </div>
-                  <a href="detail_filieres_minf.html" class="btn-ltb-line align-self-start">
+                  <a href="detail_filieres_minf.html" class="btn btn-decouvrir align-self-start">
                     En savoir plus <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>
@@ -298,7 +308,7 @@
               <div class="card h-100 shadow-sm border-0 filiere-card">
                 <div class="filiere-img-wrap">
                   <span class="badge filiere-badge">PRG · III</span>
-                  <img src="asset/filieres/image-filieres/III.jpg" alt="Internet et informatique industrielle" class="w-100 h-100 object-fit-cover">
+                  <img src="asset/image/Image des Partenaires/III copy.jpg" alt="Internet et informatique industrielle" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
                   <div class="filiere-overlay"></div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -308,7 +318,7 @@
                     <div class="text-muted small">Diplôme <strong class="d-block text-dark">Bac Techno</strong></div>
                     <div class="text-muted small">Durée <strong class="d-block text-dark">3 ans</strong></div>
                   </div>
-                  <a href="detail_filieres_dmw.html" class="btn-ltb-line align-self-start">
+                  <a href="detail_filieres_dmw.html" class="btn btn-decouvrir align-self-start">
                     En savoir plus <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>
@@ -327,10 +337,10 @@
           <div class="d-flex flex-wrap align-items-end justify-content-between mb-4">
             <div>
               <span class="badge section-badge mb-2">Fil d'actualités</span>
-              <h2 class="section-title fw-bold border-top border-primary pt-3">Actualités</h2>
+              <h2 class="titre-2 section-title fw-bold border-top border-primary pt-3">Actualités</h2>
               <p class="text-muted">Le journal de bord de l'établissement : événements, concours et projets, classés par date.</p>
             </div>
-            <a href="actualité.html" class="btn btn-warning fw-bold rounded-pill px-4 py-2 shadow">
+              <a href="actualité.html" class="btn btn-decouvrir me-3 px-4 align-items-center d-inline-flex gap-2">
               Voir l'actualité <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
           </div>
@@ -382,11 +392,11 @@
       <section class="section-card">
         <div class="container text-center">
           <div class="bg- px-1 py-1 rounded-pill fw-bold mb-5 shadow-sm">Inscriptions ouvertes</div>
-          <h2 class="fw-bold mb-3">Construisez votre avenir technique à Bikélé</h2>
+          <h2 class="titre-2 fw-bold mb-3">Construisez votre avenir technique à Bikélé</h2>
           <p>
             Inscriptions et renseignements toute l'année. Notre équipe vous accompagne dans le choix de votre filière.
           </p>
-          <a href="contact.html" class="btn-ltb-gold">Nous contacter</a>
+          <a href="contact.html" class="btn btn-decouvrir">Nous contacter</a>
         </div>
       </section>
 
@@ -414,7 +424,7 @@
               <span>CYBERSCHOOL</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -430,7 +440,7 @@
               <span>NKOK</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -447,7 +457,7 @@
               <span>CENTRE GABONAIS</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -468,7 +478,7 @@
               <span>CYBERSCHOOL</span>
             </div>
             <div class="partner-logo">
-              <img src="asset/image/Copilot_20260730_140745.png" alt="MIKA">
+              <img src="asset/image/Copilot_20260730_140745.jpg" alt="MIKA">
               <span>MIKA SERVICE</span>
             </div>
             <div class="partner-logo">
@@ -575,5 +585,25 @@
 
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="asset/filieres/script-filieres/script_filires.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const playButton = document.querySelector('.video-play-btn');
+        const video = document.getElementById('presentationVideo');
+        const wrap = document.querySelector('.video-wrap');
+
+        if (playButton && video && wrap) {
+          playButton.addEventListener('click', async () => {
+            try {
+              wrap.classList.add('is-playing');
+              playButton.classList.add('is-playing');
+              video.muted = true;
+              await video.play();
+            } catch (error) {
+              console.error('Erreur de lecture vidéo:', error);
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
