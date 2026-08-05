@@ -90,9 +90,9 @@
     font-weight: 700;
 }
 
-.texte-paragraphe{
-    color: var(--color-text) !important;
-    font-size: 16px !important;
-    font-family: "Poppins", sans-serif !important;
-}
+/* p{
+    font-family: var(--type-de-police);
+    color: var(--color-text);
+    font-size: var(--tails-paragraphe);
+} */
 
