@@ -62,29 +62,6 @@
   transition: color 0.2s ease-in-out;
 }
 
-/* button retour */
-
-.btn-warning {
-
-    background: var(--yellow);
-    border: none;
-    font-weight: 600;
-    border-radius: 12px;
-
-}
-
-.btn-warning:hover {
-    background: var(--light);
-    color: var(--text)
-}
-
-.btn-outline-light {
-
-    border-radius: 12px;
-
-}
-
-/* button retour */
 
 /* Survol des liens */
 .custom-navbar .nav-link:hover {
@@ -167,13 +144,21 @@ a{
     color:#666;
 }
 
-.hero .btn{
-    margin-top:20px;
-    border-radius:50px;
-    padding:15px 40px;
-    font-size:18px;
+.hero {
+  color: var(--coulour-jaune);
 }
 
+.hero-btn {
+  background-color: var(--coulour-jaune);
+}
+
+.survol {
+  transition: transform 0.3s ease;
+}
+
+.survol:hover {
+  transform: translateY(-18px);
+}
 /* ===========================
    PRESENTATION
 =========================== */
