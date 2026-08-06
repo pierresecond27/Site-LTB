@@ -57,9 +57,9 @@ body {
   color: var(--coulour-jaune);
 }
 
-.hero-btn {
+/* .hero-btn {
   background-color: var(--coulour-jaune);
-}
+} */
 
 .survol {
   transition: transform 0.3s ease;
@@ -94,11 +94,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* ul{
-
-  padding-left: 0;
-
-} */
 
 .card-4{
   background-color: var(--primary);
