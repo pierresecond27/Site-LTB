@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
+    <meta name="description" content="Bienvenue sur le site officiel du Lycée Technique de Bikélé. Découvrez nos filières, nos formations en Développement Multimédia Web, Maintenance Informatique, Internet et Informatique Industrielle, nos actualités, nos partenaires et les modalités d'inscription.">
+    <meta name="keywords" content="Lycée Technique de Bikélé, lycée technique, Bikélé, Libreville, Gabon, enseignement technique, formation professionnelle, DMW, Développement Multimédia Web, Maintenance Informatique, Internet et Informatique Industrielle, NTIC, inscription lycée, filières techniques">
+    <meta name="author" content="Lycée Technique de Bikélé" />
+     <link
       rel="shortcut icon"
-      href="asset/image/logo_sans_fond.png"
+      href="asset/image/logo_sans_fond.webp"
       type="image/x-icon"
     />
     <title>Lycée Technique de Bikélé</title>
@@ -20,6 +23,8 @@
     ></script>
     <!-- lien du css filieres -->
     <link rel="stylesheet" href="asset/detail_filières/detail_ORGO.css" />
+    <!-- lien du css buttons/titles -->
+    <link rel="stylesheet" href="asset/En_commun/buttons-titles.css" />
     <!-- police google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +34,6 @@
     <link rel="stylesheet" href="asset/En_commun/footer.css" />
     <!-- lien du css au scroll -->
     <link rel="stylesheet" href="asset/filieres/style-filieres/scroll.css" />
-    <!-- <link rel="stylesheet" href="styles.cssj"> -->
   </head>
   <body>
     <!-- debut de du header -->
@@ -44,11 +48,12 @@
           href="index.html"
         >
           <img
-            src="asset/image/logo_sans_fond.png"
+            src="asset/image/logo_sans_fond.webp"
             alt="Logo Lycée Technique"
             class="navbar-logo"
             width="45"
             height="45"
+             decoding="async"
           />
           <div class="brand-text">
             <span class="brand-title">LYCÉE TECHNIQUE</span>
@@ -92,14 +97,14 @@
 
     <!-- le contenu de la page -->
     <main class="container py-4">
-      <div class="clo-12 mb-4 p-2 align-iteme-center">
+      <div class="col-12 mb-4 p-2">
           <a
             href="filieres.html"
-            class="btn btn-warning me-3 px-4 hero-btn"
+            class="btn btn-warning me-3 px-4 align-items-center d-inline-flex gap-2 hero-btn"
             title="Retour"
           >
             <i class="fa-solid fa-arrow-left"></i>
-            Retour
+            <span>Retour</span>
           </a>
       </div>
       <div class="card shadow-sm">
@@ -111,7 +116,7 @@
           </h2>
           <h2 class="fw-bold text-uppercase hero">ORGO</h2>
           <div class="hero-p">
-            <p>Bâtir aujourd'hui les ouvrages qui façonneront demain.</p>
+            <p class="text-whitetexte-paragraphe">Bâtir aujourd'hui les ouvrages qui façonneront demain.</p>
           </div>
         
         </section>
@@ -130,7 +135,7 @@
 
                     <h3 class="section-title">OBJECTIFS</h3>
 
-                    <p>
+                    <p class="texte-paragraphe">
                       Former des techniciens capables d'organiser, de réaliser
                       et de superviser les travaux de gros œuvre en appliquant
                       les techniques modernes de la construction et les règles
@@ -294,9 +299,11 @@
           <!-- Colonne 1 : Logo & Slogan -->
           <div class="col-12 col-md-4 text-center">
             <img
-              src="asset/image/logo_sans_fond.png"
+              src="asset/image/logo_sans_fond.webp"
               alt="Logo Lycée Technique de Bikélé"
               class="footer-logo mb-3"
+              decoding="async"
+              loading="lazy"
             />
             <h5 class="footer-brand">
               Lycée Technique <span class="highlight-text">de Bikélé</span>
