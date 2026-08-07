@@ -162,7 +162,8 @@ body {
 }
 
 .card p {
-  color: #666;
+  color: rgba(33, 37, 41, 0.75) !important;
+  font-size: 1rem;
   line-height: 28px;
 }
 
@@ -240,7 +241,7 @@ body {
 
     background:  #fee909!important;
 
-    color:#fff !important;
+    /* color:#fff !important; */
 
     font-size:12px;
 
