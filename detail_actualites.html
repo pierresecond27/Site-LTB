@@ -1,43 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Description -->
-    <meta name="description" content="Bienvenue sur le site officiel du Lycée Technique de Bikélé. Découvrez nos filières, nos formations en Développement Multimédia Web, Maintenance Informatique, Internet et Informatique Industrielle, nos actualités, nos partenaires et les modalités d'inscription.">
-     <!-- Mots-clés utilisés par Google -->
-    <meta name="keywords" content="Lycée Technique de Bikélé, lycée technique, Bikélé, Libreville, Gabon, enseignement technique, formation professionnelle, DMW, Développement Multimédia Web, Maintenance Informatique, Internet et Informatique Industrielle, NTIC, inscription lycée, filières techniques">
-    
-    <link rel="" href="buttons-titles.css"/>
-      <link rel="shortcut icon"
+    <meta
+      name="description"
+      content="Bienvenue sur le site officiel du Lycée Technique de Bikélé. Découvrez nos filières, nos formations en Développement Multimédia Web, Maintenance Informatique, Internet et Informatique Industrielle, nos actualités, nos partenaires et les modalités d'inscription."
+    />
+    <!-- Mots-clés utilisés par Google -->
+    <meta
+      name="keywords"
+      content="Lycée Technique de Bikélé, lycée technique, Bikélé, Libreville, Gabon, enseignement technique, formation professionnelle, DMW, Développement Multimédia Web, Maintenance Informatique, Internet et Informatique Industrielle, NTIC, inscription lycée, filières techniques"
+    />
+
+    <link rel="" href="buttons-titles.css" />
+    <link
+      rel="shortcut icon"
       href="asset/image/logo_sans_fond.webp"
       type="image/x-icon"
     />
-    <title>Actualités</title>
+     <title>Lycée Technique de Bikélé</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e6f374f6c0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="asset/actualité.voir plus/image_voir_plus/style.css">
-    <link rel="stylesheet" href="asset/En_commun/footer.css">
-    <link rel="stylesheet" href="asset/En_commun/header.css">
+    <link
+      rel="stylesheet"
+      href="asset/actualité.voir plus/image_voir_plus/style.css"
+    />
+    <link rel="stylesheet" href="asset/En_commun/footer.css" />
+    <link rel="stylesheet" href="asset/En_commun/header.css" />
     <!-- style de bouton -->
-     <link rel="stylesheet" href="asset/En_commun/buttons-titles.css">
-</head>
+    <link rel="stylesheet" href="asset/En_commun/buttons-titles.css" />
+  </head>
 
-<body>
-
-<!--debut du heade -->
+  <body>
+    <!--debut du heade -->
 
     <nav class="navbar navbar-expand-lg custom-navbar" data-bs-theme="dark">
       <div class="container-fluid container">
-        <a class="navbar-brand d-flex align-items-center gap-2 me-3" href="index.html">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 me-3"
+          href="index.html"
+        >
           <img
             src="asset/image/logo_sans_fond.webp"
             alt="Logo Lycée Technique"
@@ -66,15 +87,22 @@
 
         <!-- Liens de navigation -->
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3 align-items-lg-center">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3 align-items-lg-center"
+          >
             <li class="nav-item">
-              <a class="nav-link " href="index.html" >Accueil</a>
+              <a class="nav-link" href="index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="filieres.html">Filières</a>
+              <a class="nav-link" href="filieres.html">Filières</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="actualité.html">Actualités</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="actualité.html"
+                >Actualités</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -86,158 +114,167 @@
 
     <!-- fin du heade -->
 
-     <section class="banniere">
-    <h2 class="text-center container py-5 fw-bold">Actualités</h2>
-  </section>
-  <!-- debut du corp -->
+    <section class="banniere">
+      <h2 class="text-center container py-5 fw-bold">Actualités</h2>
+    </section>
+    <!-- debut du corp -->
+    <main class="evenement-main">
+      <div class="container py-4">
+        <!-- LIGNE 1 : BOUTON RETOUR -->
 
-    <!-- ================= HERO ================= -->
-
-    <main class="container py-2">
-
-        <section class="hero container-fluid d-flex align-items-center">
-
-            <div class="container">
-
-                <div class="row align-items-center">
-
-                    <div class="col-lg-5">
-                      
-          <a
-          href="actualité.html"
-          class="btn btn-warning me-3 px-4 align-items-center d-inline-flex gap-2 hero-btn"
-          title="Retour"
-        >
-<i class="bi bi-arrow-left"></i>
-          <span> Retour</span>
-        
-        </a>
-                        <div class="hero-image">
-
-                            <img src="asset/actualité.voir plus/image_voir_plus/IMG-20260219-WA0028 (2).webp" alt="Detail actualité 1 " class="img-fluid rounded-top shadow">
-
-                        </div>
-                      
-                    </div>
-
-                    <div class="col-lg-7">
-
-                        <h1 class="display-3 fw-bold mt-3">
-
-                            Visite à sobraga
-
-                        </h1>
-                    <p class="text-muted">le 18 février 2026</p>
-                        <p class="lead">
-
-                            Dans le cadre de notre formation, nous avons effectué une visite à l'entreprise SOBRAGA afin
-                            de
-                            découvrir le processus de fabrication de la bière et du vin. Cette visite nous a permis
-                            d'acquérir des connaissances pratiques sur les différentes étapes de fabrication et
-                            d'emballage
-                            des boissons ainsi que les règles strictes de sécurité appliquées dans l'usine. Nous avons
-                            également eu l'occasion d'échanger avec les professionnels de l'entreprise, ce qui a enrichi
-                            notre compréhension du secteur et de ses défis.
-
-                        </p>
-                            
-                       
-                    </div> 
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ================= PRESENTATION ================= -->
-
-<!-- Section Photos -->
-<section class="photos-section">
-
-    <div class="photos-title">
-        <div class="title-left">
-            <i class="bi bi-camera"></i>
-            <h2>Photos de l'événement</h2>
-        </div>
-        <div class="title-line"></div>
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Photo 1 -->
-        <div class="col-lg-4 col-md-6">
-            <div class="photo-card">
-
-                <img src="asset/actualité.html/IMG-20260219-WA0028 (2).webp"
-                     class="card-img-top"
-                     alt="carte1">  
-                    
-                <div class="photo-card-body">
-                    <h5>Petite réunion</h5>
-
-                    <div class="photo-date">
-                        <i class="bi bi-calendar3"></i>
-                        <span>18 Février 2026</span>
-                    </div>
-                </div>
-
-            </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <a
+              href="actualité.html"
+              class="btn btn-warning me-3 px-4 align-items-center d-inline-flex gap-2 hero-btn"
+              title="Retour aux actualités"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>Retour</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Photo 2 -->
-        <div class="col-lg-4 col-md-6">
-            <div class="photo-card">
+        <!-- LIGNE 2 : TITRE -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="evenement-titre-wrapper">
+              <h1 class="evenement-titre">Visite à Sobraca</h1>
 
-                <img src="asset/actualité.html/IMG-20260219-WA0031.webp"
-                     class="card-img-top"
-                     alt="carte2  ">
-
-                <div class="photo-card-body">
-                    <h5>Fin de journée</h5>
-
-                    <div class="photo-date">
-                        <i class="bi bi-calendar3"></i>
-                        <span>18 Février 2026</span>
-                    </div>
-                </div>
-
+              <div class="evenement-ligne"></div>
             </div>
+          </div>
         </div>
 
-        <!-- Photo 3 -->
-        <div class="col-lg-4 col-md-6">
-            <div class="photo-card">
+        <!-- LIGNE 3 : IMAGE PRINCIPALE -->
 
-                <img src="asset/actualité.html/IMG-20260219-WA0096_1.jpg"
-                     class="card-img-top"
-                     alt="carte3">
-
-                <div class="photo-card-body">
-                    <h5>Prise des notes </h5>
-
-                    <div class="photo-date">
-                        <i class="bi bi-calendar3"></i>
-                        <span>18 Février 2026</span>
-                    </div>
-                </div>
-
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="evenement-image-principale">
+              <img
+                src="asset/actualité.voir plus/image_voir_plus/IMG-20260219-WA0031.webp"
+                alt="Visite à Sobraca"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
+          </div>
         </div>
 
+        <!-- LIGNE 4 : DESCRIPTION -->
 
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="evenement-description">
+              <p>
+                Dans le cadre de la formation pratique des apprenants, le Lycée
+                Technique de Bikélé a organisé une visite à Sobraca. Cette
+                activité a permis aux élèves de découvrir concrètement
+                l'environnement professionnel et de mieux comprendre les
+                différentes pratiques liées à leur formation.
+              </p>
 
+              <p>
+                Cette expérience a également favorisé les échanges entre les
+                apprenants et les professionnels, tout en leur permettant
+                d'enrichir leurs connaissances et de rapprocher les
+                enseignements théoriques de la réalité du terrain.
+              </p>
+            </div>
+          </div>
+        </div>
 
-            
-        
+        <!-- LIGNE 5 : PHOTOS DE L'ÉVÉNEMENT -->
 
-    </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="photos-evenement-header">
+              <div class="photos-titre">
+                <i class="bi bi-camera"></i>
+                <h2>Photos de l'événement</h2>
+              </div>
 
-</section>
-      
-        <!-- ================= SERVICES ================= -->
+              <div class="photos-ligne"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALERIE -->
+        <div class="row g-4">
+          <!-- PHOTO 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="photo-card">
+              <div class="photo-card-image">
+                <img
+                  src="asset/actualité.voir plus/image_voir_plus/IMG-20260219-WA0028 (2).webp"
+                  alt="Petite réunion lors de la visite"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="photo-card-body">
+                <h3>Petite réunion</h3>
+
+                <div class="photo-date">
+                  <i class="bi bi-calendar3"></i>
+                  <span>18 Février 2026</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PHOTO 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="photo-card">
+              <div class="photo-card-image">
+                <img
+                  src="asset/actualité.voir plus/image_voir_plus/IMG-20260219-WA0031.webp"
+                  alt="Fin de journée"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="photo-card-body">
+                <h3>Fin de journée</h3>
+
+                <div class="photo-date">
+                  <i class="bi bi-calendar3"></i>
+                  <span>18 Février 2026</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PHOTO 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="photo-card">
+              <div class="photo-card-image">
+                <img
+                  src="asset/actualité.voir plus/image_voir_plus/IMG-20260219-WA0096_1.webp"
+                  alt="Prise des notes"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="photo-card-body">
+                <h3>Prise des notes</h3>
+
+                <div class="photo-date">
+                  <i class="bi bi-calendar3"></i>
+                  <span>18 Février 2026</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </main>
-<!-- debut footer -->
+    <!-- fin du corp -->
+
+    <!-- debut footer -->
     <footer class="custom-footer text-white py-3">
       <div class="container pt-3">
         <div class="row gy-4 align-items-start">
@@ -268,7 +305,9 @@
               <li>
                 <a href="filieres.html">Filières</a>
               </li>
-              <li class="active" aria-current="page"><a href="actualité.html">Actualités</a></li>
+              <li class="active" aria-current="page">
+                <a href="actualité.html">Actualités</a>
+              </li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -285,7 +324,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="">LTB@gmail.com</a>
+                <a href="#">LTB@gmail.com</a>
               </li>
               <li>
                 <i class="fa-solid fa-phone"></i>
@@ -319,7 +358,5 @@
     </footer>
     <!-- fin du footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
