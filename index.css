@@ -254,6 +254,7 @@ h4 { font-size: clamp(1.08rem, 1.45vw, 1.2rem); }
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+ 
 }
 
 .filiere-card:hover .filiere-img-wrap img { transform: scale(1.06); }
