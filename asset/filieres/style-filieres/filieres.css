@@ -49,13 +49,23 @@ body {
 
 /* Cards filières */
 
+.text-align{
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .no-br {
+    display: none;
+  }
+}
+
 
 
 .filiere-card {
     width: 100%;
     background: var(--ltb-cream);
     border: 1px solid rgba(19, 27, 82, 0.08);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
     transition:
