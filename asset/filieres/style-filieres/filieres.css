@@ -49,6 +49,16 @@ body {
 
 /* Cards filières */
 
+.text-align{
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .no-br {
+    display: none;
+  }
+}
+
 
 
 .filiere-card {
